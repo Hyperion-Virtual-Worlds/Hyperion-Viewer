@@ -223,7 +223,6 @@ Ansariel Hiller
 	MAINT-8723
 	SL-10385
 	SL-10891
-	SL-10675
 	SL-13364
 	SL-13858
 	SL-13697
@@ -266,6 +265,7 @@ Benjamin Bigdipper
 Beq Janus
 	BUG-227094
 	SL-10288
+    SL-11300
 	SL-13583
 	SL-14766
 Beth Walcher
@@ -360,6 +360,8 @@ Chaser Zaks
     BUG-227485
 Cherry Cheevers
 ChickyBabes Zuzu
+Chorazin Allen
+    BUG-229753
 Christopher  Organiser
 Ciaran Laval
 Cinder Roxley
@@ -805,7 +807,6 @@ Jonathan Yap
 Kadah Coba
 	STORM-1060
     STORM-1843
-    SL-10675
 Jondan Lundquist
 Joosten Briebers
     MAINT-7074
@@ -1356,6 +1357,12 @@ Sovereign Engineer
     SL-11079
     OPEN-343
 	SL-11625
+	SL-14705
+	SL-14706
+	SL-14707
+	SL-14731
+	SL-14732
+	SL-15096
 SpacedOut Frye
 	VWR-34
 	VWR-45
