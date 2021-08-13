@@ -35,7 +35,7 @@
 #include "llanimationstates.h"
 #include "llassetstorage.h"
 #include "llfilesystem.h"
-#include "llinventoryfunctions.h"		// for ROOT_Starbird_FOLDER
+#include "llinventoryfunctions.h"		// for ROOT_STARBIRD_FOLDER
 #include "llinventorymodel.h"
 #include "llnotificationsutil.h"
 #include "llstring.h"
@@ -1880,12 +1880,12 @@ void AOEngine::tick()
 	}
 	// </FS:ND>
 
-	const LLUUID categoryID = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
+	const LLUUID categoryID = gInventory.findCategoryByName(ROOT_STARBIRD_FOLDER);
 
 	if (categoryID.isNull())
 	{
-		LL_WARNS("AOEngine") << "no " << ROOT_Starbird_FOLDER << " folder yet. Creating ..." << LL_ENDL;
-		gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_Starbird_FOLDER);
+		LL_WARNS("AOEngine") << "no " << ROOT_STARBIRD_FOLDER << " folder yet. Creating ..." << LL_ENDL;
+		gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_STARBIRD_FOLDER);
 		mAOFolder.setNull();
 	}
 	else

@@ -83,36 +83,36 @@ struct LLCalcParser : grammar<LLCalcParser>
 			;
 
 			unary_func =
-				((str_p("SIN") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sin)(self,arg1)]) |
-				 (str_p("COS") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_cos)(self,arg1)]) |
-				 (str_p("TAN") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_tan)(self,arg1)]) |
-				 (str_p("ASIN") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_asin)(self,arg1)]) |
-				 (str_p("ACOS") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_acos)(self,arg1)]) |
-				 (str_p("ATAN") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atan)(self,arg1)]) |
-				 // FIRE-14618: Provide radian-based functions
-				 (str_p("SINR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sinr)(self,arg1)]) |
-				 (str_p("COSR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_cosr)(self,arg1)]) |
-				 (str_p("TANR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_tanr)(self,arg1)]) |
-				 (str_p("ASINR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_asinr)(self,arg1)]) |
-				 (str_p("ACOSR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_acosr)(self,arg1)]) |
-				 (str_p("ATANR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atanr)(self,arg1)]) |
-
-				 (str_p("SQRT") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sqrt)(self,arg1)]) |
-				 (str_p("LOG") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_log)(self,arg1)]) |
-				 (str_p("EXP") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_exp)(self,arg1)]) |
-				 (str_p("ABS") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_fabs)(self,arg1)]) |
-				 (str_p("FLR") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_floor)(self,arg1)]) |
-				 (str_p("CEIL") >> '(' >> expression[unary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_ceil)(self,arg1)])
+				((str_p("SIN") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sin)(self,arg1)]) |
+				 (str_p("COS") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_cos)(self,arg1)]) |
+				 (str_p("TAN") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_tan)(self,arg1)]) |
+				 (str_p("ASIN") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_asin)(self,arg1)]) |
+				 (str_p("ACOS") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_acos)(self,arg1)]) |
+				 (str_p("ATAN") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atan)(self,arg1)]) |
+				 // <FS:Ansariel> FIRE-14618: Provide radian-based functions
+				 (str_p("SINR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sinr)(self,arg1)]) |
+				 (str_p("COSR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_cosr)(self,arg1)]) |
+				 (str_p("TANR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_tanr)(self,arg1)]) |
+				 (str_p("ASINR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_asinr)(self,arg1)]) |
+				 (str_p("ACOSR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_acosr)(self,arg1)]) |
+				 (str_p("ATANR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atanr)(self,arg1)]) |
+				 // </FS:Ansariel>
+				 (str_p("SQRT") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_sqrt)(self,arg1)]) |
+				 (str_p("LOG") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_log)(self,arg1)]) |
+				 (str_p("EXP") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_exp)(self,arg1)]) |
+				 (str_p("ABS") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_fabs)(self,arg1)]) |
+				 (str_p("FLR") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_floor)(self,arg1)]) |
+				 (str_p("CEIL") >> '(' >> expression[unary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_ceil)(self,arg1)])
 				) >> assert_syntax(ch_p(')'))
 			;
 			
 			binary_func =
 				((str_p("ATAN2") >> '(' >> expression[binary_func.value = arg1] >> ',' >>
-				  expression[binary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atan2)(self, binary_func.value, arg1)]) |
+				  expression[binary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_atan2)(self, binary_func.value, arg1)]) |
 				 (str_p("MIN") >> '(' >> expression[binary_func.value = arg1] >> ',' >> 
-				  expression[binary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_min)(self, binary_func.value, arg1)]) |
+				  expression[binary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_min)(self, binary_func.value, arg1)]) |
 				 (str_p("MAX") >> '(' >> expression[binary_func.value = arg1] >> ',' >> 
-				  expression[binary_func.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_max)(self, binary_func.value, arg1)])
+				  expression[binary_func.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::_max)(self, binary_func.value, arg1)])
 				) >> assert_syntax(ch_p(')'))
 			;
 			
@@ -127,10 +127,11 @@ struct LLCalcParser : grammar<LLCalcParser>
 				 binary_func[factor.value = arg1] |
 				 // Lookup throws an Unknown Symbol error if it is unknown, while this works fine,
 				 // would be "neater" to handle symbol lookup from here with an assertive parser.
-				 identifier[factor.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::lookup)(self, arg1, arg2)]
+//				 constants_p[factor.value = arg1]|
+				 identifier[factor.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::lookup)(self, arg1, arg2)]
 				) >>
 				// Detect and throw math errors.
-				assert_domain(eps_p(/* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::checkNaN)(self, factor.value)))
+				assert_domain(eps_p(/*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&LLCalcParser::checkNaN)(self, factor.value)))
 			;
 
 			unary_expr =
@@ -147,7 +148,7 @@ struct LLCalcParser : grammar<LLCalcParser>
 				power[term.value = arg1] >>
 				*(('*' >> assert_syntax(power[term.value *= arg1])) |
 				  ('/' >> assert_syntax(power[term.value /= arg1])) |
-				  ('%' >> assert_syntax(power[term.value = /* Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&fmodf)(term.value, arg1)]))
+				  ('%' >> assert_syntax(power[term.value = /*<FS:ND/> Replace bind with phoenix::bind to make GCC happy*/ phoenix::bind(&fmodf)(term.value, arg1)]))
 				)
 			;
 			
@@ -179,13 +180,14 @@ private:
 	F32 _asin(const F32& a) const { return asin(a) * RAD_TO_DEG; }
 	F32 _acos(const F32& a) const { return acos(a) * RAD_TO_DEG; }
 	F32 _atan(const F32& a) const { return atan(a) * RAD_TO_DEG; }
-	// FIRE-14618: Provide radian-based functions
+	// <FS:Ansariel> FIRE-14618: Provide radian-based functions
 	F32 _sinr(const F32& a) const { return sin(a); }
 	F32 _cosr(const F32& a) const { return cos(a); }
 	F32 _tanr(const F32& a) const { return tan(a); }
 	F32 _asinr(const F32& a) const { return asin(a); }
 	F32 _acosr(const F32& a) const { return acos(a); }
 	F32 _atanr(const F32& a) const { return atan(a); }
+	// </FS:Ansariel>
 	F32 _sqrt(const F32& a) const { return sqrt(a); }
 	F32 _log(const F32& a) const { return log(a); }
 	F32 _exp(const F32& a) const { return exp(a); }
@@ -196,6 +198,7 @@ private:
 
 	LLCalc::calc_map_t* mConstants;
 	LLCalc::calc_map_t* mVariables;
+//	LLCalc::calc_map_t* mUserVariables;
 	
 	F32&		mResult;
 };

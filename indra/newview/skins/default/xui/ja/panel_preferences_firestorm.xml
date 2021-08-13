@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel label="Starbird" name="Starbird">
+<panel label="Starbird" name="starbird">
 
 <tab_container label="Starbird Prefs" name="tabs" >
 
@@ -87,7 +87,7 @@
 
 	<!-- アバター -->
 	
-	<panel label="アバター" name="Starbird_avatar" >
+	<panel label="アバター" name="starbird_avatar" >
 
         <text name="HeadMovement" >
             マウスを追いかけるアバターの頭の動き（動かしたくない時は0に設定）：

@@ -15,11 +15,11 @@ RUN_PATH=`dirname "$0" || echo .`
 #cd "${RUN_PATH}/.."
 ch "${RUN_PATH}"
 
-#exec ./Starbird -url \'"${URL}"\'
-if [ `pidof do-not-directly-run-Starbird-bin` ]; then
+#exec ./starbird -url \'"${URL}"\'
+if [ `pidof do-not-directly-run-starbird-bin` ]; then
 	exec dbus-send --type=method_call --dest=com.secondlife.ViewerAppAPIService /com/secondlife/ViewerAppAPI com.secondlife.ViewerAppAPI.GoSLURL string:"$1"
 else
-	exec ../Starbird -url \'"${URL}"\'
+	exec ../starbird -url \'"${URL}"\'
 fi
 `
 

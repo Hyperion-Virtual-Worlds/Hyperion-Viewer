@@ -63,7 +63,7 @@
             <menu_item_call.on_click
              function="PromptShowURL"
              name="script_library_url"
-             parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org/doku.php?id=start" />
+             parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com/doku.php?id=start" />
        </menu_item_call>
        <menu_item_call
         label="Troubleshooting"
@@ -71,7 +71,7 @@
            <menu_item_call.on_click
             function="PromptShowURL"
             name="wiki_troubleshooting_url"
-            parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org/Starbird_troubleshooting" />
+            parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com/starbird_troubleshooting" />
        </menu_item_call>
         <menu_item_call
          label="Guidebook"

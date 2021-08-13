@@ -31,7 +31,7 @@
 #include "llcombobox.h"
 #include "lldir.h"
 #include "llfoldertype.h"
-#include "llinventoryfunctions.h"	// for ROOT_Starbird_FOLDER
+#include "llinventoryfunctions.h"	// for ROOT_STARBIRD_FOLDER
 #include "llinventorytype.h"
 #include "lllineeditor.h"
 #include "llnotificationsutil.h"
@@ -533,12 +533,12 @@ void ParticleEditor::onCopyButtonClicked()
 void ParticleEditor::onInjectButtonClicked()
 {
 	// first try to find the #Starbird folder
-	LLUUID categoryID = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
+	LLUUID categoryID = gInventory.findCategoryByName(ROOT_STARBIRD_FOLDER);
 
 	// if no #Starbird folder was found, create one
 	if (categoryID.isNull())
 	{
-		categoryID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_Starbird_FOLDER);
+		categoryID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_STARBIRD_FOLDER);
 	}
 
 	// if still no #Starbird folder was found, try to find the default "Scripts" folder

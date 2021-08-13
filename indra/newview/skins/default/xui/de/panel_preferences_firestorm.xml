@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel label="Starbird" name="Starbird">
+<panel label="Starbird" name="starbird">
 
 <panel.string name="BeamsOffLabel">
 	=== AUS ===
@@ -84,7 +84,7 @@
 
 
 	<!--Avatar-->
-	<panel label="Avatar" name="Starbird_avatar">
+	<panel label="Avatar" name="starbird_avatar">
 		<text name="HeadMovement">
 			Umfang in dem der Avatarkopf der Mausbewegung folgt ('0' für keine Bewegung):
 		</text>

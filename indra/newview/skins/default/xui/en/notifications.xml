@@ -193,7 +193,7 @@ No tutorial is currently available.
    icon="alertmodal.tga"
    name="BadInstallation"
    type="alertmodal">
- Installation of [APP_NAME] is defective. Please [https://www.Starbirdviewer.org/downloads download a new copy] of the Viewer and reinstall.
+ Installation of [APP_NAME] is defective. Please [https://www.hyperionvirtual.com/downloads download a new copy] of the Viewer and reinstall.
     <tag>fail</tag>
     <usetemplate
      name="okbutton"
@@ -1845,7 +1845,7 @@ Visit [_URL] for more information?
     <tag>confirm</tag>
     <url option="0" name="url">
 
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
     </url>
     <usetemplate
      ignoretext="My computer hardware is not supported"
@@ -9629,7 +9629,7 @@ Please check your network and firewall setup.
 Disable any SIP ALG feature in your router.
 
 Voice communications will not be available.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
     <tag>voice</tag>
   <tag>fail</tag>
     <usetemplate
@@ -9646,7 +9646,7 @@ We're having trouble connecting to your voice server.
 
 Voice communications will not be available.
 Please check your network and firewall setup.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
     <tag>voice</tag>
   <tag>fail</tag>
     <usetemplate
@@ -10613,7 +10613,7 @@ This will send the following information to the current IM session:
 
   <notification
    icon="alertmodal.tga"
-   name="StarbirdReqInfo"
+   name="FireStormReqInfo"
    type="alertmodal">
     [NAME] is requesting that you send them information about your [APP_NAME] setup.
 (This is the same information that can be found by going to Help->About [APP_NAME])
@@ -10876,7 +10876,7 @@ Your viewer cache is currently empty. Please be aware that you may experience sl
    icon="alertmodal.tga"
    name="FirstJoinSupportGroup2"
    type="alertmodal">
-Welcome to the Second Galaxy Development Team Group!
+Welcome to Second Galaxy Development Team Group!
 
 To make support easier, it is recommended to announce your viewer's version to the group. This information includes current viewer version, viewer skin, operating system and RLVa status. You can choose to display your viewer's version in front of any chat you send to the group. Our support members can give you more meaningful advice right away if they know the viewer version you are on.
 

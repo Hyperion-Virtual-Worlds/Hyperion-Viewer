@@ -82,7 +82,7 @@ Fehlerdetails: The notification called &apos;[_NAME]&apos; was not found in noti
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="BadInstallation">
-		Installation von [APP_NAME] ist defekt. Bitte [https://www.Starbirdviewer.org/downloads laden Sie neue Kopie des Viewers herunter] und installieren Sie erneut.
+		Installation von [APP_NAME] ist defekt. Bitte [https://www.hyperionvirtual.com/downloads laden Sie neue Kopie des Viewers herunter] und installieren Sie erneut.
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -723,7 +723,7 @@ Das Objekt ist möglicherweise außer Reichweite oder wurde gelöscht.
 
 Weitere Informationen finden Sie auf [_URL].
 		<url name="url" option="0">
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="Meine Hardware wird nicht unterstützt" name="okcancelignore" notext="Nein" yestext="Ja"/>
 	</notification>
@@ -3724,7 +3724,7 @@ Bitte prüfen Sie Ihre Netzwerk- und Firewall-Konfiguration.
 Deaktivieren Sie alle SIP ALG-Funktionen in Ihrem Router. 
 
 Voice-Kommunikation ist leider nicht verfügbar.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate name="okignore" yestext="OK" ignoretext="Warnen, wenn keine Verbindung zum Voice-Server hergestellt werden kann."/>
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3732,7 +3732,7 @@ Voice-Kommunikation ist leider nicht verfügbar.
 
 Voice-Kommunikation ist leider nicht verfügbar.
 Bitte überprüfen Sie Ihr Netzwerk- und Firewall-Setup.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate name="okignore" yestext="OK"/>
 	</notification>
 	<notification name="AvatarRezLeftNotification">
@@ -4961,7 +4961,7 @@ Dieses wird die folgenden Informationen an die aktuelle IM-Sitzung senden:
      yestext="OK"/>
   </notification>
 
-  <notification name="StarbirdReqInfo">
+  <notification name="FireStormReqInfo">
 [NAME] hat die eine Anfrage geschickt, Informationen über Ihre [APP_NAME]-Konfiguration zu übermitteln.
 (Dies sind dieselben Informationen, die unter Hilfe->Info über [APP_NAME] zu finden sind.)
 [REASON]

@@ -76,7 +76,7 @@ The Starbird Linux client can entirely run from the directory you have
 unpacked it into - no installation step is required.  If you wish to
 perform a separate installation step anyway, you may run './install.sh'
 
-Run './Starbird' from the installation directory to start Starbird.
+Run './starbird' from the installation directory to start Starbird.
 
 For in-world MOVIE and MUSIC PLAYBACK, you will need (32-bit) GStreamer 0.10
 installed on your system.  This is optional - it is not required for general
@@ -86,8 +86,8 @@ plugins you have; if you cannot play a certain in-world movie then you are
 probably missing the appropriate GStreamer plugin on your system - you may
 be able to install it (see TROUBLESHOOTING).
 
-User data is stored in the hidden directory ~/.Starbird by default; you may
-override this location with the Starbird_USER_DIR, or Starbird_X64_USER_DIR
+User data is stored in the hidden directory ~/.starbird by default; you may
+override this location with the STARBIRD_USER_DIR, or STARBIRD_X64_USER_DIR
 if using the 64 bit version, environment variable if you wish.
 
 
@@ -101,7 +101,7 @@ if using the 64 bit version, environment variable if you wish.
 -=-=-=-=-=-=-=-=-=
 
 The client prints a lot of diagnostic information to the console it was
-run from.  Most of this is also replicated in ~/.Starbird/logs/Starbird.log
+run from.  Most of this is also replicated in ~/.starbird/logs/Starbird.log
 - this is helpful to read when troubleshooting, especially 'WARNING' and
 'ERROR' lines.
 
@@ -126,7 +126,7 @@ SOLUTION:- Usually this indicates that your graphics card does not meet
    <https://help.ubuntu.com/community/BinaryDriverHowto>
  * If your distribution does not make it easy, then you can download the
    required Linux drivers straight from your graphics card manufacturer:
-   - <https://wiki.Starbirdviewer.org/downloads#video_drivers>
+   - <https://wiki.hyperionvirtual.com/downloads#video_drivers>
 
 PROBLEM 2:- My whole system seems to hang when running Starbird.
 SOLUTION:- This is typically a hardware/driver issue.  The first thing to
@@ -136,7 +136,7 @@ SOLUTION:- Some residents with ATI cards have reported that running
    'sudo aticonfig --locked-userpages=off' before running Starbird solves
    their stability issues.
 SOLUTION:- As a last resort, you can disable most of Starbird's advanced
-   graphics features by editing the 'Starbird' script and removing the '#'
+   graphics features by editing the 'starbird' script and removing the '#'
    from the line which reads '#export LL_GL_NOEXT=x'
 
 PROBLEM 3:- After I minimize the Starbird window, it's just blank when
@@ -176,7 +176,7 @@ SOLUTION:- You need to have a working installation of GStreamer 0.10; this
 6. ADVANCED TROUBLESHOOTING
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-The 'Starbird' script which launches Starbird contains some
+The 'starbird' script which launches Starbird contains some
 configuration options for advanced troubleshooters.
 
 * AUDIO - Edit the 'secondlife' script and you will see these audio
@@ -201,19 +201,19 @@ configuration options for advanced troubleshooters.
 
 We're pleased to have released Starbird client's source code under
 an Open Source license compatible with the 'LGPL'.
-<https://wiki.Starbirdviewer.org/downloads#source_code>
+<https://wiki.hyperionvirtual.com/downloads#source_code>
 
 
 8. GETTING MORE HELP AND REPORTING PROBLEMS
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 For general help and support with Starbird:
-<http://wiki.Starbirdviewer.org>
+<http://wiki.hyperionvirtual.com>
 
 In-world discussion: 
 
 Main support: Join one of our in-world support groups.
-<http://wiki.Starbirdviewer.org/Starbird_in-world_groups>
+<http://wiki.hyperionvirtual.com/starbird_in-world_groups>
 
 There is also a 'Linux Client Users' group inside Second Life which 
 is free to join.  You can find it by pressing the 'Search' button at 
@@ -222,7 +222,7 @@ searching for 'Linux'.  This group is useful for discussing Linux
 issues with fellow Linux client users who are online.
 
 The Starbird Issue Tracker:
-<https://jira.Starbirdviewer.org/>
+<https://jira.hyperionvirtual.com/>
 This is the right place for finding known issues and reporting new
 bugs in all Starbird releases if you find that the Troubleshooting
 section in this file hasn't helped.

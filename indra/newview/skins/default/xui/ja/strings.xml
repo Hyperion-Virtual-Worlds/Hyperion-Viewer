@@ -148,14 +148,14 @@
 		終了
 	</string>
 	<string name="create_account_url">
-		https://www.Starbirdviewer.org/join-secondlife/
+		https://www.hyperionvirtual.com/join-secondlife/
 	</string>
 	<string name="ViewerDownloadURL">
-		https://www.Starbirdviewer.org/choose-your-platform/
+		https://www.hyperionvirtual.com/choose-your-platform/
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		お使いの古いビューワでは Second Life にアクセスできません。以下のページから新しいビューワをダウンロードしてください：
-https://www.Starbirdviewer.org/choose-your-platform/
+https://www.hyperionvirtual.com/choose-your-platform/
 
 詳細については、FAQ を参照してください：
 http://secondlife.com/viewer-access-faq
@@ -676,7 +676,7 @@ support@secondlife.com にお問い合わせください。
 	<string name="AssetUploadServerUnavaliable">サービスが利用できないか、アップロードのタイムアウト上限に達しています。</string>
 	<string name="AssetUploadRequestInvalid">
 アップロードの要求中にエラーが発生しました。この問題を解決するには、次のページを参照して下さい。
-https://www.Starbirdviewer.org/support
+https://www.hyperionvirtual.com/support
 	</string>
 	
 	<!-- Settings errors -->

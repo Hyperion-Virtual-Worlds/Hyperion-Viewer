@@ -287,10 +287,10 @@
 		</menu_item_call>
 		<menu_item_separator/>
     	<menu_item_call label="Starbird ブログ" name="Starbird Blog">
-             <menu_item_call.on_click name="Starbird_blog_url" parameter="WebLaunchExternalTarget,https://www.Starbirdviewer.org" />
+             <menu_item_call.on_click name="starbird_blog_url" parameter="WebLaunchExternalTarget,https://www.hyperionvirtual.com" />
 		</menu_item_call>
     	<menu_item_call label="Starbird ツイッター" name="Starbird Twitter">
-             <menu_item_call.on_click name="Starbird_twitter_url" parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
+             <menu_item_call.on_click name="starbird_twitter_url" parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
 		</menu_item_call>
        <menu_item_separator/>
 		<!-- added Mar.15, 2015 -->
@@ -304,10 +304,10 @@
 		<menu_item_check label="ヒントを有効にする" name="Enable Hints"/>
 		<menu_item_call label="Starbird Wiki" name="Starbird Wiki"/>
 		<menu_item_call label="問題の解決" name="Troubleshooting">
-			<menu_item_call.on_click name="wiki_troubleshooting_url" parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org/Starbird_troubleshooting" />
+			<menu_item_call.on_click name="wiki_troubleshooting_url" parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com/starbird_troubleshooting" />
 		</menu_item_call>
 		
-		<menu_item_call label="Starbirdサポートグループに参加" name="Starbird_support_group"/>
+		<menu_item_call label="Starbirdサポートグループに参加" name="starbird_support_group"/>
 		<menu_item_call label="Starbird 勉強会スケジュール" name="Starbird Classes Schedule" />
 		<menu_item_call label="Starbird イベントカレンダー" name="Starbird Events Calendar" />
 		<menu_item_call label="ハウツー..." name="How To" />

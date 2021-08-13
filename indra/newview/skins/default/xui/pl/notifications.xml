@@ -31,7 +31,7 @@ Szczegóły błędu: Błąd o nazwie &apos;[_NAME]&apos; nie został odnaleziony
 		<usetemplate name="okcancelbuttons" notext="Anuluj" yestext="Tak"/>
 	</notification>
 	<notification name="BadInstallation">
-		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.Starbirdviewer.org/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
+		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.hyperionvirtual.com/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Nie można połączyć z [SECOND_LIFE_GRID].
@@ -1398,7 +1398,7 @@ Możesz normalnie używać [APP_NAME], inni użytkownicy będą Cię widzieli po
 		Instalacja [APP_NAME] zakończona.
 
 Jeżeli używasz [CURRENT_GRID] po raz pierwszy to musisz stworzyć konto żeby móc się zalogować.
-Czy chcesz przejść na stronę [https://www.Starbirdviewer.org/join-secondlife/ Starbirdviewer.org] żeby stworzyć nowe konto?
+Czy chcesz przejść na stronę [https://www.hyperionvirtual.com/join-secondlife/ hyperionvirtual.com] żeby stworzyć nowe konto?
 		<usetemplate name="okcancelbuttons" notext="Kontynuuj" yestext="Stwórz konto..."/>
 	</notification>
 	<notification name="LoginCantRemoveUsername">
@@ -3591,7 +3591,7 @@ Porty, które muszą być otwarte dla połączeń głosowych, to:
 Proszę sprawdź swoją sieć i ustawienia firewall.
 Wyłącz wszelkie funkcjonalności SIP ALG (Application Layer Gateway) w swoim routerze.
 
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate name="okignore" ignoretext="Ostrzegaj mnie, gdy przeglądarka nie może połączyć się z serwerem głosu" />
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3600,7 +3600,7 @@ Wyłącz wszelkie funkcjonalności SIP ALG (Application Layer Gateway) w swoim r
 Komunikacja głosowa nie będzie dostępna.
 Proszę sprawdź swoją sieć i ustawienia firewall.
 
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( [EXISTENCE] sekund w Second Life)
@@ -3962,7 +3962,7 @@ Nazwa może zawierać tylko znaki ASCII, za wyjątkiem ":" oraz "|".
 	<notification name="TestversionExpired">
 		Ta wersja testowa programu [APP_NAME] wygasła i nie można jej już dalej używać.
 	</notification>
-	<notification name="StarbirdReqInfo">
+	<notification name="FireStormReqInfo">
 		[NAME] prosi o wysłanie jej/mu informacji o Twojej instalacji przeglądarki [APP_NAME].
 (To dokładnie to samo, co możesz znaleźć w Pomoc -> Informacje o [APP_NAME])
 [REASON]
@@ -4077,7 +4077,7 @@ Zobacz FIRE-17710 aby dowiedzieć się więcej.
 		Pamięć podręczna (bufor danych) Twojej Przeglądarki jest pusta. Miej na uwadze, że możesz przez jakiś czas odczuwać obniżoną wydajność i spowolnione doczytywanie obiektów z Szafy.
 	</notification>
 	<notification name="FirstJoinSupportGroup2">
-		Witaj w grupie Second Galaxy Development Team!
+		Witaj w grupie wsparcia Second Galaxy Development Team!
 
 Abyśmy mogli pomóc Ci lepiej zalecamy, aby Twoja Przeglądarka automatycznie prezentowała swoją wersję - będzie ona wyświetlana przed każdą Twoją wypowiedzią na tym czacie grupowym. Informacja te obejmuje aktualną wersję, skórkę, system operacyjny i status RLVa. Osoby z naszej załogi wsparcia będą mogły dać Ci bardziej sensowne porady, jeśli będą znać wersję Twojej Przeglądarki od razu.
 
@@ -4087,7 +4087,7 @@ Chcesz włączyć automatyczne prezentowanie wersji Przeglądarki?
 		<form name="form">
 			<button name="OK_okcancelignore" text="Tak" />
 			<button name="Cancel_okcancelignore" text="Nie" />
-			<ignore name="ignore" text="Dołączenie do grupy Second Galaxy Development Team" />
+			<ignore name="ignore" text="Dołączenie do grupy wsparcia Second Galaxy Development Team" />
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">

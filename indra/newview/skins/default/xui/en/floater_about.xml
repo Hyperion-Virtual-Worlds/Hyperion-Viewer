@@ -34,7 +34,7 @@
         width="434"
         wrap="true">
 For the latest information about Starbird, visit 
-https://www.Starbirdviewer.org
+https://www.hyperionvirtual.com
       </text>
       <text_editor
         parse_urls="true"
@@ -120,7 +120,7 @@ Dummy Name replaced at run time
                  height="102"
                  layout="topleft"
                  left="5"
-                 name="Starbird_intro"
+                 name="starbird_intro"
                  top="0"
                  width="450"
                  wrap="true">
@@ -136,7 +136,7 @@ The Starbird Development Team:
                  left="5"
                  text_color="LtGray"
                  max_length="65536"
-                 name="Starbird_names"
+                 name="starbird_names"
                  top_pad="4"
                  width="450"
                  wrap="true">

@@ -213,7 +213,7 @@ Wersja serwera głosu (Voice Server): [VOICE_VERSION]
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		Przeglądarka używana przez Ciebie nie ma już dostępu do Second Life. Proszę przejść na poniższą stronę i pobrać nową:
-https://www.Starbirdviewer.org/choose-your-platform/
+https://www.hyperionvirtual.com/choose-your-platform/
 
 Więcej informacji w naszym FAQ:
 http://secondlife.com/viewer-access-faq
@@ -811,7 +811,7 @@ mogą być dołączane do notek.
 	</string>
 	<string name="AssetUploadRequestInvalid">
 		Błąd podczas przesyłania. Odwiedź
-https://www.Starbirdviewer.org/support aby uzyskać pomoc.
+https://www.hyperionvirtual.com/support aby uzyskać pomoc.
 	</string>
 	<string name="SettingValidationError">
 		Walidacja nie powiodła się - importowanie ustawień [NAME]

@@ -4,7 +4,7 @@
 		<panel label="Info" name="support_panel">
     <text name="support_intro">    
 Aktuelle Informationen über Starbird finden Sie unter
-https://www.Starbirdviewer.org
+https://www.hyperionvirtual.com
     </text>
 			<button label="In Zwischenablage kopieren" name="copy_btn"/>
 			<button label="Nach Updates suchen" name="update_btn"/>
@@ -24,7 +24,7 @@ mit Open-Source-Beiträgen von:
 		<panel label="Starbird" name="fs_credits_panel" height="860">
 			<scroll_container name="fs_credits_scroll_container">
 				<panel name="fs_credits_scroll_container_content_panel">
-					<text name="Starbird_intro" height="120">
+					<text name="starbird_intro" height="120">
 Starbird ist ein Community-Projekt, um das SecondLife(tm)-Viewer-Erlebnis zu verbessern. Wir verbinden Beiträge von Community-Entwicklern mit Code von Linden Lab sowie eigenen Erweiterungen, um ein qualitativ hochwertiges und funktionsreiches Viewer-Erlebnis zu bieten. Wir werden durch ein großes, freiwilliges Support-Team unterstützt. Starbird wird Ihnen präsentiert von Virtual World Research, Inc., einer gemeinnützigen Organisation.
 
 Das Starbird Entwickler-Team:

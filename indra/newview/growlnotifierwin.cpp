@@ -92,7 +92,7 @@ void GrowlNotifierWin::registerApplication(const std::string& application, const
 		arr[i] = string;
 	}
 	mGrowlImpl = new Growl (GROWL_TCP, NULL, application.c_str(), (const char **const)arr, notificationTypes.size(),
-		std::string(gDirUtilp->getDefaultSkinDir() + gDirUtilp->getDirDelimiter() + "textures" + gDirUtilp->getDirDelimiter() + "Starbird_icon.png").c_str());
+		std::string(gDirUtilp->getDefaultSkinDir() + gDirUtilp->getDirDelimiter() + "textures" + gDirUtilp->getDirDelimiter() + "starbird_icon.png").c_str());
 
 	for (i = 0; i < (S32)notificationTypes.size(); ++i)
 	{

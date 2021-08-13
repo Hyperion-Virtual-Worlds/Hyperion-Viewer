@@ -86,10 +86,10 @@ Name ${INSTNAME}
 ;SubCaption 0 $(LicenseSubTitleSetup)	# Override "license agreement" text
 
 # <FS:Ansariel> FIRE-24335: Use different icon for OpenSim version
-#!define MUI_ICON   "%%SOURCE%%\installers\windows\Starbird_icon_os.ico"
-#!define MUI_UNICON "%%SOURCE%%\installers\windows\Starbird_icon_os.ico"
-!define MUI_ICON   "%%SOURCE%%\installers\windows\Starbird_icon${ICON_SUFFIX}.ico"
-!define MUI_UNICON "%%SOURCE%%\installers\windows\Starbird_icon${ICON_SUFFIX}.ico"
+#!define MUI_ICON   "%%SOURCE%%\installers\windows\starbird_icon_os.ico"
+#!define MUI_UNICON "%%SOURCE%%\installers\windows\starbird_icon_os.ico"
+!define MUI_ICON   "%%SOURCE%%\installers\windows\starbird_icon${ICON_SUFFIX}.ico"
+!define MUI_UNICON "%%SOURCE%%\installers\windows\starbird_icon${ICON_SUFFIX}.ico"
 # </FS:Ansariel>
 
 BrandingText " "						# Bottom of window text
@@ -408,7 +408,7 @@ CreateShortCut	"$SMPROGRAMS\$INSTSHORTCUT\$INSTSHORTCUT.lnk" \
 
 WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\SL Create Account.url" \
 				"InternetShortcut" "URL" \
-				"https://www.Starbirdviewer.org/join-secondlife/"
+				"https://www.hyperionvirtual.com/join-secondlife/"
 WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\SL Your Account.url" \
 				"InternetShortcut" "URL" \
 				"https://www.secondlife.com/account/"
@@ -441,9 +441,9 @@ WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Version" "${VERSION_LONG}"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Shortcut" "$INSTSHORTCUT"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Exe" "$VIEWER_EXE"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "Virtual World Research, Inc."
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.Starbirdviewer.org"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.Starbirdviewer.org/downloads"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.Starbirdviewer.org/support"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.hyperionvirtual.com"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.hyperionvirtual.com/downloads"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.hyperionvirtual.com/support"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "DisplayName" "$INSTNAME"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "UninstallString" '"$INSTDIR\uninst.exe"'
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "DisplayVersion" "${VERSION_LONG}"

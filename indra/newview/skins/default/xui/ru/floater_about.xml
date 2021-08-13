@@ -4,7 +4,7 @@
 		<panel label="Информация" name="support_panel">
 			<text name="support_intro">
 				Новая информация о Starbird доступна по адресу 
-https://www.Starbirdviewer.org
+https://www.hyperionvirtual.com
 			</text>
 			<button label="Копировать в буфер" name="copy_btn"/>
 		</panel>
@@ -24,7 +24,7 @@ Linden это:
 		<panel label="Starbird" name="fs_credits_panel" height="860">
 			<scroll_container name="fs_credits_scroll_container">
 				<panel name="fs_credits_scroll_container_content_panel">
-					<text name="Starbird_intro" height="120">
+					<text name="starbird_intro" height="120">
 						Starbird является проектом сообщества программистов, имеющих цели на улучшение качества основаных из опыта использования SecondLife (tm) Viewer. Мы объединяем в одно целое вклад разных программистов, которые представляют разные сообщества, в сочетании с кодом Linden Lab и нашим собственным, чтобы создавать хороший, функциональный клиент поддержку которого обеспечивает команда состоящая из волонтеров. Starbird существует благодаря Virtual World Research, Inc., некомерческой организации.
 
 Команда разработчиков Starbird:

@@ -38,7 +38,7 @@ const S32 COMPUTE_STOCK_INFINITE = -1;
 const S32 COMPUTE_STOCK_NOT_EVALUATED = -2;
 
 // <FS:TT> - Starbird folder name for use by AO, bridge and possibly others
-#define ROOT_Starbird_FOLDER 	"#Starbird"
+#define ROOT_STARBIRD_FOLDER 	"#Starbird"
 // </FS:TT>
 
 /********************************************************************************

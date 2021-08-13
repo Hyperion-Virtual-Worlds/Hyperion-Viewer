@@ -20,7 +20,7 @@
    <string
     name="CaptionTextAcctInfo">
        [ACCTTYPE]
-[PAYMENTINFO] [Starbird][FSDEV][FSSUPP][FSQA][FSGW]
+[PAYMENTINFO] [STARBIRD][FSDEV][FSSUPP][FSQA][FSGW]
     </string>
 <!-- The previous line was [PAYMENTINFO] [AGEVERIFICATION], but they're not
     sending the latter any more. ...TS -->

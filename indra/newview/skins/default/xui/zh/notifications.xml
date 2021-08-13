@@ -82,7 +82,7 @@
 		<usetemplate name="okbutton" yestext="確定"/>
 	</notification>
 	<notification name="BadInstallation">
-		[APP_NAME] 更新時出錯。  請 [https://www.Starbirdviewer.org/downloads 下載] 最新版本的 Viewer。
+		[APP_NAME] 更新時出錯。  請 [https://www.hyperionvirtual.com/downloads 下載] 最新版本的 Viewer。
 		<usetemplate name="okbutton" yestext="確定"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -635,7 +635,7 @@
 
 要造訪 [_URL] 獲取進一步資訊？
 		<url name="url">
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="我的電腦硬體並不支援" name="okcancelignore" notext="否" yestext="是"/>
 	</notification>

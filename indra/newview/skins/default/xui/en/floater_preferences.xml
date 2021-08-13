@@ -208,12 +208,12 @@ https://accounts.secondlife.com/change_email/
          help_topic="preferences_crashreports_tab"
          name="crashreports" />
         <panel
-         class="panel_preference_Starbird"
-         filename="panel_preferences_Starbird.xml"
+         class="panel_preference_starbird"
+         filename="panel_preferences_starbird.xml"
          label="Starbird"
          layout="topleft"
-         help_topic="preferences_Starbird_tab"
-         name="Starbird" />
+         help_topic="preferences_starbird_tab"
+         name="starbird" />
         <panel
          class="panel_preference_opensim"
          filename="panel_preferences_opensim.xml"

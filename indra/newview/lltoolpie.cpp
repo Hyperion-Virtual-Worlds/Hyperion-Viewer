@@ -602,7 +602,7 @@ ECursorType LLToolPie::cursorFromObject(LLViewerObject* object)
 			if ((object && object->flagTakesMoney())
 				|| (parent && parent->flagTakesMoney()))
 			{
-				//cursor = UI_CURSOR_TOOLBUY;  Starbird - pay cursor is separate from buy cursor
+				//cursor = UI_CURSOR_TOOLBUY;  STARBIRD - pay cursor is separate from buy cursor
 // [RLVa:KB] - @buy
 				cursor = ((object && RlvActions::canPayObject(object->getID())) || (parent && RlvActions::canPayObject(parent->getID())))
 					? UI_CURSOR_TOOLPAY

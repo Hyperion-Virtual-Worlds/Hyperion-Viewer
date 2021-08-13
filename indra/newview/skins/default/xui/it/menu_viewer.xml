@@ -240,7 +240,7 @@
 		<menu_item_check label="Abilita suggerimenti interfaccia" name="Enable Hints"/>
 		<menu_item_call label="Wiki di Starbird" name="Starbird Wiki"/>
 		<menu_item_call label="Soluzione problemi" name="Troubleshooting"/>
-		<menu_item_call label="Iscriviti a Starbird Support Group" name="Starbird_support_group"/>
+		<menu_item_call label="Iscriviti a Starbird Support Group" name="starbird_support_group"/>
 		<menu_item_call label="Calendario lezioni su Starbird" name="Starbird Classes Schedule"/>
 		<menu_item_call label="Calendario eventi Starbird" name="Starbird Events Calendar"/>
 		<menu_item_call label="Guida" name="How To"/>

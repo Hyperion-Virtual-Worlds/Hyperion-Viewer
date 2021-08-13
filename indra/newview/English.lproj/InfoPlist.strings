@@ -3,4 +3,4 @@
 CFBundleName = "Starbird";
 
 CFBundleShortVersionString = "Starbird version %%VERSION%%";
-CFBundleGetInfoString = "Starbird version %%VERSION%%, Copyright 2021 Virtual World Research, Inc.";
+CFBundleGetInfoString = "Starbird version %%VERSION%%, Copyright 2010-2021 Virtual World Research, Inc.";

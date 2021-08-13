@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<panel label="Starbird" name="Starbird">
+<panel label="Starbird" name="starbird">
 	<panel.string name="BeamsOffLabel">=== OFF ===</panel.string>
 	<string name="EmbeddedItemNotSet">Non défini</string>
 	<string name="EmbeddedItemNotAvailable">Non disponible</string>
@@ -52,7 +52,7 @@
 			<check_box label="Seuil de confirmation avant paiement :" width="240" name="FSConfirmPayments" tool_tip="Afficher une fenêtre de confirmation avant de verser une somme à un résident supérieure au seuil indiqué. Pour toujours avoir une confirmation, réglez le seuil à 0."/>
 			<spinner name="FSPaymentConfirmationThreshold" tool_tip="Afficher une fenêtre de confirmation avant de verser une somme à un résident supérieure au seuil indiqué. Pour toujours avoir une confirmation, réglez le seuil à 0."/>
 		</panel>
-		<panel label="Avatar" name="Starbird_avatar">
+		<panel label="Avatar" name="starbird_avatar">
 			<text name="HeadMovement">Inclinaison maximum de la tête de mon avatar qui suit ma souris (0 = aucun mouvement) :</text>
 			<slider label="Inclinaison verticale :" tool_tip="Inclinaison verticale maximum de la tête de mon avatar en degrés" name="PitchFromMousePositionSlider"/>
 			<text name="PitchFromMousePositionText">degrés</text>

@@ -292,12 +292,55 @@ void LLCrashLogger::gatherFiles()
     {
         mCrashHost = mFileMap["CrashHostUrl"];
     }
-	// Might hardcode mCrashHost to crashlogs.hyperionvirtual.com if unset
+	// <FS:ND> Might hardcode mCrashHost to crashlogs.phoenixviewer.com if unset
+
+	// <FS:ND> Do not send out crash reports to Linden Labs. They won't have much use for them without symbols.
+	//default to agni, per product
+	//mAltCrashHost = "http://viewercrashreport.agni.lindenlab.com/cgi-bin/viewercrashreceiver.py";
+
+	// </FS:ND>
 
 	mCrashInfo["DebugLog"] = mDebugLog;
 	mFileMap["StatsLog"] = gDirUtilp->getExpandedFilename(LL_PATH_DUMP,"stats.log");
 	
 	updateApplication("Encoding files...");
+
+	// <FS:ND> We're not using this. We do not send a LLSD xml with all data embedded.
+	//for(std::map<std::string, std::string>::iterator itr = mFileMap.begin(); itr != mFileMap.end(); ++itr)
+	//{
+        //std::string file = (*itr).second;
+        //if (!file.empty())
+        //{
+        //    LL_DEBUGS("CRASHREPORT") << "trying to read " << itr->first << ": " << file << LL_ENDL;
+        //    llifstream f(file.c_str());
+        //    if(f.is_open())
+        //    {
+        //        std::stringstream s;
+        //        s << f.rdbuf();
+
+        //        std::string crash_info = s.str();
+        //        if(itr->first == "SecondLifeLog")
+        //        {
+        //            if(!mCrashInfo["DebugLog"].has("StartupState"))
+        //            {
+        //                mCrashInfo["DebugLog"]["StartupState"] = getStartupStateFromLog(crash_info);
+        //            }
+        //            trimSLLog(crash_info);
+        //        }
+
+        //        mCrashInfo[(*itr).first] = LLStringFn::strip_invalid_xml(rawstr_to_utf8(crash_info));
+        //    }
+        //    else
+        //    {
+        //        LL_WARNS("CRASHREPORT") << "Failed to open file " << file << LL_ENDL;
+        //    }
+        //}
+        //else
+        //{
+        //    LL_DEBUGS("CRASHREPORT") << "empty file in list for " << itr->first << LL_ENDL;
+        //}
+	//}
+	// </FS:ND>
 	
 	std::string minidump_path;
 	// Add minidump as binary.
@@ -358,7 +401,7 @@ void LLCrashLogger::gatherFiles()
         LL_WARNS("CRASHREPORT") << "readMinidump returned no minidump" << LL_ENDL;
     }
 
-	// Put minidump file into mFileMap. Otherwise it does not get uploaded to the crashlog server.
+	// <FS:ND> Put minidump file into mFileMap. Otherwise it does not get uploaded to the crashlog server.
 	if( has_minidump )
 	{
 		std::string fullName = mDebugLog["MinidumpPath"];
@@ -379,6 +422,7 @@ void LLCrashLogger::gatherFiles()
 
 		mFileMap[ dmpName ] = fullName;
 	}
+	// </FS:ND>
 }
 
 LLSD LLCrashLogger::constructPostData()
@@ -388,7 +432,7 @@ LLSD LLCrashLogger::constructPostData()
 
 const char* const CRASH_SETTINGS_FILE = "settings_crash_behavior.xml";
 
-// Restore crash report user settings
+// <FS:Ansariel> Restore crash report user settings
 S32 LLCrashLogger::loadCrashBehaviorSetting()
 {
 	// First check user_settings (in the user's home dir)
@@ -433,8 +477,11 @@ bool LLCrashLogger::saveCrashBehaviorSetting(S32 crash_behavior)
 
 	return true;
 }
+// </FS:Ansariel>
+
 std::string LLCrashLogger::loadCrashURLSetting()
 {
+
 	// First check user_settings (in the user's home dir)
 	std::string filename = gDirUtilp->getExpandedFilename(LL_PATH_USER_SETTINGS, CRASH_SETTINGS_FILE);
 	if (! mCrashSettings.loadFromFile(filename))
@@ -465,6 +512,7 @@ std::string getFormDataField(const std::string& strFieldName, const std::string&
 
 	return streamFormPart.str();
 }
+// [/SL:KB]
 
 bool LLCrashLogger::runCrashLogPost(std::string host, LLSD data, std::string msg, int retries, int timeout)
 {
@@ -508,8 +556,11 @@ bool LLCrashLogger::runCrashLogPost(std::string host, LLSD data, std::string msg
 
 bool LLCrashLogger::sendCrashLog(std::string dump_dir)
 {
-    gDirUtilp->setDumpDir( dump_dir );
 
+    gDirUtilp->setDumpDir( dump_dir );
+    
+    // std::string dump_path = gDirUtilp->getExpandedFilename(LL_PATH_LOGS,
+    //                                                        "SecondLifeCrashReport");
     std::string dump_path = gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "StarbirdCrashReport");
     std::string report_file = dump_path + ".log";
 
@@ -539,7 +590,17 @@ bool LLCrashLogger::sendCrashLog(std::string dump_dir)
         
 		sent = runCrashLogPost(mCrashHost, post_data, std::string("Sending to server"), CRASH_UPLOAD_RETRIES, CRASH_UPLOAD_TIMEOUT);
 	}
+    
+	// <FS:ND> We do not send to mAltCrashHost ever.
 
+	// if(!sent)
+	// {
+        //updateApplication("Using default server...");
+	// 	sent = runCrashLogPost(mAltCrashHost, post_data, std::string("Sending to alternate server"), CRASH_UPLOAD_RETRIES, CRASH_UPLOAD_TIMEOUT);
+	// }
+
+	// </FS:ND>
+    
 	mSentCrashLogs = sent;
     
 	return sent;
@@ -560,11 +621,12 @@ bool LLCrashLogger::sendCrashLogs()
         rec["procname"]=opts["procname"];
     }
 
-	// Try to send the current crash right away, if that fails queue it for next time.
+	// <FS:ND> Try to send the current crash right away, if that fails queue it for next time.
 	if( rec && rec.has("dumpdir") )
 		if( !sendCrashLog( rec["dumpdir"].asString() ) )
 			newlocks.append(rec);
-
+	// </FS:ND>
+	
     if (locks.isArray())
     {
         for (LLSD::array_iterator lock=locks.beginArray();
@@ -602,6 +664,13 @@ bool LLCrashLogger::sendCrashLogs()
         }
     }
 
+	// <FS:ND> We want this appended right away, or this crash only gets send the next time the crashreporter runs.
+    //if (rec)
+    //{
+    //    newlocks.append(rec);
+    //}
+	// </FS:ND>
+    
     mKeyMaster.putProcessList(newlocks);
     return true;
 }
@@ -626,8 +695,12 @@ bool LLCrashLogger::init()
 
 	LLError::initForApplication(gDirUtilp->getExpandedFilename(LL_PATH_USER_SETTINGS, ""), gDirUtilp->getExpandedFilename(LL_PATH_APP_SETTINGS, ""));
 
-	// Default to the product name "Starbird"
+	// Default to the product name "Second Life" (this is overridden by the -name argument)
+	
+	// <FS:ND> Change default to Starbird
+	//	mProductName = "Second Life";
 	mProductName = "Starbird";
+	// </FS:ND>
 
 	// Rename current log file to ".old"
 	std::string old_log_file = gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "crashreport.log.old");
@@ -670,7 +743,7 @@ bool LLCrashLogger::init()
 							  "1 = always send crash report, "
 							  "2 = never send crash report)");
     
-	// Restore crash report user settings
+	// <FS:Ansariel> Restore crash report user settings
 	LL_INFOS("CRASHREPORT") << "Loading crash behavior setting" << LL_ENDL;
 	mCrashBehavior = loadCrashBehaviorSetting();
 
@@ -680,7 +753,8 @@ bool LLCrashLogger::init()
 		LL_INFOS("CRASHREPORT") << "Crash behavior is never_send, quitting" << LL_ENDL;
 		return false;
 	}
-
+	// </FS:Ansariel>
+    
     init_curl();
     LLCore::HttpRequest::createService();
     LLCore::HttpRequest::startThread();
@@ -715,6 +789,7 @@ void LLCrashLogger::init_curl()
     }
 }
 
+
 void LLCrashLogger::term_curl()
 {
     CRYPTO_set_locking_callback(NULL);
@@ -725,6 +800,7 @@ void LLCrashLogger::term_curl()
     delete[] ssl_mutex_list;
 }
 
+
 void LLCrashLogger::ssl_thread_id_callback(CRYPTO_THREADID* pthreadid)
 {
 #if LL_WINDOWS
@@ -733,6 +809,7 @@ void LLCrashLogger::ssl_thread_id_callback(CRYPTO_THREADID* pthreadid)
     CRYPTO_THREADID_set_pointer(pthreadid, reinterpret_cast<void*>(pthread_self()));
 #endif
 }
+
 
 void LLCrashLogger::ssl_locking_callback(int mode, int type, const char * /* file */, int /* line */)
 {
@@ -748,3 +825,4 @@ void LLCrashLogger::ssl_locking_callback(int mode, int type, const char * /* fil
         }
     }
 }
+

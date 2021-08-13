@@ -79,7 +79,7 @@ Detalles del error: la notificación de nombre &apos;[_NAME]&apos; no se ha enco
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="BadInstallation">
-		Ha habido un error actualizando [APP_NAME]. Por favor, [https://www.Starbirdviewer.org/downloads descarga la última versión] del Visor.
+		Ha habido un error actualizando [APP_NAME]. Por favor, [https://www.hyperionvirtual.com/downloads descarga la última versión] del Visor.
 		<usetemplate name="okbutton" yestext="Aceptar"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -642,7 +642,7 @@ El objeto debe de haber sido borrado o estar fuera de alcance (&apos;out of rang
 
 ¿Ir a [_URL] para más información?
 		<url name="url" option="0">
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="El hardware de mi ordenador no está admitido" name="okcancelignore" notext="No" yestext="Sí"/>
 	</notification>
@@ -4728,7 +4728,7 @@ El nombre NO puede contener los caracteres ":" o "|".
 		[REASON]
 		<usetemplate name="okbutton" yestext="Aceptar"/>
 	</notification>
-	<notification name="StarbirdReqInfo">
+	<notification name="FireStormReqInfo">
 		[NAME] te solicita que le envíes información sobre tu configuración de [APP_NAME] (Ésta es la misma información que puedes encontrar en Ayuda->Acerca de [APP_NAME])    
 [REASON]
 ¿Aceptas enviarle esta información?
@@ -4854,7 +4854,7 @@ Configuración actual: [CURRENT_VALUE]
 		La cache del visor está vacía. Por favor, ten en cuenta que puedes sufrir de lentitud de movimiento y de inventario mientras se carga el nuevo contenido.
 	</notification>
 	<notification name="FirstJoinSupportGroup2">
-		¡Bienvenido al Grupo de Second Galaxy Development Team!
+		¡Bienvenido al Grupo de Soporte de Second Galaxy Development Team!
 Para facilitar el soporte, se recomienda que publiques la versión de tu visor en el grupo. Esta información incluye la versión actual del visor, el skin del visor, el sistema operativo y el estatus del RLVa. Puedes mostrar la versión de tu visor delante de cada mensaje que envías al grupo. Nuestros miembros de soporte pueden darte respuestas más adecuadas si saben qué visor estás usando.
 
 Puedes activar y desactivar esta función en cualquier momento usando la casilla existente en la ventana del chat del grupo.
@@ -4863,7 +4863,7 @@ Puedes activar y desactivar esta función en cualquier momento usando la casilla
 		<form name="form">
 			<button name="OK_okcancelignore" text="Sí"/>
 			<button name="Cancel_okcancelignore" text="No"/>
-			<ignore name="ignore" text="Te has unido al Grupo de Second Galaxy Development Team"/>
+			<ignore name="ignore" text="Te has unido al Grupo de Soporte de Second Galaxy Development Team"/>
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">

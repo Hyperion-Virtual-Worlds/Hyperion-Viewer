@@ -239,7 +239,7 @@ void FSDiscordConnect::updateRichPresence()
 #endif
 
 	discordPresence.largeImageText = LLGridManager::getInstance()->getGridLabel().c_str();
-	discordPresence.smallImageKey = "Starbird_512";
+	discordPresence.smallImageKey = "starbird_512";
 	std::string appName = std::string("via " + APP_NAME);
 	discordPresence.smallImageText = appName.c_str();
 

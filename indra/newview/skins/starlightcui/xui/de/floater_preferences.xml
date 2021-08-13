@@ -28,7 +28,7 @@ https://accounts.secondlife.com/change_email/?lang=de-DE
 		<panel label="Erweitert" name="advanced1"/>
 		<panel label="Benutzerinterface" name="ui"/>
 		<panel label="Oberflächendesign" name="skins"/>
-		<panel label="Starbird" name="Starbird"/>
+		<panel label="Starbird" name="starbird"/>
 		<panel label="OpenSim" name="opensim"/>
 		<panel label="Sicherung" name="backup"/>
 	</tab_container>

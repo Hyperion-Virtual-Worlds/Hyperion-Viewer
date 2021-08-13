@@ -304,7 +304,7 @@
 		<menu_item_check label="Включить подсказки интерфейса клиента" name="Enable Hints"/>
 		<menu_item_call label="Starbird Wiki" name="Starbird Wiki"/>
 		<menu_item_call label="Поиск решения Проблем" name="Troubleshooting"/>
-		<menu_item_call label="Вступить в группу поддержки Starbird" name="Starbird_support_group"/>
+		<menu_item_call label="Вступить в группу поддержки Starbird" name="starbird_support_group"/>
 		<menu_item_call label="Расписание обучений Starbird" name="Starbird Classes Schedule"/>
 		<menu_item_call label="Календарь Событий Starbird" name="Starbird Events Calendar"/>
 		<menu_item_call label="Обучение" name="How To"/>

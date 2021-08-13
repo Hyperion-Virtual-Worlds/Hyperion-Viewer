@@ -982,7 +982,7 @@ bool LLAppViewerWin32::initHardwareTest()
 			if (OSBTN_NO== button)
 			{
 				LL_INFOS("AppInit") << "User quitting after failed DirectX 9 detection" << LL_ENDL;
-				LLWeb::loadURLExternal("http://www.Starbirdviewer.org/support", false);
+				LLWeb::loadURLExternal("http://www.hyperionvirtual.com/support", false);
 				return false;
 			}
 			gWarningSettings.setBOOL("AboutDirectX9", FALSE);

@@ -59,7 +59,7 @@
 static const char dialog_text[] =
 "Starbird appears to have crashed or frozen last time it ran.\n"
 "This crash reporter collects information about your computer's hardware, operating system which are used for debugging purposes only. SecondLife logs are not collected.\n"
-"This report will be send to Starbirdviewer.org. Review our privacy policy at http://www.Starbirdviewer.org/privacy-policy for more information.\n"
+"This report will be send to hyperionvirtual.com. Review our privacy policy at http://www.hyperionvirtual.com/privacy-policy for more information.\n"
 "\n"
 "Send crash report?";
 

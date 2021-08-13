@@ -1500,7 +1500,7 @@ LLUUID FSLSLBridge::findFSCategory()
 	LLUUID fsCatID;
 	LLUUID bridgeCatID;
 
-	fsCatID = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
+	fsCatID = gInventory.findCategoryByName(ROOT_STARBIRD_FOLDER);
 	if (!fsCatID.isNull())
 	{
 		LLInventoryModel::item_array_t* items;
@@ -1520,7 +1520,7 @@ LLUUID FSLSLBridge::findFSCategory()
 	}
 	else
 	{
-		fsCatID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_Starbird_FOLDER);
+		fsCatID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_STARBIRD_FOLDER);
 	}
 
 	if (bridgeCatID.isNull())

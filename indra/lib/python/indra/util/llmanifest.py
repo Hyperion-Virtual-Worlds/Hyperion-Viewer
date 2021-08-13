@@ -229,7 +229,7 @@ def main(extra=[]):
             args['version'] = vf.read().strip().split('.')
         except:
             print "Unable to read versionfile '%s'" % args['versionfile']
-            # <FS:ND> This will break copy_w_viewer_manifest on Windows 32 and 64 bit builds, the versionfile will not create until the Starbird project.
+            # <FS:ND> This will break copy_w_viewer_manifest on Windows 32 and 64 bit builds, the versionfile will not create until the starbird project.
             # As copy_w_viewer_manifest does not seem to need the version attribute, we supress the exception for now.
             # raise
 

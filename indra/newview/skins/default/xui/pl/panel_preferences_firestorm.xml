@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel name="Starbird">
+<panel name="starbird">
 <panel.string name="BeamsOffLabel">
     === WYŁĄCZONE ===
 </panel.string>
@@ -75,7 +75,7 @@
         <check_box label="Potwierdź przed płaceniem. Próg:" name="FSConfirmPayments" tool_tip="Pokaż okienko z potwierdzeniem przed płaceniem sum większych, niż ustawiony tutaj próg. Aby zawsze pokazywać potwierdzenie ustaw próg na 0." />
         <spinner name="FSPaymentConfirmationThreshold" tool_tip="Pokaż okienko z potwierdzeniem przed płaceniem sum większych, niż ustawiony tutaj próg. Aby zawsze pokazywać potwierdzenie ustaw próg na 0." />
     </panel>
-    <panel label="Awatar" name="Starbird_avatar">
+    <panel label="Awatar" name="starbird_avatar">
         <text name="HeadMovement">
             Ustaw, jak mocno głowa Awatara śledzi myszkę ('0' oznacza brak ruchu):
         </text>

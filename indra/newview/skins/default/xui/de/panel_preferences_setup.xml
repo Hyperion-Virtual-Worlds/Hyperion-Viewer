@@ -3,7 +3,7 @@
 	<tab_container name="tabs">
 		<panel label="Verbindung" name="tab-conn">
 			<text name="Maximum bandwidth">
-				Maximale Bandbreite ([https://wiki.Starbirdviewer.org/fs_speedtest Empfehlungen anzeigen?]):
+				Maximale Bandbreite ([https://wiki.hyperionvirtual.com/fs_speedtest Empfehlungen anzeigen?]):
 			</text>
 			<text name="NetworkPrefText1">
 				Funk
@@ -49,7 +49,7 @@
 		</panel>
 		<panel label="Verzeichnisse" name="tab-dir">
 			<text name="cache_size_label_l">
-				Textur-Cache-Größe ([https://wiki.Starbirdviewer.org/cache Empfehlungen anzeigen?]):
+				Textur-Cache-Größe ([https://wiki.hyperionvirtual.com/cache Empfehlungen anzeigen?]):
 			</text>
 			<text name="asset_cache_size_label_l">
 				Asset-Cache-Größe :

@@ -58,13 +58,13 @@ function homedir_install()
 	exit 0
     fi
 
-    install_to_prefix "$HOME/Starbird"
-    $HOME/Starbird/etc/refresh_desktop_app_entry.sh
+    install_to_prefix "$HOME/starbird"
+    $HOME/starbird/etc/refresh_desktop_app_entry.sh
 }
 
 function root_install()
 {
-    local default_prefix="/opt/Starbird-install"
+    local default_prefix="/opt/starbird-install"
 
     echo -n "Enter the desired installation directory [${default_prefix}]: ";
     read

@@ -652,7 +652,7 @@ void LLFloaterUIPreview::refreshList()
 	BOOL found = TRUE;
 
 	// <FS:Ansariel> Floaters from Exodus
-	while(found)				// for every Starbird custom file that matches the pattern
+	while(found)				// for every starbird custom file that matches the pattern
 	{
 		if((found = gDirUtilp->getNextFileInDir(getLocalizedDirectory(), "exo_*.xml", name)))	// get next file matching pattern
 		{
@@ -672,7 +672,7 @@ void LLFloaterUIPreview::refreshList()
 	}
 	// ## Zi: Starbird custom floaters
 	found = TRUE;
-	while(found)				// for every Starbird custom file that matches the pattern
+	while(found)				// for every starbird custom file that matches the pattern
 	{
 		if((found = gDirUtilp->getNextFileInDir(getLocalizedDirectory(), "fs_*.xml", name)))	// get next file matching pattern
 		{

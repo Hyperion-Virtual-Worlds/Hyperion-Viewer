@@ -44,7 +44,7 @@ class FSSlurlCommandHandler : public LLCommandHandler
 {
 public:
 	// not allowed from outside the app
-	FSSlurlCommandHandler() : LLCommandHandler("Starbird", UNTRUSTED_BLOCK) { }
+	FSSlurlCommandHandler() : LLCommandHandler("starbird", UNTRUSTED_BLOCK) { }
 
 	bool handle(const LLSD& params, const LLSD& query_map, LLMediaCtrl* web)
 	{

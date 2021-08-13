@@ -217,7 +217,7 @@ Voice-Serverversion: [VOICE_VERSION]
 		Beenden
 	</string>
 	<string name="create_account_url">
-		https://www.Starbirdviewer.org/join-secondlife/
+		https://www.hyperionvirtual.com/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Second Life Main Grid (Agni)
@@ -230,7 +230,7 @@ Voice-Serverversion: [VOICE_VERSION]
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		Mit dem von Ihnen verwendeten Viewer ist der Zugriff auf Second Life nicht mehr möglich. Laden Sie von den folgenden Seite einen neuen Viewer herunter:
-https://www.Starbirdviewer.org/choose-your-platform/
+https://www.hyperionvirtual.com/choose-your-platform/
 
 Weitere Informationen finden Sie auf der folgenden FAQ-Seite: 
 http://secondlife.com/viewer-access-faq
@@ -881,7 +881,7 @@ nächsten Eigentümer angehängt werden.
 	</string>
 	<string name="AssetUploadRequestInvalid">
 Fehler in der Upload-Anforderung. Bitte besuchen Sie
-https://www.Starbirdviewer.org/support für Hilfe zum Lösen des Problems.
+https://www.hyperionvirtual.com/support für Hilfe zum Lösen des Problems.
 	</string>
 	<string name="SettingValidationError">
 		Validierung für das Importieren der Einstellungen [NAME] fehlgeschlagen

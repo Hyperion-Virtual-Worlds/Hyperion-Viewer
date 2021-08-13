@@ -2280,23 +2280,23 @@
              name="Starbird Blog">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="Starbird_blog_url"
-             parameter="WebLaunchExternalTarget,https://www.Starbirdviewer.org/" />
+             name="starbird_blog_url"
+             parameter="WebLaunchExternalTarget,https://www.hyperionvirtual.com/" />
        </menu_item_call>
     	<menu_item_call
              label="Starbird Flickr"
              name="Starbird Flickr">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="Starbird_flickr_url"
-             parameter="WebLaunchExternalTarget,http://www.flickr.com/groups/Starbirdviewer/pool/" />
+             name="starbird_flickr_url"
+             parameter="WebLaunchExternalTarget,http://www.flickr.com/groups/starbirdviewer/pool/" />
        </menu_item_call>
     	<menu_item_call
              label="Starbird YouTube"
              name="Starbird YouTube">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="Starbird_youtube_url"
+             name="starbird_youtube_url"
              parameter="WebLaunchExternalTarget,http://www.youtube.com/user/PhoenixViewerSL" />
        </menu_item_call>
     	<menu_item_call
@@ -2304,7 +2304,7 @@
              name="Starbird Twitter">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="Starbird_twitter_url"
+             name="starbird_twitter_url"
              parameter="WebLaunchExternalTarget,https://twitter.com/phoenixviewersl" />
        </menu_item_call>
     	<menu_item_call
@@ -2312,7 +2312,7 @@
              name="Starbird Plurk">
              <menu_item_call.on_click
              function="PromptShowURL"
-             name="Starbird_plurk_url"
+             name="starbird_plurk_url"
              parameter="WebLaunchExternalTarget,http://www.plurk.com/ThePhoenixViewerProject" />
        </menu_item_call>
        <menu_item_separator/>
@@ -2350,7 +2350,7 @@
              <menu_item_call.on_click
              function="PromptShowURL"
              name="script_library_url"
-             parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org" />
+             parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com" />
         </menu_item_call>
         
         <menu_item_call
@@ -2359,15 +2359,15 @@
             <menu_item_call.on_click
              function="PromptShowURL"
              name="wiki_troubleshooting_url"
-             parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org/Starbird_troubleshooting" />
+             parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com/starbird_troubleshooting" />
         </menu_item_call>
 	   
         <menu_item_call
          label="Join Starbird Support Group"
-         name="Starbird_support_group">
+         name="starbird_support_group">
             <menu_item_call.on_click
              function="Advanced.WebBrowserTest"
-             parameter="https://wiki.Starbirdviewer.org/Starbird_support_groups_join" />
+             parameter="https://wiki.hyperionvirtual.com/starbird_support_groups_join" />
             <menu_item_call.on_visible
              function="GridCheck"
              parameter="secondlife" />
@@ -2379,7 +2379,7 @@
              <menu_item_call.on_click
              function="PromptShowURL"
              name="wiki_classes_url"
-             parameter="WebLaunchExternalTarget,https://wiki.Starbirdviewer.org/Starbird_classes" />
+             parameter="WebLaunchExternalTarget,https://wiki.hyperionvirtual.com/starbird_classes" />
         </menu_item_call>
 
         <menu_item_call

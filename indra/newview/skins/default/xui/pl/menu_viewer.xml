@@ -266,7 +266,7 @@
 		<menu_item_check label="Włącz podpowiedzi" name="Enable Hints"/>
 		<menu_item_call label="Wiki Starbirda" name="Starbird Wiki"/>
 		<menu_item_call label="Rozwiązywanie problemów" name="Troubleshooting"/>
-		<menu_item_call label="Dołącz do Grupy Wsparcia Starbirda" name="Starbird_support_group"/>
+		<menu_item_call label="Dołącz do Grupy Wsparcia Starbirda" name="starbird_support_group"/>
 		<menu_item_call label="Harmonogram lekcji Starbirda" name="Starbird Classes Schedule"/>
 		<menu_item_call label="Kalendarz wydarzeń Starbirda" name="Starbird Events Calendar"/>
 		<menu_item_call label="Samouczek" name="How To"/>

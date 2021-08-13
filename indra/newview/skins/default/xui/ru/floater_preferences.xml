@@ -24,7 +24,7 @@
 		<panel label="Интерфейс" name="ui"/>
 		<panel label="Темы" name="skins"/>
 		<panel label="Ошибки" name="crashreports"/>
-		<panel label="Starbird" name="Starbird"/>
+		<panel label="Starbird" name="starbird"/>
 		<panel label="OpenSim" name="opensim"/>
 		<panel label="Резервная копия" name="backup"/>
 	</tab_container>

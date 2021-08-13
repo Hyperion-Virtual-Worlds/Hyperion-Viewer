@@ -295,7 +295,7 @@ tool_tip="The account name you chose when you registered, like bobsmith420 or St
            <combo_box.item
             label="Starbird"
             name="Starbird"
-            value="settings_Starbird.xml" />
+            value="settings_starbird.xml" />
            <combo_box.item
             label="Phoenix"
             name="Phoenix"

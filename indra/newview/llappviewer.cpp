@@ -2990,7 +2990,7 @@ bool LLAppViewer::initConfiguration()
 		// <FS>
 		if (gSavedSettings.getString("SessionSettingsFile").empty())
 		{
-			gSavedSettings.setString("SessionSettingsFile", "settings_Starbird.xml");
+			gSavedSettings.setString("SessionSettingsFile", "settings_starbird.xml");
 		}
 		// </FS>
 		
@@ -3453,7 +3453,7 @@ void LLAppViewer::initStrings()
 	{
 		// initial check to make sure files are there failed
 		gDirUtilp->dumpCurrentDirectories(LLError::LEVEL_WARN);
-		LL_ERRS() << "Viewer failed to find localization and UI files. Please reinstall viewer from  https://www.Starbirdviewer.org/downloads and contact https://www.Starbirdviewer.org/support if issue persists after reinstall." << LL_ENDL;
+		LL_ERRS() << "Viewer failed to find localization and UI files. Please reinstall viewer from  https://www.hyperionvirtual.com/downloads and contact https://www.hyperionvirtual.com/support if issue persists after reinstall." << LL_ENDL;
 	}
 	LLTransUtil::parseStrings(strings_file, default_trans_args);
 	LLTransUtil::parseLanguageStrings("language_settings.xml");
@@ -3747,7 +3747,7 @@ LLSD LLAppViewer::getViewerInfo() const
 
 	// return a URL to the release notes for this viewer, such as:
 	// https://releasenotes.secondlife.com/viewer/2.1.0.123456.html
-	// <FS:Ansariel> FIRE-13993: Create URL in the form of https://wiki.Starbirdviewer.org/Starbird_change_log_x.y.z.rev
+	// <FS:Ansariel> FIRE-13993: Create URL in the form of https://wiki.hyperionvirtual.com/starbird_change_log_x.y.z.rev
 	//std::string url = versionInfo.getReleaseNotes(); // VVM supplied
     //if (url.empty())
     //{
@@ -5354,7 +5354,7 @@ void LLAppViewer::badNetworkHandler()
 		"the issue. \n"
 		" \n"
 		"If the problem continues, see the Tech Support FAQ at: \n"
-		"www.Starbirdviewer.org/support";
+		"www.hyperionvirtual.com/support";
 	forceDisconnect(message.str());
 
 	LLApp::instance()->writeMiniDump();

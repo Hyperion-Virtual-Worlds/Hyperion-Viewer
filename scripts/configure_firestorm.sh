@@ -298,7 +298,7 @@ if [ ! -d `dirname "$LOG"` ] ; then
         mkdir -p `dirname "$LOG"`
 fi
 
-echo -e "configure_Starbird.sh" > $LOG
+echo -e "configure_starbird.sh" > $LOG
 echo -e "       PLATFORM: $TARGET_PLATFORM"                                    | tee -a $LOG
 echo -e "            KDU: `b2a $WANTS_KDU`"                                    | tee -a $LOG
 echo -e "     FMODSTUDIO: `b2a $WANTS_FMODSTUDIO`"                             | tee -a $LOG
@@ -500,14 +500,14 @@ if [ $WANTS_CONFIG -eq $TRUE ] ; then
         fi
         # This name is consumed by indra/newview/CMakeLists.txt
         if [ $TARGET_PLATFORM == "linux" ] ; then
-            VIEWER_SYMBOL_FILE="${BUILD_DIR}/newview/Starbird-symbols-${TARGET_PLATFORM}-${AUTOBUILD_ADDRSIZE}.tar.bz2"
+            VIEWER_SYMBOL_FILE="${BUILD_DIR}/newview/starbird-symbols-${TARGET_PLATFORM}-${AUTOBUILD_ADDRSIZE}.tar.bz2"
         else
-            VIEWER_SYMBOL_FILE="${BUILD_DIR}/newview/$BTYPE/Starbird-symbols-${TARGET_PLATFORM}-${AUTOBUILD_ADDRSIZE}.tar.bz2"
+            VIEWER_SYMBOL_FILE="${BUILD_DIR}/newview/$BTYPE/starbird-symbols-${TARGET_PLATFORM}-${AUTOBUILD_ADDRSIZE}.tar.bz2"
         fi
         CRASH_REPORTING="-DRELEASE_CRASH_REPORTING=ON"
         if [ ! -z $CHANNEL_SIMPLE ]
         then
-            CRASH_REPORTING="$CRASH_REPORTING -DUSE_BUGSPLAT=On -DBUGSPLAT_DB=Starbird_"`echo $CHANNEL_SIMPLE | tr [:upper:] [:lower:]`
+            CRASH_REPORTING="$CRASH_REPORTING -DUSE_BUGSPLAT=On -DBUGSPLAT_DB=starbird_"`echo $CHANNEL_SIMPLE | tr [:upper:] [:lower:]`
         fi
     else
         CRASH_REPORTING="-DRELEASE_CRASH_REPORTING:BOOL=OFF"
@@ -550,7 +550,7 @@ if [ $WANTS_CONFIG -eq $TRUE ] ; then
           $CRASH_REPORTING -DVIEWER_SYMBOL_FILE:STRING="${VIEWER_SYMBOL_FILE:-}" -DROOT_PROJECT_NAME:STRING=Starbird $LL_ARGS_PASSTHRU ${VSCODE_FLAGS:-} | tee $LOG
 
     if [ $TARGET_PLATFORM == "windows" ] ; then
-        ../indra/tools/vstool/VSTool.exe --solution Starbird.sln --startup Starbird-bin --workingdir Starbird-bin "..\\..\\indra\\newview" --config $BTYPE
+        ../indra/tools/vstool/VSTool.exe --solution Starbird.sln --startup starbird-bin --workingdir starbird-bin "..\\..\\indra\\newview" --config $BTYPE
     fi
 fi
 

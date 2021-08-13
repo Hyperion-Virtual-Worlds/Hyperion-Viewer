@@ -7,7 +7,7 @@
 		Starbird
 	</string>
 	<string name="CAPITALIZED_APP_NAME">
-		Starbird
+		STARBIRD
 	</string>
 	<string name="SECOND_LIFE_GRID">
 		Red de Second Life
@@ -185,11 +185,11 @@ Versión del servidor de voz: [VOICE_VERSION]
 		Salir
 	</string>
 	<string name="create_account_url">
-		https://www.Starbirdviewer.org/join-secondlife/
+		https://www.hyperionvirtual.com/join-secondlife/
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		Ya no puedes acceder a Second Life con el visor que estás utilizando. Visita la siguiente página para descargar un nuevo visor:
-https://www.Starbirdviewer.org/choose-your-platform/
+https://www.hyperionvirtual.com/choose-your-platform/
  
 Si deseas obtener más información, consulta las preguntas frecuentes que aparecen a continuación:
 http://secondlife.com/viewer-access-faq

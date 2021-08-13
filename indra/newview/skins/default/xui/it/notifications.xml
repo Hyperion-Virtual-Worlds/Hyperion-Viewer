@@ -31,7 +31,7 @@ Dettagli errore: La notifica denominata &apos;[_NAME]&apos; non è stata trovata
 		<usetemplate name="okcancelbuttons" notext="Annulla" yestext="Si"/>
 	</notification>
 	<notification name="BadInstallation">
-		Il programma [APP_NAME] ha riscontrato un&apos;errore durante il tentativo di aggiornamento.  [https://www.Starbirdviewer.org/downloads Scarica l&apos;ultima versione] del viewer.
+		Il programma [APP_NAME] ha riscontrato un&apos;errore durante il tentativo di aggiornamento.  [https://www.hyperionvirtual.com/downloads Scarica l&apos;ultima versione] del viewer.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Non è possibile collegarsi alla [SECOND_LIFE_GRID].
@@ -3414,7 +3414,7 @@ Il pulsante verrà visualizzato quando lo spazio sarà sufficiente.
 	<notification name="MeshUploadError">
 		[LABEL] non è stato caricato: [MESSAGE]
 
-Per informazioni dettagliate, vedi il file del registro Starbird.log
+Per informazioni dettagliate, vedi il file del registro starbird.log
 	</notification>
 	<notification name="MeshUploadPermError">
 		Errore durante la richiesta di autorizzazione al caricamento della mesh.
@@ -3513,7 +3513,7 @@ Consigliamo di controllare le impostazioni di rete e del firewall.
 Disabilitare tutte le funzioni SIP ALG sul router.
 
 Le comunicazioni tramite voce non saranno disponibili.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate ignoretext="Avvisami quando non è possibile la connessione con il server voce" name="okignore"/>
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3521,7 +3521,7 @@ Le comunicazioni tramite voce non saranno disponibili.
 
 Le comunicazioni tramite voce non saranno disponibili.
 Consigliamo di controllare le impostazioni di rete e del firewall.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( presente da [EXISTENCE] secondi )
@@ -3867,7 +3867,7 @@ Il nome può contenere solo caratteri ASCII esclusi : e | .
 	<notification name="TestversionExpired">
 		Questa versione di prova di [APP_NAME] è scaduta e non può più essere usata.
 	</notification>
-	<notification name="StarbirdReqInfo">
+	<notification name="FireStormReqInfo">
 		[NAME] chiede che vengano inviate informazioni sulla configurazione di [APP_NAME].
 (Sono le stesse informazioni che si possono trovare in Aiuto->A proposito di [APP_NAME])
 [REASON]

@@ -25,7 +25,7 @@
 		<panel label="UI" name="ui"/>
 		<panel label="スキン" name="skins"/>
 		<panel label="レポート" name="crashreports"/>
-		<panel label="Starbird" name="Starbird"/>
+		<panel label="Starbird" name="starbird"/>
 		<panel label="Opensim" name="opensim" />
 		<panel label="バックアップ" name="backup" />
 	</tab_container>

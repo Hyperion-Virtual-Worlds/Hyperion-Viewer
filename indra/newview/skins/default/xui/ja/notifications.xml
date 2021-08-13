@@ -81,7 +81,7 @@
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="BadInstallation">
-		[APP_NAME] のインストールに失敗しました。ビューワの [https://www.Starbirdviewer.org/downloads 最新バージョンをダウンロード] して、もう一度インストールし直してください。
+		[APP_NAME] のインストールに失敗しました。ビューワの [https://www.hyperionvirtual.com/downloads 最新バージョンをダウンロード] して、もう一度インストールし直してください。
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -738,7 +738,7 @@ L$ が不足しているのでこのグループに参加することができ�
 
 [_URL] に移動して確認をしますか？
 		<url name="url" option="0">
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="使用中のコンピューターのハードウェアがサポートされていないとき" name="okcancelignore" notext="いいえ" yestext="はい"/>
 	</notification>
@@ -3893,12 +3893,12 @@ UDP: 3478, 3479, 5060, 5062, 6250, 12000-32000
 お使いのルーターの SIP ALG 機能をすべて無効にしてください。
 
 ボイスチャットによるコミュニケーションが利用できません。
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate ignoretext="ビューワーがボイスサーバーに接続できなかった時に警告" name="okignore" yestext="OK"/>
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
 		ボイスサーバーに接続できません。ボイスチャットによるコミュニケーションが利用できません。お使いのネットワークやファイアウォールの設定を確認してください。
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="AvatarRezLeftNotification">
@@ -4307,7 +4307,7 @@ AO セット "[AO_SET_NAME]" の名前を変更できません。
 		[APP_NAME] のこのテストバージョンは無効になりました。今後使用することはできません。
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
-	<notification name="StarbirdReqInfo">
+	<notification name="FireStormReqInfo">
 		[NAME] があなたの [APP_NAME] の設定に関する情報を送信するよ要求しています。
 （ここで送信される情報は、「ヘルプ」＞「[APP_NAME] について」に表示される情報と同じものです。）
 [REASON]
@@ -5487,7 +5487,7 @@ LOD 要素 --> 8: 具体的な効果は得られません。種々のエラー�
 	<notification name="CurrencyURIOverrideReceived">
 この地域は、サードパーティーの通貨購入を指定することを選択しています。
 Starbird ビューワを利用して行った通貨の購入は、ユーザーであるあなたと当該通貨のプロバイダーまたは販売者との間の取引であることをご認識下さい。
-即ち、Starbird ビューワ、Virtual World Research ビューワ・プロジェクト、及びそのチームは当該取引によって直接間接に生じる費用や損害に関し、一切責任を追うものではありません。
+即ち、Starbird ビューワ、Second Galaxy Development Team ビューワ・プロジェクト、及びそのチームは当該取引によって直接間接に生じる費用や損害に関し、一切責任を追うものではありません。
 もしこの利用規約に同意できない場合は、このビューワを利用していかなる金融取引もすべきではありません。
 		<usetemplate ignoretext="地域が新しい通貨ヘルパーを設定している場合" name="okignore" yestext="OK"/>
 	</notification>

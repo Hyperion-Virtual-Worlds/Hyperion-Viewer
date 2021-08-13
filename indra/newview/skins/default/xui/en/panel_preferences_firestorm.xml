@@ -8,7 +8,7 @@
  top="1"
  width="540"
  label="Starbird"
- name="Starbird">
+ name="starbird">
  
 <panel.string name="BeamsOffLabel">
 	=== OFF ===
@@ -516,7 +516,7 @@
      right="-1"
      follows="all"
      label="Avatar"
-     name="Starbird_avatar" >
+     name="starbird_avatar" >
 
         <text
          type="string"

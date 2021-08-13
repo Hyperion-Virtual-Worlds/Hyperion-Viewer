@@ -37,7 +37,7 @@
 		[MESSAGE]
 	</notification>
 	<notification name="BadInstallation">
-		Произошла ошибка при обновлении [APP_NAME]. [https://www.Starbirdviewer.org/downloads Загрузите последнюю версию] клиента.
+		Произошла ошибка при обновлении [APP_NAME]. [https://www.hyperionvirtual.com/downloads Загрузите последнюю версию] клиента.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Не удалось подключиться к [SECOND_LIFE_GRID].
@@ -641,7 +641,7 @@
 
 Найти более подробную информацию на [_URL]?
 		<url name="url">
-			https://wiki.Starbirdviewer.org/fs_system_requirements
+			https://wiki.hyperionvirtual.com/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="Оборудование моего компьютера не поддерживается" name="okcancelignore" notext="Нет" yestext="Да"/>
 	</notification>
@@ -3711,7 +3711,7 @@ URL: [AUDIOURL]
 Отключите любую функцию SIP ALG в вашем маршрутизаторе.
 
 Голосовая связь будет недоступна.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 		<usetemplate ignoretext="Возникли проблемы соединения с голосовым сервером" name="okignore" yestext="OK"/>
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3719,7 +3719,7 @@ URL: [AUDIOURL]
 
 Голосовое общение будет недоступно.
 Проверьте настройки сети и брандмауэра.
-[https://wiki.Starbirdviewer.org/fs_voice]
+[https://wiki.hyperionvirtual.com/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( [EXISTENCE] сек. жизни )
@@ -4083,7 +4083,7 @@ URL: [AUDIOURL]
 	<notification name="TestversionExpired">
 		Срок действия этой тестовой версии [APP_NAME] истек, и ее нельзя использовать в дальнейшем.
 	</notification>
-	<notification name="StarbirdReqInfo">
+	<notification name="FireStormReqInfo">
 		[NAME] просит, чтобы вы отправили информацию о ваших настройках [APP_NAME].
 (Это та же информация, которую можно найти, перейдя в Помощь -> Информация о [APP_NAME])
 [REASON]
@@ -4209,7 +4209,7 @@ URL: [AUDIOURL]
 		<form name="form">
 			<button name="OK_okcancelignore" text="Да"/>
 			<button name="Cancel_okcancelignore" text="Нет"/>
-			<ignore name="ignore" text="Присоединение к группе технической поддержки Second Galaxy Development Team"/>
+			<ignore name="ignore" text="Присоединение к группе технической поддержки The Second Galaxy Development Team"/>
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">

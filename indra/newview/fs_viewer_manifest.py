@@ -43,7 +43,7 @@ class FSViewerManifest:
 
     def fs_sign_win_binaries( self ):
         try:
-            subprocess.check_call(["signtool.exe","sign","/n","/d","Starbird","/du","https://www.hyperionvirtual.com","/t","http://timestamp.verisign.com/scripts/timstamp.dll",self.args['configuration']+"\\Starbird-bin.exe"],
+            subprocess.check_call(["signtool.exe","sign","/n","/d","Starbird","/du","https://www.hyperionvirtual.com","/t","http://timestamp.verisign.com/scripts/timstamp.dll",self.args['configuration']+"\\starbird-bin.exe"],
                                   stderr=subprocess.PIPE,stdout=subprocess.PIPE)
             subprocess.check_call(["signtool.exe","sign","/n","/d","Starbird","/du","https://www.hyperionvirtual.com","/t","http://timestamp.verisign.com/scripts/timstamp.dll",self.args['configuration']+"\\slplugin.exe"],
                                   stderr=subprocess.PIPE,stdout=subprocess.PIPE)
@@ -88,14 +88,14 @@ class FSViewerManifest:
     def fs_save_windows_symbols(self):
         self.fs_save_symbols("windows")
 
-        pdbName = "Starbird-bin.pdb"
+        pdbName = "starbird-bin.pdb"
         try:
             subprocess.check_call( [ "pdbcopy.exe" ,
-                                     self.args['configuration'] + "\\Starbird-bin.pdb", 
-                                     self.args['configuration'] + "\\Starbird-bin-public.pdb",
+                                     self.args['configuration'] + "\\starbird-bin.pdb", 
+                                     self.args['configuration'] + "\\starbird-bin-public.pdb",
                                      "-p"
                                  ], stderr=subprocess.PIPE,stdout=subprocess.PIPE )
-            pdbName = "Starbird-bin-public.pdb"
+            pdbName = "starbird-bin-public.pdb"
         except:
             print( "Cannot run pdbcopy, packaging private symbols" )
 
@@ -108,7 +108,7 @@ class FSViewerManifest:
                                                                                     self.args['viewer_flavor'],
                                                                                     self.address_size),
                                                                                     'w')
-        symbolTar.add( "%s/Starbird-bin.exe" % self.args['configuration'].lower(), "Starbird-bin.exe" )
+        symbolTar.add( "%s/Starbird-bin.exe" % self.args['configuration'].lower(), "starbird-bin.exe" )
         symbolTar.add( "%s/build_data.json" % self.args['configuration'].lower(), "build_data.json" )
         symbolTar.add( "%s/%s" % (self.args['configuration'].lower(),pdbName), pdbName )
         symbolTar.close()
@@ -139,7 +139,7 @@ class FSViewerManifest:
         self.fs_save_symbols("darwin")
 
     def fs_save_symbols(self, osname):
-        if (os.path.exists("%s/Starbird-symbols-%s-%d.tar.bz2" % (self.args['configuration'].lower(),
+        if (os.path.exists("%s/starbird-symbols-%s-%d.tar.bz2" % (self.args['configuration'].lower(),
                                                                        osname,
                                                                        self.address_size))):
             # Rename to add version numbers
@@ -153,7 +153,7 @@ class FSViewerManifest:
             if os.path.exists( sName ):
                 os.unlink( sName )
 
-            os.rename("%s/Starbird-symbols-%s-%d.tar.bz2" % (self.args['configuration'].lower(), osname, self.address_size), sName)
+            os.rename("%s/starbird-symbols-%s-%d.tar.bz2" % (self.args['configuration'].lower(), osname, self.address_size), sName)
 
 
     # New llmanifest is braindead and does not allow any optional files.

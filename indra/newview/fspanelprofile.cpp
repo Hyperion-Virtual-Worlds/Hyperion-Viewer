@@ -514,7 +514,7 @@ void FSPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
 	//   the XML, too? Argh. -- TS
 	// args["[AGEVERIFICATION]"] = "";
 
-	args["[Starbird]"] = "";
+	args["[STARBIRD]"] = "";
 	args["[FSSUPP]"] = "";
 	args["[FSDEV]"] = "";
 	args["[FSQA]"] = "";
@@ -526,7 +526,7 @@ void FSPanelProfileSecondLife::fillAccountStatus(const LLAvatarData* avatar_data
 		std::string text;
 		if (flags & (FSData::DEVELOPER | FSData::SUPPORT | FSData::QA | FSData::GATEWAY))
 		{
-			args["[Starbird]"] = LLTrans::getString("APP_NAME");
+			args["[STARBIRD]"] = LLTrans::getString("APP_NAME");
 		}
 
 		if (flags & FSData::DEVELOPER)

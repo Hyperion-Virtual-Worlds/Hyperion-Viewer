@@ -198,7 +198,7 @@ void RlvUIEnabler::onToggleShowMinimap()
 
 	// Break/reestablish the visibility connection for the nearby people panel embedded minimap instance
 	LLPanel* pPeoplePanel = LLFloaterSidePanelContainer::getPanel("people", "panel_people");
-	LLPanel* pNetMapPanel = (pPeoplePanel) ? pPeoplePanel->getChild<LLPanel>("minimaplayout", TRUE) : NULL;  //AO: Starbird specific
+	LLPanel* pNetMapPanel = (pPeoplePanel) ? pPeoplePanel->getChild<LLPanel>("minimaplayout", TRUE) : NULL;  //AO: starbird specific
 	RLV_ASSERT( (pPeoplePanel) && (pNetMapPanel) );
 	if (pNetMapPanel)
 	{
@@ -210,7 +210,7 @@ void RlvUIEnabler::onToggleShowMinimap()
 
 	// Break/reestablish the visibility connection for the radar panel embedded minimap instance
 	LLFloater* pRadarFloater = LLFloaterReg::getInstance("fs_radar");
-	LLPanel* pRadarNetMapPanel = (pRadarFloater) ? pRadarFloater->getChild<LLPanel>("minimaplayout", TRUE) : NULL;  //AO: Starbird specific
+	LLPanel* pRadarNetMapPanel = (pRadarFloater) ? pRadarFloater->getChild<LLPanel>("minimaplayout", TRUE) : NULL;  //AO: starbird specific
 	RLV_ASSERT( (pRadarFloater) && (pRadarNetMapPanel) );
 	if (pRadarNetMapPanel)
 	{

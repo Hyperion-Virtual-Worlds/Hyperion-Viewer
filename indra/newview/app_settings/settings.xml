@@ -6866,7 +6866,7 @@
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>https://wiki.Starbirdviewer.org/[TOPIC]</string>
+      <string>https://wiki.hyperionvirtual.com/[TOPIC]</string>
       <key>Backup</key>
       <integer>0</integer>
     </map>
@@ -6879,7 +6879,7 @@
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>https://wiki.Starbirdviewer.org/start#basic_functions</string>
+      <string>https://wiki.hyperionvirtual.com/start#basic_functions</string>
       <key>Backup</key>
       <integer>0</integer>
     </map>    
@@ -13829,7 +13829,7 @@ Change of this parameter will affect the layout of buttons in notification toast
 			<key>Type</key>
 			<string>String</string>
 			<key>Value</key>
-			<string>https://jira.Starbirdviewer.org/secure/CreateIssueDetails!init.jspa?pid=10005&amp;issuetype=1&amp;priority=3&amp;environment=[ENVIRONMENT]</string>
+			<string>https://jira.hyperionvirtual.com/secure/CreateIssueDetails!init.jspa?pid=10005&amp;issuetype=1&amp;priority=3&amp;environment=[ENVIRONMENT]</string>
 		</map>
 	<key>RevokePermsOnStopAnimation</key>
     <map>
@@ -15178,7 +15178,7 @@ Change of this parameter will affect the layout of buttons in notification toast
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>Starbird</string>
+      <string>starbird</string>
     </map>
     <key>SkinningSettingsFile</key>
     <map>
@@ -19998,7 +19998,7 @@ Change of this parameter will affect the layout of buttons in notification toast
     <key>NearbyListShowMap</key>
     <map>
       <key>Comment</key>
-      <string>Show/hide map above nearby people list (unused by Starbird)</string>
+      <string>Show/hide map above nearby people list (unused by starbird)</string>
       <key>Persist</key>
       <integer>1</integer>
       <key>Type</key>

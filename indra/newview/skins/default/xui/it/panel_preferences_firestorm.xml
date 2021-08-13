@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel name="Starbird">
+<panel name="starbird">
     <panel.string name="BeamsOffLabel">
         === SPENTO ===
     </panel.string>
@@ -71,7 +71,7 @@
             <check_box label="Conferma prima di pagare. Soglia:" name="FSConfirmPayments" tool_tip="Mostra una finestra di conferma prima di pagare una somma maggiore della soglia indicata. Per chiedere sempre conferma, impostare a 0."/>
             <spinner name="FSPaymentConfirmationThreshold" tool_tip="Mostra una finestra di conferma prima di pagare una somma maggiore della soglia indicata. Per chiedere sempre conferma, impostare a 0."/>
        </panel>
-       <panel label="Avatar" name="Starbird_avatar">
+       <panel label="Avatar" name="starbird_avatar">
             <text name="HeadMovement">
                 Gradi di rotazione della testa quando segue il mouse (Impostare a &apos;0&apos; per non muoverla):
             </text>

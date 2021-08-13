@@ -886,7 +886,7 @@ else (OPENSIM)
         )
 endif (OPENSIM)
 
-set(VIEWER_BINARY_NAME "Starbird-bin" CACHE STRING
+set(VIEWER_BINARY_NAME "starbird-bin" CACHE STRING
     "The name of the viewer executable to create.")
 
 set(viewer_HEADER_FILES
@@ -1750,7 +1750,7 @@ if (DARWIN)
 
   # Add resource files to the project.
   set(viewer_RESOURCE_FILES
-    Starbird_icon.icns
+    starbird_icon.icns
     macview.r
     Info-Starbird.plist
     Starbird.xib/
@@ -1832,8 +1832,8 @@ if (LINUX)
     message(STATUS "Copying icons for ${ICON_PATH}")
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.bmp"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/Starbird_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/starbird_256.bmp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/starbird_icon.BMP"
       )
 endif (LINUX)
 
@@ -1897,18 +1897,18 @@ if (WINDOWS)
     message(STATUS "Copying icons for ${ICON_PATH}")
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_icon.ico"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res/Starbird_icon.ico"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/starbird_icon.ico"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res/starbird_icon.ico"
       )
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.BMP"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res/Starbird_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/starbird_256.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res/starbird_icon.BMP"
       )
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.BMP"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/Starbird_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/starbird_256.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/starbird_icon.BMP"
       )
 
     # Add resource files to the project.
@@ -1944,9 +1944,9 @@ if (WINDOWS)
         res/lltooltranslate.cur
         res/lltoolzoomin.cur
         res/lltoolzoomout.cur
-        res/Starbird_icon.BMP
-        res/Starbird_icon.ico
-        res-sdl/Starbird_icon.BMP
+        res/starbird_icon.BMP
+        res/starbird_icon.ico
+        res-sdl/starbird_icon.BMP
         res/resource.h
         res/toolpickobject.cur
         res/toolpickobject2.cur
@@ -2085,7 +2085,7 @@ set(viewer_APPSETTINGS_FILES
     app_settings/scriptlibrary_aa.xml
     app_settings/scriptlibrary_ossl.xml
     app_settings/scriptlibrary_preproc.xml
-    app_settings/settings_Starbird.xml
+    app_settings/settings_starbird.xml
     app_settings/settings_hybrid.xml
     app_settings/settings_phoenix.xml
     app_settings/settings_v3.xml
@@ -2654,16 +2654,17 @@ if (DARWIN)
   # These all get set with PROPERTIES. It's not that the property names are
   # magically known to CMake -- it's that these names are referenced in the
   # Info-SecondLife.plist file in the configure_file() directive below.
+  #set(product "${VIEWER_CHANNEL}")
   set(product "Starbird")
   set(MACOSX_EXECUTABLE_NAME "Starbird")
   set(MACOSX_BUNDLE_INFO_STRING "Starbird Viewer")
   set(MACOSX_BUNDLE_ICON_FILE "starbird_icon.icns")
-  set(MACOSX_BUNDLE_GUI_IDENTIFIER "com..starbird.viewer-${ND_VIEWER_FLAVOR}")
+  set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.phoenixviewer.starbird.viewer-${ND_VIEWER_FLAVOR}")
   set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VIEWER_CHANNEL} ${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
   set(MACOSX_BUNDLE_BUNDLE_NAME "Starbird")
   set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
   set(MACOSX_BUNDLE_BUNDLE_VERSION "${VIEWER_SHORT_VERSION}${VIEWER_MACOSX_PHASE}${VIEWER_REVISION}")
-  set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2021 Virtual World Research, Inc.")
+  set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2010-2021 Virtual World Research, Inc.")
   set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Starbird.nib")
   set(MACOSX_BUNDLE_NSPRINCIPAL_CLASS "LLApplication")
 
@@ -2795,7 +2796,7 @@ if (PACKAGE AND (RELEASE_CRASH_REPORTING OR NON_RELEASE_CRASH_REPORTING) AND VIE
     if (LINUX)
       list(APPEND SYMBOL_SEARCH_DIRS "${CMAKE_CURRENT_BINARY_DIR}/packaged")
 ##      set(VIEWER_EXE_GLOBS "do-not-directly-run-secondlife-bin SLPlugin")
-      set(VIEWER_EXE_GLOBS "do-not-directly-run-Starbird-bin")
+      set(VIEWER_EXE_GLOBS "do-not-directly-run-starbird-bin")
       set(VIEWER_LIB_GLOB "*${CMAKE_SHARED_MODULE_SUFFIX}*")
       set(VIEWER_COPY_MANIFEST copy_l_viewer_manifest)
     endif (LINUX)
@@ -2849,8 +2850,8 @@ if (PACKAGE AND (RELEASE_CRASH_REPORTING OR NON_RELEASE_CRASH_REPORTING) AND VIE
           "${VIEWER_SYMBOL_FILE_CYGWIN}"
           "-C"
           "${PARENT_DIRECTORY_CYGWIN}"
-          "Starbird-bin.pdb"
-        DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/Starbird-bin.pdb"
+          "starbird-bin.pdb"
+        DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/starbird-bin.pdb"
         COMMENT "Packing viewer PDB into ${VIEWER_SYMBOL_FILE_CYGWIN}"
         )
       add_custom_target(generate_symbols DEPENDS "${VIEWER_SYMBOL_FILE}" ${VIEWER_BINARY_NAME})

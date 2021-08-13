@@ -821,11 +821,11 @@ with the same filename but different name
   <texture name="skin ansastorm bright blue" file_name="skinspreview/ansa_blue.jpg" preload="true" />
   <texture name="skin ansastorm classic brown" file_name="skinspreview/ansa_brown.jpg" preload="true" />
   <texture name="skin ansastorm ectoplasma" file_name="skinspreview/ansa_ecto.jpg" preload="true" />
-  <texture name="skin Starbird grey" file_name="skinspreview/fs_grey.jpg" preload="true" />
-  <texture name="skin Starbird dark" file_name="skinspreview/fs_dark.jpg" preload="true" />
-  <texture name="skin Starbird blue" file_name="skinspreview/fs_blue.jpg" preload="true" />
-  <texture name="skin Starbird high contrast" file_name="skinspreview/fs_contrast.jpg" preload="true" />
-  <texture name="skin Starbird ctrlaltstudio" file_name="skinspreview/fs_ctrlaltstudio.jpg" preload="true" />
+  <texture name="skin starbird grey" file_name="skinspreview/fs_grey.jpg" preload="true" />
+  <texture name="skin starbird dark" file_name="skinspreview/fs_dark.jpg" preload="true" />
+  <texture name="skin starbird blue" file_name="skinspreview/fs_blue.jpg" preload="true" />
+  <texture name="skin starbird high contrast" file_name="skinspreview/fs_contrast.jpg" preload="true" />
+  <texture name="skin starbird ctrlaltstudio" file_name="skinspreview/fs_ctrlaltstudio.jpg" preload="true" />
   <texture name="skin latency (beta) extra plain" file_name="skinspreview/lat_plain.jpg" preload="true" />
   <texture name="skin metaharper modern coolocean" file_name="skinspreview/meta_coolocean.jpg" preload="true" />
   <texture name="skin metaharper modern appalachiansky" file_name="skinspreview/meta_appalachia.jpg" preload="true" />
