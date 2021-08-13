@@ -3,7 +3,7 @@
  * @brief Quick preferences access panel for bottomtray
  *
  * $LicenseInfo:firstyear=2011&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Starbird Viewer Source Code
  * Copyright (C) 2011, WoLf Loonie @ Second Life
  * Copyright (C) 2013, Zi Ree @ Second Life
  * Copyright (C) 2013, Ansariel Hiller @ Second Life
@@ -23,7 +23,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  * 
  * Linden Research, Inc., 945 Battery Street, San Francisco, CA  94111  USA
- * http://www.firestormviewer.org
+ * https://www.hyperionvirtual.com
  * $/LicenseInfo$
  */
 

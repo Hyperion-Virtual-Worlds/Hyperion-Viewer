@@ -20,7 +20,7 @@
 			<scroll_container name="fs_credits_scroll_container">
 				<panel name="fs_credits_scroll_container_content_panel">
 					<text name="firestorm_intro">
- Firestorm est un projet destiné à améliorer l'immersion dans SecondLife(tm). Nous avons mis en commun les contributions d'une communauté de plusieurs développeurs qui travaillent autour du code fourni par Linden Lab ainsi que du nôtre afin de vous apporter une interface riche en possibilités et soutenue par de nombreux volontaires. Firestorm vous est fourni par The Phoenix Firestorm Project, Inc., une organisation à but non lucratif.
+ Firestorm est un projet destiné à améliorer l'immersion dans SecondLife(tm). Nous avons mis en commun les contributions d'une communauté de plusieurs développeurs qui travaillent autour du code fourni par Linden Lab ainsi que du nôtre afin de vous apporter une interface riche en possibilités et soutenue par de nombreux volontaires. Firestorm vous est fourni par Virtual World Research, Inc., une organisation à but non lucratif.
  L'équipe de développement Firestorm :
 					</text>
 					<text name="fs_contrib_intro">Code additionnel pour Firestorm généreusement fourni par :</text>

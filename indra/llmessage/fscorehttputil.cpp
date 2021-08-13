@@ -3,7 +3,7 @@
  * @brief Core HTTP utility classes.
  *
  * $LicenseInfo:firstyear=2015&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Starbird Viewer Source Code
  * Copyright (c) 2015 Nicky Dasmijn
  *
  * This library is free software; you can redistribute it and/or
@@ -20,8 +20,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  * 
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * Virtual World Research, Inc., 109 Marion Drive, Room #306, Van Buren, Maine 04785-1267 USA
+ * https://www.hyperionvirtual.com
  * $/LicenseInfo$
  */
 

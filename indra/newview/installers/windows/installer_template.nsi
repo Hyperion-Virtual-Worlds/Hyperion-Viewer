@@ -104,7 +104,7 @@ SetOverwrite on							# Overwrite files by default
 #AutoCloseWindow true					# After all files install, close window
 
 # Registry key paths, ours and Microsoft's
-!define LINDEN_KEY      "SOFTWARE\The Phoenix Firestorm Project"
+!define LINDEN_KEY      "SOFTWARE\Virtual World Research"
 !define INSTNAME_KEY    "${LINDEN_KEY}\${INSTNAME}"
 !define MSCURRVER_KEY   "SOFTWARE\Microsoft\Windows\CurrentVersion"
 !define MSNTCURRVER_KEY "SOFTWARE\Microsoft\Windows NT\CurrentVersion"
@@ -440,7 +440,7 @@ WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "" "$INSTDIR"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Version" "${VERSION_LONG}"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Shortcut" "$INSTSHORTCUT"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Exe" "$VIEWER_EXE"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "The Phoenix Firestorm Project, Inc."
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "Virtual World Research, Inc."
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.firestormviewer.org"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.firestormviewer.org/downloads"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.firestormviewer.org/support"

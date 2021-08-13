@@ -4,7 +4,7 @@
  * @author nagle@animats.com
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
- * Phoenix Firestorm Viewer Source Code
+ * Starbird Viewer Source Code
  * Copyright (C) 2020 Animats
  *
  * This library is free software; you can redistribute it and/or
@@ -21,8 +21,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * The Phoenix Firestorm Project, Inc., 1831 Oakwood Drive, Fairmont, Minnesota 56031-3225 USA
- * http://www.firestormviewer.org
+ * Virtual World Research, Inc., 109 Marion Drive, Room #306, Van Buren, Maine 04785-1267 USA
+ * https://www.hyperionvirtual.com
  */
 
 #ifndef FS_FSREGIONCROSS_H
