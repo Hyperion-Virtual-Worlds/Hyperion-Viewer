@@ -5191,7 +5191,7 @@ URL: [AUDIOURL]
 	</notification>
 
 	<notification name="FirstJoinSupportGroup2">
-Willkommen in der Phoenix/Firestorm Viewer Support-Gruppe!
+Willkommen in der Second Galaxy Development Team-Gruppe!
 
 Um den Support zu vereinfachen wird empfohlen, die aktuelle Version Ihres Viewers der Gruppe mitzuteilen. Diese Information beinhaltet Viewer-Version, Viewer-Skin, Betriebssystem und RLVa-Status. Sie können daher entscheiden, ob Sie die Version Ihres Viewers jeder Nachricht in diesem Gruppenchat voranstellen möchten. Unser Support-Team kann Ihnen eine sinnvollere Hilfestellung geben, wenn es direkt weiß, welche Viewer-Version Sie benutzen.
 
@@ -5202,7 +5202,7 @@ Soll die automatische Anzeige der Viewer-Version aktiviert werden?
 		<form name="form">
 			<button name="OK_okcancelignore" text="Ja"/>
 			<button name="Cancel_okcancelignore" text="Nein"/>
-			<ignore name="ignore" text="Wenn dem Phoenix/Firestorm Support-Gruppenchat beigetreten wird."/>
+			<ignore name="ignore" text="Wenn dem Second Galaxy Development Team-Gruppenchat beigetreten wird."/>
 		</form>
 	</notification>
 

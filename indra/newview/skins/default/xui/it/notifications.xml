@@ -3973,7 +3973,7 @@ Valore attuale: [CURRENT_VALUE]
 	</notification>
 <!-- Commented out because without an update it would show false information!
 	<notification name="FirstJoinSupportGroup2">
-		Benvenuti al gruppo di supporto di Phoenix/Firestorm!
+		Benvenuti al gruppo di supporto di Second Galaxy Development Team!
 
 Per rendere il supporto più efficace, raccomandiamo di annunciare la versione del programma al gruppo. Il numero di versione può essere allegato ad ogni chat inviata al gruppo. I membri del gruppo di supporto possono dare suggerimenti più efficaci se conoscono la versione usata.
 
@@ -3983,7 +3983,7 @@ Abilitare l&apos;invio automatico della versione?
 		<form name="form">
 			<button name="OK_okcancelignore" text="Sì"/>
 			<button name="Cancel_okcancelignore" text="No"/>
-			<ignore name="ignore" text="Iscrizione al gruppo di supporto Phoenix/Firestorm" save_option="true" />
+			<ignore name="ignore" text="Iscrizione al gruppo di Second Galaxy Development Team" save_option="true" />
 		</form>
 	</notification>
 -->

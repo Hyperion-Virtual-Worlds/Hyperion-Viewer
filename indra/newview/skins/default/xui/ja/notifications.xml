@@ -4441,7 +4441,7 @@ AO セット "[AO_SET_NAME]" の名前を変更できません。
 
 	<!-- <FS:Zi> Viewer version popup -->
 	<notification name="FirstJoinSupportGroup2">
-Phoenix/Firestorm ビューワのサポート・グループへようこそ！
+Second Galaxy Development Team ビューワのサポート・グループへようこそ！
 
 よりスムーズにサポートが得られるように、ご使用になられているビューワのバージョンをグループに伝えることをお勧めします。このグループに送信するチャットの先頭にビューワのバージョンを自動的に表示することもできます。ご使用になられているビューワのバージョンが分かれば、グループのサポート・メンバーがすぐに有意義なアドバイスをすることができるようになります。
 
@@ -4452,7 +4452,7 @@ Phoenix/Firestorm ビューワのサポート・グループへようこそ！
 		<form name="form">
 			<button name="OK_okcancelignore" text="はい"/>
 			<button name="Cancel_okcancelignore" text="いいえ"/>
-			<ignore name="ignore" text="Phoenix/Firestorm サポート・グループに参加した時" />
+			<ignore name="ignore" text="Second Galaxy Development Team サポート・グループに参加した時" />
 		</form>
 	</notification>
 	<!-- <FS:Zi> Viewer version popup -->

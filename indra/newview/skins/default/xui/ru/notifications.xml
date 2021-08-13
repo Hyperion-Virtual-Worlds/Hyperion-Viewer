@@ -4209,7 +4209,7 @@ URL: [AUDIOURL]
 		<form name="form">
 			<button name="OK_okcancelignore" text="Да"/>
 			<button name="Cancel_okcancelignore" text="Нет"/>
-			<ignore name="ignore" text="Присоединение к группе технической поддержки The Phoenix/Firestorm"/>
+			<ignore name="ignore" text="Присоединение к группе технической поддержки Second Galaxy Development Team"/>
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">

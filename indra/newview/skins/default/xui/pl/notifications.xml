@@ -4077,7 +4077,7 @@ Zobacz FIRE-17710 aby dowiedzieć się więcej.
 		Pamięć podręczna (bufor danych) Twojej Przeglądarki jest pusta. Miej na uwadze, że możesz przez jakiś czas odczuwać obniżoną wydajność i spowolnione doczytywanie obiektów z Szafy.
 	</notification>
 	<notification name="FirstJoinSupportGroup2">
-		Witaj w grupie wsparcia Phoenix/Firestorm!
+		Witaj w grupie Second Galaxy Development Team!
 
 Abyśmy mogli pomóc Ci lepiej zalecamy, aby Twoja Przeglądarka automatycznie prezentowała swoją wersję - będzie ona wyświetlana przed każdą Twoją wypowiedzią na tym czacie grupowym. Informacja te obejmuje aktualną wersję, skórkę, system operacyjny i status RLVa. Osoby z naszej załogi wsparcia będą mogły dać Ci bardziej sensowne porady, jeśli będą znać wersję Twojej Przeglądarki od razu.
 
@@ -4087,7 +4087,7 @@ Chcesz włączyć automatyczne prezentowanie wersji Przeglądarki?
 		<form name="form">
 			<button name="OK_okcancelignore" text="Tak" />
 			<button name="Cancel_okcancelignore" text="Nie" />
-			<ignore name="ignore" text="Dołączenie do grupy wsparcia Phoenix/Firestorm" />
+			<ignore name="ignore" text="Dołączenie do grupy Second Galaxy Development Team" />
 		</form>
 	</notification>
 	<notification name="ConfirmScriptModify">
