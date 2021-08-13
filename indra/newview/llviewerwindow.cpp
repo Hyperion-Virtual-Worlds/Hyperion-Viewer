@@ -5054,7 +5054,7 @@ void renderOnePhysicsShape(LLViewerObject* objectp)
 	}
 
 }
-// End Firestorm additions that add the ability to visualise the physics shape in edit mode.
+// End Starbird additions that add the ability to visualise the physics shape in edit mode.
 //</FS:Beq> Physics display in edit mode changes
 
 // Draws the selection outlines for the currently selected objects

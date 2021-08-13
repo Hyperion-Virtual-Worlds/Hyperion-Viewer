@@ -86,10 +86,10 @@ Name ${INSTNAME}
 ;SubCaption 0 $(LicenseSubTitleSetup)	# Override "license agreement" text
 
 # <FS:Ansariel> FIRE-24335: Use different icon for OpenSim version
-#!define MUI_ICON   "%%SOURCE%%\installers\windows\firestorm_icon_os.ico"
-#!define MUI_UNICON "%%SOURCE%%\installers\windows\firestorm_icon_os.ico"
-!define MUI_ICON   "%%SOURCE%%\installers\windows\firestorm_icon${ICON_SUFFIX}.ico"
-!define MUI_UNICON "%%SOURCE%%\installers\windows\firestorm_icon${ICON_SUFFIX}.ico"
+#!define MUI_ICON   "%%SOURCE%%\installers\windows\Starbird_icon_os.ico"
+#!define MUI_UNICON "%%SOURCE%%\installers\windows\Starbird_icon_os.ico"
+!define MUI_ICON   "%%SOURCE%%\installers\windows\Starbird_icon${ICON_SUFFIX}.ico"
+!define MUI_UNICON "%%SOURCE%%\installers\windows\Starbird_icon${ICON_SUFFIX}.ico"
 # </FS:Ansariel>
 
 BrandingText " "						# Bottom of window text
@@ -408,7 +408,7 @@ CreateShortCut	"$SMPROGRAMS\$INSTSHORTCUT\$INSTSHORTCUT.lnk" \
 
 WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\SL Create Account.url" \
 				"InternetShortcut" "URL" \
-				"https://www.firestormviewer.org/join-secondlife/"
+				"https://www.Starbirdviewer.org/join-secondlife/"
 WriteINIStr		"$SMPROGRAMS\$INSTSHORTCUT\SL Your Account.url" \
 				"InternetShortcut" "URL" \
 				"https://www.secondlife.com/account/"
@@ -441,9 +441,9 @@ WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Version" "${VERSION_LONG}"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Shortcut" "$INSTSHORTCUT"
 WriteRegStr SHELL_CONTEXT "${INSTNAME_KEY}" "Exe" "$VIEWER_EXE"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "Publisher" "Virtual World Research, Inc."
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.firestormviewer.org"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.firestormviewer.org/downloads"
-WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.firestormviewer.org/support"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLInfoAbout" "https://www.Starbirdviewer.org"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "URLUpdateInfo" "https://www.Starbirdviewer.org/downloads"
+WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "HelpLink" "https://www.Starbirdviewer.org/support"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "DisplayName" "$INSTNAME"
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "UninstallString" '"$INSTDIR\uninst.exe"'
 WriteRegStr SHELL_CONTEXT "${MSUNINSTALL_KEY}" "DisplayVersion" "${VERSION_LONG}"
@@ -750,21 +750,21 @@ Push $2
 # Required since ProfileImagePath is of type REG_EXPAND_SZ
     ExpandEnvStrings $2 $2
 
-# Delete files in \Users\<User>\AppData\Roaming\Firestorm
+# Delete files in \Users\<User>\AppData\Roaming\Starbird
 # Remove all settings files but leave any other .txt files to preserve the chat logs
-    RMDir /r "$2\AppData\Roaming\Firestorm\logs"
-    RMDir /r "$2\AppData\Roaming\Firestorm\browser_profile"
-    RMDir /r "$2\AppData\Roaming\Firestorm\user_settings"
-    Delete  "$2\AppData\Roaming\Firestorm\*.xml"
-    Delete  "$2\AppData\Roaming\Firestorm\*.bmp"
-    Delete  "$2\AppData\Roaming\Firestorm\search_history.txt"
-    Delete  "$2\AppData\Roaming\Firestorm\plugin_cookies.txt"
-    Delete  "$2\AppData\Roaming\Firestorm\typed_locations.txt"
-# Delete files in \Users\<User>\AppData\Local\Firestorm
+    RMDir /r "$2\AppData\Roaming\Starbird\logs"
+    RMDir /r "$2\AppData\Roaming\Starbird\browser_profile"
+    RMDir /r "$2\AppData\Roaming\Starbird\user_settings"
+    Delete  "$2\AppData\Roaming\Starbird\*.xml"
+    Delete  "$2\AppData\Roaming\Starbird\*.bmp"
+    Delete  "$2\AppData\Roaming\Starbird\search_history.txt"
+    Delete  "$2\AppData\Roaming\Starbird\plugin_cookies.txt"
+    Delete  "$2\AppData\Roaming\Starbird\typed_locations.txt"
+# Delete files in \Users\<User>\AppData\Local\Starbird
     ${If} ${ISOPENSIM} == "0"
-        RMDir /r  "$2\AppData\Local\Firestorm"						#Delete the Havok cache folder
+        RMDir /r  "$2\AppData\Local\Starbird"						#Delete the Havok cache folder
     ${Else}
-        RMDir /r  "$2\AppData\Local\FirestormOS"					#Delete the OpenSim cache folder
+        RMDir /r  "$2\AppData\Local\StarbirdOS"					#Delete the OpenSim cache folder
     ${EndIf}
 
   CONTINUE:
@@ -776,11 +776,11 @@ Pop $2
 Pop $1
 Pop $0
 
-# Delete files in ProgramData\Firestorm
+# Delete files in ProgramData\Starbird
 Push $0
   ReadRegStr $0 SHELL_CONTEXT "${MSCURRVER_KEY}\Explorer\Shell Folders" "Common AppData"
   StrCmp $0 "" +2
-  RMDir /r "$0\Firestorm"
+  RMDir /r "$0\Starbird"
 Pop $0
 
 Keep:

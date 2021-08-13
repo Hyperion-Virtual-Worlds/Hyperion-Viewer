@@ -81,7 +81,7 @@
 // [/RLVa:KB]
 
 
-// Firestorm includes
+// Starbird includes
 #include "fscommon.h"
 #include "fspanelradar.h"
 #include "lggcontactsets.h"
@@ -563,16 +563,16 @@ LLPanelPeople::LLPanelPeople()
 		// [FS:CR] Contact sets
 		mContactSetList(NULL),
 		mContactSetCombo(NULL),
-		// <FS:Ansariel> Firestorm radar
+		// <FS:Ansariel> Starbird radar
 		//mMiniMap(NULL)
 		mMiniMap(NULL),
 		mRadarPanel(NULL),
-		// </FS:Ansariel> Firestorm radar
+		// </FS:Ansariel> Starbird radar
 		// <FS:Ansariel> FIRE-4740: Friend counter in people panel
 		mFriendsTabContainer(NULL)
 {
 	mFriendListUpdater = new LLFriendListUpdater(boost::bind(&LLPanelPeople::updateFriendList,	this));
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mNearbyListUpdater = new LLNearbyListUpdater(boost::bind(&LLPanelPeople::updateNearbyList,	this));
 	mRecentListUpdater = new LLRecentListUpdater(boost::bind(&LLPanelPeople::updateRecentList,	this));
 	mButtonsUpdater = new LLButtonsUpdater(boost::bind(&LLPanelPeople::updateButtons, this));
@@ -586,19 +586,19 @@ LLPanelPeople::LLPanelPeople()
 
 	mCommitCallbackRegistrar.add("People.Group.Plus.Action",  boost::bind(&LLPanelPeople::onGroupPlusMenuItemClicked,  this, _2));
 	mCommitCallbackRegistrar.add("People.Friends.ViewSort.Action",  boost::bind(&LLPanelPeople::onFriendsViewSortMenuItemClicked,  this, _2));
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mCommitCallbackRegistrar.add("People.Nearby.ViewSort.Action",  boost::bind(&LLPanelPeople::onNearbyViewSortMenuItemClicked,  this, _2));
 	mCommitCallbackRegistrar.add("People.Groups.ViewSort.Action",  boost::bind(&LLPanelPeople::onGroupsViewSortMenuItemClicked,  this, _2));
 	mCommitCallbackRegistrar.add("People.Recent.ViewSort.Action",  boost::bind(&LLPanelPeople::onRecentViewSortMenuItemClicked,  this, _2));
 
 	mEnableCallbackRegistrar.add("People.Friends.ViewSort.CheckItem",	boost::bind(&LLPanelPeople::onFriendsViewSortMenuItemCheck,	this, _2));
 	mEnableCallbackRegistrar.add("People.Recent.ViewSort.CheckItem",	boost::bind(&LLPanelPeople::onRecentViewSortMenuItemCheck,	this, _2));
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mEnableCallbackRegistrar.add("People.Nearby.ViewSort.CheckItem",	boost::bind(&LLPanelPeople::onNearbyViewSortMenuItemCheck,	this, _2));
 
 	mEnableCallbackRegistrar.add("People.Group.Plus.Validate",	boost::bind(&LLPanelPeople::onGroupPlusButtonValidate,	this));
 
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//doPeriodically(boost::bind(&LLPanelPeople::updateNearbyArrivalTime, this), 2.0);
 	
 	// [FS:CR] Contact sets
@@ -616,7 +616,7 @@ LLPanelPeople::LLPanelPeople()
 LLPanelPeople::~LLPanelPeople()
 {
 	delete mButtonsUpdater;
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//delete mNearbyListUpdater;
 	delete mFriendListUpdater;
 	delete mRecentListUpdater;
@@ -664,7 +664,7 @@ BOOL LLPanelPeople::postBuild()
 	//S32 max_premium = LLAgentBenefitsMgr::get("Premium").getGroupMembershipLimit();
 	// </FS:Ansariel>
 
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//getChild<LLFilterEditor>("nearby_filter_input")->setCommitCallback(boost::bind(&LLPanelPeople::onFilterEdit, this, _2));
 	getChild<LLFilterEditor>("friends_filter_input")->setCommitCallback(boost::bind(&LLPanelPeople::onFilterEdit, this, _2));
 	getChild<LLFilterEditor>("groups_filter_input")->setCommitCallback(boost::bind(&LLPanelPeople::onFilterEdit, this, _2));
@@ -689,26 +689,26 @@ BOOL LLPanelPeople::postBuild()
 
 	// <FS:Ansariel> FIRE-4740: Friend counter in people panel
 	mFriendsTabContainer = friends_tab->findChild<LLTabContainer>("friends_accordion");
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	mOnlineFriendList = friends_tab->getChild<LLAvatarList>("avatars_online");
 	mAllFriendList = friends_tab->getChild<LLAvatarList>("avatars_all");
 	mOnlineFriendList->setNoItemsCommentText(getString("no_friends_online"));
 	mOnlineFriendList->setShowIcons("FriendsListShowIcons");
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mOnlineFriendList->showPermissions("FriendsListShowPermissions");
 	mOnlineFriendList->showPermissions(true);
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 	mOnlineFriendList->setShowCompleteName(!gSavedSettings.getBOOL("FriendsListHideUsernames"));
 	mAllFriendList->setNoItemsCommentText(getString("no_friends"));
 	mAllFriendList->setShowIcons("FriendsListShowIcons");
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mAllFriendList->showPermissions("FriendsListShowPermissions");
 	mAllFriendList->showPermissions(true);
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 	mAllFriendList->setShowCompleteName(!gSavedSettings.getBOOL("FriendsListHideUsernames"));
 
 	LLPanel* nearby_tab = getChild<LLPanel>(NEARBY_TAB_NAME);
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//nearby_tab->setVisibleCallback(boost::bind(&Updater::setActive, mNearbyListUpdater, _2));
 	
 	// <FS:AO> Radarlist takes over for nearbylist for presentation.
@@ -716,14 +716,14 @@ BOOL LLPanelPeople::postBuild()
 	mRadarPanel->onColumnDisplayModeChanged();
 	// </FS:AO>
 
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mNearbyList = nearby_tab->getChild<LLAvatarList>("avatar_list");
 	//mNearbyList->setNoItemsCommentText(getString("no_one_near"));
 	//mNearbyList->setNoItemsMsg(getString("no_one_near"));
 	//mNearbyList->setNoFilteredItemsMsg(getString("no_one_filtered_near"));
 	//mNearbyList->setShowIcons("NearbyListShowIcons");
 	//mNearbyList->setShowCompleteName(!gSavedSettings.getBOOL("NearbyListHideUsernames"));
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 // [RLVa:KB] - Checked: RLVa-1.2.0
 	// Externalized to FSRadar
 	//mNearbyList->setRlvCheckShowNames(true);
@@ -746,7 +746,7 @@ BOOL LLPanelPeople::postBuild()
 	mGroupList->setNoItemsMsg(getString("no_groups_msg"));
 	mGroupList->setNoFilteredItemsMsg(getString("no_filtered_groups_msg"));
 
-	// <FS:Ansariel> Use Firestorm radar menu handler
+	// <FS:Ansariel> Use Starbird radar menu handler
 	//mNearbyList->setContextMenu(&LLPanelPeopleMenus::gNearbyPeopleContextMenu);
 	// </FS:Ansariel>
 	mRecentList->setContextMenu(&LLPanelPeopleMenus::gPeopleContextMenu);
@@ -755,14 +755,14 @@ BOOL LLPanelPeople::postBuild()
 
 	setSortOrder(mRecentList,		(ESortOrder)gSavedSettings.getU32("RecentPeopleSortOrder"),	false);
 	setSortOrder(mAllFriendList,	(ESortOrder)gSavedSettings.getU32("FriendsSortOrder"),		false);
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//setSortOrder(mNearbyList,		(ESortOrder)gSavedSettings.getU32("NearbyPeopleSortOrder"),	false);
 
 	mOnlineFriendList->setItemDoubleClickCallback(boost::bind(&LLPanelPeople::onAvatarListDoubleClicked, this, _1));
 	mAllFriendList->setItemDoubleClickCallback(boost::bind(&LLPanelPeople::onAvatarListDoubleClicked, this, _1));
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mNearbyList->setItemDoubleClickCallback(boost::bind(&LLPanelPeople::onAvatarListDoubleClicked, this, _1));
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 	mRecentList->setItemDoubleClickCallback(boost::bind(&LLPanelPeople::onAvatarListDoubleClicked, this, _1));
 
 	mOnlineFriendList->setCommitCallback(boost::bind(&LLPanelPeople::onAvatarListCommitted, this, mOnlineFriendList));
@@ -774,7 +774,7 @@ BOOL LLPanelPeople::postBuild()
 	// Set openning IM as default on return action for avatar lists
 	mOnlineFriendList->setReturnCallback(boost::bind(&LLPanelPeople::onImButtonClicked, this));
 	mAllFriendList->setReturnCallback(boost::bind(&LLPanelPeople::onImButtonClicked, this));
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//mNearbyList->setReturnCallback(boost::bind(&LLPanelPeople::onImButtonClicked, this));
 	mRecentList->setReturnCallback(boost::bind(&LLPanelPeople::onImButtonClicked, this));
 
@@ -1307,7 +1307,7 @@ void LLPanelPeople::onAvatarListDoubleClicked(LLUICtrl* ctrl)
 	}
 	
 // [RLVa:KB] - Checked: RLVa-2.0.1
-	// <FS:Ansariel> Firestorm radar; commented out
+	// <FS:Ansariel> Starbird radar; commented out
 	//if ( (RlvActions::isRlvEnabled()) && (NEARBY_TAB_NAME == getActiveTabName()) && (!RlvActions::canShowName(RlvActions::SNC_DEFAULT, clicked_id)) )
 	//{
 	//	return;
@@ -1431,7 +1431,7 @@ void LLPanelPeople::onImButtonClicked()
 	uuid_vec_t selected_uuids;
 	getCurrentItemIDs(selected_uuids);
 // [RLVa:KB] - Checked: RLVa-2.0.1
-	// <FS:Ansariel> Firestorm radar; commented out
+	// <FS:Ansariel> Starbird radar; commented out
 	//if ( (RlvActions::isRlvEnabled()) && (NEARBY_TAB_NAME == getActiveTabName()) && (!RlvActions::canShowName(RlvActions::SNC_DEFAULT)) )
 	//{
 	//	bool fCanShowNames = true;

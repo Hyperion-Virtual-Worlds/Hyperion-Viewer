@@ -54,7 +54,7 @@
 #include "llvoavatar.h"
 #include "llavataractions.h"
 
-// Firestorm includes
+// Starbird includes
 #include "fscommon.h"
 #include "fsfloaternearbychat.h"
 #include "fskeywords.h"

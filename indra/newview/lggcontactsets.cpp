@@ -402,13 +402,13 @@ LLColor4 LGGContactSets::colorize(const LLUUID& uuid, const LLColor4& cur_color,
 		{
 			case LGG_CS_CHAT:
 			case LGG_CS_IM:
-				color = LLUIColorTable::instance().getColor("FirestormChatColor", LLColor4::red).get();
+				color = LLUIColorTable::instance().getColor("StarbirdChatColor", LLColor4::red).get();
 				break;
 			case LGG_CS_TAG:
-				color = LLUIColorTable::instance().getColor("NameTagFirestorm", LLColor4::red).get();
+				color = LLUIColorTable::instance().getColor("NameTagStarbird", LLColor4::red).get();
 				break;
 			case LGG_CS_MINIMAP:
-				color = LLUIColorTable::instance().getColor("MapAvatarFirestormColor", LLColor4::red).get();
+				color = LLUIColorTable::instance().getColor("MapAvatarStarbirdColor", LLColor4::red).get();
 				break;
 			case LGG_CS_RADAR:
 			default:

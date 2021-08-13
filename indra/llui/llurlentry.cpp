@@ -1443,7 +1443,7 @@ std::string LLUrlEntrySL::getLabel(const std::string &url, const LLUrlLabelCallb
 
 // <FS:Ansariel> FS Help SLUrl
 ///
-/// FSHelpDebugUrlEntrySL Describes a Firestorm Help SLURL, e.g.
+/// FSHelpDebugUrlEntrySL Describes a Starbird Help SLURL, e.g.
 /// secondlife://app/fshelp/showdebug/DisplayIM
 ///
 FSHelpDebugUrlEntrySL::FSHelpDebugUrlEntrySL()
@@ -1640,7 +1640,7 @@ std::string LLUrlEntryJira::getUrl(const std::string &string) const
 		string.find("SLS") != std::string::npos ||
 		string.find("SUP") != std::string::npos )
 	{
-		return llformat("https://jira.firestormviewer.org/browse/%s", string.c_str());
+		return llformat("https://jira.Starbirdviewer.org/browse/%s", string.c_str());
 	}
 	else
 	{

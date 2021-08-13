@@ -54,8 +54,8 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_LL_ICON             ICON                    "firestorm_icon.ico"
-IDI_LCD_LL_ICON         ICON                    "firestorm_icon.ico"
+IDI_LL_ICON             ICON                    "Starbird_icon.ico"
+IDI_LCD_LL_ICON         ICON                    "Starbird_icon.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -67,7 +67,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDI_LL_ICON,IDC_STATIC,7,7,20,20
-    LTEXT           "Loading Firestorm ...",666,36,13,211,8
+    LTEXT           "Loading Starbird ...",666,36,13,211,8
 END
 
 
@@ -157,12 +157,12 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "CompanyName", "Virtual World Research, Inc."
-            VALUE "FileDescription", "Firestorm"
+            VALUE "FileDescription", "Starbird"
             VALUE "FileVersion", "${VIEWER_VERSION_MAJOR}.${VIEWER_VERSION_MINOR}.${VIEWER_VERSION_PATCH}.${VIEWER_VERSION_REVISION}"
-            VALUE "InternalName", "Firestorm"
+            VALUE "InternalName", "Starbird"
             VALUE "LegalCopyright", "Copyright \251 2010-2021, Virtual World Research, Inc."
-            VALUE "OriginalFilename", "Firestorm.exe"
-            VALUE "ProductName", "Firestorm"
+            VALUE "OriginalFilename", "Starbird.exe"
+            VALUE "ProductName", "Starbird"
             VALUE "ProductVersion", "${VIEWER_VERSION_MAJOR}.${VIEWER_VERSION_MINOR}.${VIEWER_VERSION_PATCH}.${VIEWER_VERSION_REVISION}"
         END
     END

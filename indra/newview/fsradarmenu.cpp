@@ -1,6 +1,6 @@
 /** 
  * @file fsradarmenu.cpp
- * @brief Menu used by Firestorm radar
+ * @brief Menu used by Starbird radar
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Second Life Viewer Source Code

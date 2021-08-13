@@ -10,7 +10,7 @@
 			<text name="ShadersPrefText2">Moyen</text>
 			<text name="ShadersPrefText3">Élevé</text>
 			<text name="ShadersPrefText4">Ultra</text>
-			<check_box label="Mode plein écran" name="Fullscreen Mode" tool_tip="Exécuter Firestorm en mode plein écran. Un redémarrage est nécessaire pour changer de mode."/>
+			<check_box label="Mode plein écran" name="Fullscreen Mode" tool_tip="Exécuter Starbird en mode plein écran. Un redémarrage est nécessaire pour changer de mode."/>
 			<text name="ShadersText">Shaders :</text>
 			<check_box label="Transparence de l'eau" name="TransparentWater"/>
 			<check_box label="Relief &amp; Brillance" name="BumpShiny"/>

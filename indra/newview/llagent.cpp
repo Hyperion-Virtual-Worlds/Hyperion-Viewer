@@ -109,7 +109,7 @@
 #include "rlvui.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// Starbird includes
 #include "fsfloaternearbychat.h"
 #include "fslslbridge.h"
 #include "llpresetsmanager.h"

@@ -133,7 +133,7 @@
 
 #include "llexperiencecache.h"
 
-// Firestorm includes
+// Starbird includes
 #include <boost/regex.hpp>
 #include "animationexplorer.h"		// <FS:Zi> Animation Explorer
 #include "fsareasearch.h"

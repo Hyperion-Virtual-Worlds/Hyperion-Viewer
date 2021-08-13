@@ -2114,14 +2114,14 @@ BOOL LLScrollListCtrl::handleRightMouseDown(S32 x, S32 y, MASK mask)
 			registrar.add("Url.CopyUrl", boost::bind(&LLScrollListCtrl::copySLURLToClipboard, id, is_group));
 
 			// <FS:Ansariel> Additional convenience options
-			registrar.add("FS.ZoomIn", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/zoom", true));
-			registrar.add("FS.TeleportToTarget", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/teleportto", true));
-			registrar.add("FS.OfferTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/offerteleport", true));
-			registrar.add("FS.RequestTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/requestteleport", true));
-			registrar.add("FS.TrackAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/track", true));
-			registrar.add("FS.AddToContactSet", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/addtocontactset", true));	// [FS:CR]
-			registrar.add("FS.BlockAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/blockavatar", true));
-			registrar.add("FS.ViewLog", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + id + "/viewlog", true));
+			registrar.add("FS.ZoomIn", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/zoom", true));
+			registrar.add("FS.TeleportToTarget", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/teleportto", true));
+			registrar.add("FS.OfferTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/offerteleport", true));
+			registrar.add("FS.RequestTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/requestteleport", true));
+			registrar.add("FS.TrackAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/track", true));
+			registrar.add("FS.AddToContactSet", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/addtocontactset", true));	// [FS:CR]
+			registrar.add("FS.BlockAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/blockavatar", true));
+			registrar.add("FS.ViewLog", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + id + "/viewlog", true));
 			// </FS:Ansariel> Additional convenience options
 
 			// <FS:Ansariel> Add enable checks for menu items
@@ -2143,9 +2143,9 @@ BOOL LLScrollListCtrl::handleRightMouseDown(S32 x, S32 y, MASK mask)
 			// <FS:Zi> FIRE-30725 - Add more group functions to group URL context menu
 			std::string uuid_str = uuid.asString();
 
-			registrar.add("FS.JoinGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupjoin", true));
-			registrar.add("FS.LeaveGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupleave", true));
-			registrar.add("FS.ActivateGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + uuid_str + "/groupactivate", true));
+			registrar.add("FS.JoinGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + uuid_str + "/groupjoin", true));
+			registrar.add("FS.LeaveGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + uuid_str + "/groupleave", true));
+			registrar.add("FS.ActivateGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + uuid_str + "/groupactivate", true));
 
 			enable_registrar.add("FS.WaitingForGroupData", boost::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, uuid, FS_RGSTR_CHK_WAITING_FOR_GROUP_DATA));
 			enable_registrar.add("FS.HaveGroupData", boost::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, uuid, FS_RGSTR_CHK_HAVE_GROUP_DATA));

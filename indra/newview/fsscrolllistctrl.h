@@ -1,6 +1,6 @@
 /** 
  * @file fsscrolllistctrl.h
- * @brief A Firestorm specific implementation of scrolllist
+ * @brief A Starbird specific implementation of scrolllist
  *
  * $LicenseInfo:firstyear=2014&license=viewerlgpl$
  * Starbird Viewer Source Code

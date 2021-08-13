@@ -85,7 +85,7 @@
 
 #include <boost/regex.hpp>
 
-// Firestorm includes
+// Starbird includes
 #include "lfsimfeaturehandler.h"
 #include "llviewermenu.h"
 #include "llviewernetwork.h"

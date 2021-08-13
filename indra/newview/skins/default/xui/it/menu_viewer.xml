@@ -229,20 +229,20 @@
 		<menu_item_call label="SL Marketplace" name="SL Marketplace"/>
 		<menu_item_call label="L$ Market Data" name="LindenXchange"/>
 		<menu_item_call label="Biblioteca script" name="Script Library"/>
-		<menu_item_call label="Firestorm Blog" name="Firestorm Blog"/>
-		<menu_item_call label="Firestorm Flickr" name="Firestorm Flickr"/>
-		<menu_item_call label="Firestorm YouTube" name="Firestorm YouTube"/>
-		<menu_item_call label="Firestorm Twitter" name="Firestorm Twitter"/>
-		<menu_item_call label="Firestorm Plurk" name="Firestorm Plurk"/>
-		<menu_item_call label="Messaggio del giorno" name="Firestorm MoTD"/>
+		<menu_item_call label="Starbird Blog" name="Starbird Blog"/>
+		<menu_item_call label="Starbird Flickr" name="Starbird Flickr"/>
+		<menu_item_call label="Starbird YouTube" name="Starbird YouTube"/>
+		<menu_item_call label="Starbird Twitter" name="Starbird Twitter"/>
+		<menu_item_call label="Starbird Plurk" name="Starbird Plurk"/>
+		<menu_item_call label="Messaggio del giorno" name="Starbird MoTD"/>
 	</menu>
 	<menu label="Aiuto" name="Help">
 		<menu_item_check label="Abilita suggerimenti interfaccia" name="Enable Hints"/>
-		<menu_item_call label="Wiki di Firestorm" name="Firestorm Wiki"/>
+		<menu_item_call label="Wiki di Starbird" name="Starbird Wiki"/>
 		<menu_item_call label="Soluzione problemi" name="Troubleshooting"/>
-		<menu_item_call label="Iscriviti a Firestorm Support Group" name="firestorm_support_group"/>
-		<menu_item_call label="Calendario lezioni su Firestorm" name="Firestorm Classes Schedule"/>
-		<menu_item_call label="Calendario eventi Firestorm" name="Firestorm Events Calendar"/>
+		<menu_item_call label="Iscriviti a Starbird Support Group" name="Starbird_support_group"/>
+		<menu_item_call label="Calendario lezioni su Starbird" name="Starbird Classes Schedule"/>
+		<menu_item_call label="Calendario eventi Starbird" name="Starbird Events Calendar"/>
 		<menu_item_call label="Guida" name="How To"/>
 		<menu_item_call label="Aiuto su [CURRENT_GRID]" name="current_grid_help"/>
 		<menu_item_call label="A proposito di [CURRENT_GRID]" name="current_grid_about"/>

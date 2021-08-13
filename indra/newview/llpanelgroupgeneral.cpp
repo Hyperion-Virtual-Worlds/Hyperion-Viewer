@@ -54,7 +54,7 @@
 #include "lltrans.h"
 #include "llviewerwindow.h"
 
-// Firestorm includes
+// Starbird includes
 #include "exogroupmutelist.h"
 #include "fsnamelistavatarmenu.h"
 #include "llclipboard.h"
@@ -137,7 +137,7 @@ BOOL LLPanelGroupGeneral::postBuild()
 	if (mListVisibleMembers)
 	{
 		mListVisibleMembers->setDoubleClickCallback(openProfile, this);
-		// <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+		// <FS:Ansariel> Special Starbird menu also allowing multi-select action
 		//mListVisibleMembers->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
 		mListVisibleMembers->setContextMenu(&gFSNameListAvatarMenu);
 		

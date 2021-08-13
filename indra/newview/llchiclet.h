@@ -32,7 +32,7 @@
 #include "llnotifications.h"
 #include "lltextbox.h"
 
-// Firestorm includes
+// Starbird includes
 #include "llgroupmgr.h"
 #include "llimview.h"
 #include "lloutputmonitorctrl.h"

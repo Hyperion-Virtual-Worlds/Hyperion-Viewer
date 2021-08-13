@@ -48,7 +48,7 @@ class LLStreamingAudioInterface
 	virtual bool supportsAdjustableBufferSizes(){return false;}
 	virtual void setBufferSizes(U32 streambuffertime, U32 decodebuffertime){};
 
-	// These three are Firestorm additions and thus optional.
+	// These three are Starbird additions and thus optional.
 	virtual bool getNewMetadata(LLSD& metadata) { return false; }
 };
 

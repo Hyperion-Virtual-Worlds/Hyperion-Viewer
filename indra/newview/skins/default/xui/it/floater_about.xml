@@ -46,15 +46,15 @@ Versione Server voce: [VOICE_VERSION]
 	<tab_container name="about_tab">
 		<panel label="Informazioni" name="support_panel">
 			<text name="support_intro">
-Per le ultime informazioni su Firestorm, visitare
-https://www.firestormviewer.org
+Per le ultime informazioni su Starbird, visitare
+https://www.Starbirdviewer.org
 			</text>
 			<button label="Copia negli appunti" name="copy_btn"/>
 			<button label="Cerca aggiornamenti" name="update_btn"/>
 		</panel>
 		<panel label="Ringraziamenti" name="credits_panel">
 			<text name="linden_intro">
-			Firestorm would not be possible without the decision from Linden Lab to make their Second Life viewer source code available.
+			Starbird would not be possible without the decision from Linden Lab to make their Second Life viewer source code available.
 			
 Second Life vi è offerto dai Linden,
 con contributi open source da:

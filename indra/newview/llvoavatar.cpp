@@ -3301,7 +3301,7 @@ void LLVOAvatar::idleUpdateLoadingEffect()
 //				setParticleSource(particle_parameters, getID());
 //			}
 
-			// Firestorm Clouds
+			// Starbird Clouds
 			// do not generate particles for dummy or overly-complex avatars
 			if (!mIsDummy && !isTooComplex())
 			{

@@ -1,6 +1,6 @@
 /**
  * @file fsconsoleutils.h
- * @brief Class for console-related functions in Firestorm
+ * @brief Class for console-related functions in Starbird
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Starbird Viewer Source Code

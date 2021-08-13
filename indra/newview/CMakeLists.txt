@@ -886,7 +886,7 @@ else (OPENSIM)
         )
 endif (OPENSIM)
 
-set(VIEWER_BINARY_NAME "firestorm-bin" CACHE STRING
+set(VIEWER_BINARY_NAME "Starbird-bin" CACHE STRING
     "The name of the viewer executable to create.")
 
 set(viewer_HEADER_FILES
@@ -1750,10 +1750,10 @@ if (DARWIN)
 
   # Add resource files to the project.
   set(viewer_RESOURCE_FILES
-    firestorm_icon.icns
+    Starbird_icon.icns
     macview.r
-    Info-Firestorm.plist
-    Firestorm.xib/
+    Info-Starbird.plist
+    Starbird.xib/
     # CMake doesn't seem to support Xcode language variants well just yet
     English.lproj/InfoPlist.strings
     English.lproj/language.txt
@@ -1832,8 +1832,8 @@ if (LINUX)
     message(STATUS "Copying icons for ${ICON_PATH}")
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/firestorm_256.bmp"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/firestorm_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.bmp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/Starbird_icon.BMP"
       )
 endif (LINUX)
 
@@ -1897,18 +1897,18 @@ if (WINDOWS)
     message(STATUS "Copying icons for ${ICON_PATH}")
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/firestorm_icon.ico"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res/firestorm_icon.ico"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_icon.ico"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res/Starbird_icon.ico"
       )
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/firestorm_256.BMP"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res/firestorm_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res/Starbird_icon.BMP"
       )
     execute_process(
       COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/firestorm_256.BMP"
-        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/firestorm_icon.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/icons/${ICON_PATH}/Starbird_256.BMP"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res-sdl/Starbird_icon.BMP"
       )
 
     # Add resource files to the project.
@@ -1944,9 +1944,9 @@ if (WINDOWS)
         res/lltooltranslate.cur
         res/lltoolzoomin.cur
         res/lltoolzoomout.cur
-        res/firestorm_icon.BMP
-        res/firestorm_icon.ico
-        res-sdl/firestorm_icon.BMP
+        res/Starbird_icon.BMP
+        res/Starbird_icon.ico
+        res-sdl/Starbird_icon.BMP
         res/resource.h
         res/toolpickobject.cur
         res/toolpickobject2.cur
@@ -2085,7 +2085,7 @@ set(viewer_APPSETTINGS_FILES
     app_settings/scriptlibrary_aa.xml
     app_settings/scriptlibrary_ossl.xml
     app_settings/scriptlibrary_preproc.xml
-    app_settings/settings_firestorm.xml
+    app_settings/settings_Starbird.xml
     app_settings/settings_hybrid.xml
     app_settings/settings_phoenix.xml
     app_settings/settings_v3.xml
@@ -2131,7 +2131,7 @@ if (NOT USESYSTEMLIBS)
     list(APPEND viewer_SOURCE_FILES ${viewer_CHARACTER_FILES})
 endif (NOT USESYSTEMLIBS)
 
-# <FS:Ansariel> Add Firestorm folders
+# <FS:Ansariel> Add Starbird folders
 file(GLOB viewer_FONT_FILES fonts/*.xml)
 source_group("Fonts" FILES ${viewer_FONT_FILES})
 set_source_files_properties(${viewer_FONT_FILES}
@@ -2139,7 +2139,7 @@ set_source_files_properties(${viewer_FONT_FILES}
 list(APPEND viewer_SOURCE_FILES ${viewer_FONT_FILES})
 
 file(GLOB viewer_FS_RESOURCES fs_resources/*)
-source_group("Firestorm Resources" FILES ${viewer_FS_RESOURCES})
+source_group("Starbird Resources" FILES ${viewer_FS_RESOURCES})
 set_source_files_properties(${viewer_FS_RESOURCES}
                             PROPERTIES HEADER_FILE_ONLY TRUE)
 list(APPEND viewer_SOURCE_FILES ${viewer_FS_RESOURCES})
@@ -2549,7 +2549,7 @@ set(ARTWORK_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE PATH
     "Path to artwork files.")
 
 if (LINUX)
-  set(product Firestorm-${ARCH}-${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION})
+  set(product Starbird-${ARCH}-${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION})
 
   # These are the generated targets that are copied to package/
 if (NOT ENABLE_MEDIA_PLUGINS)
@@ -2654,18 +2654,17 @@ if (DARWIN)
   # These all get set with PROPERTIES. It's not that the property names are
   # magically known to CMake -- it's that these names are referenced in the
   # Info-SecondLife.plist file in the configure_file() directive below.
-  #set(product "${VIEWER_CHANNEL}")
-  set(product "Firestorm")
-  set(MACOSX_EXECUTABLE_NAME "Firestorm")
-  set(MACOSX_BUNDLE_INFO_STRING "Firestorm Viewer")
-  set(MACOSX_BUNDLE_ICON_FILE "firestorm_icon.icns")
-  set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.phoenixviewer.firestorm.viewer-${ND_VIEWER_FLAVOR}")
+  set(product "Starbird")
+  set(MACOSX_EXECUTABLE_NAME "Starbird")
+  set(MACOSX_BUNDLE_INFO_STRING "Starbird Viewer")
+  set(MACOSX_BUNDLE_ICON_FILE "starbird_icon.icns")
+  set(MACOSX_BUNDLE_GUI_IDENTIFIER "com..starbird.viewer-${ND_VIEWER_FLAVOR}")
   set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VIEWER_CHANNEL} ${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
-  set(MACOSX_BUNDLE_BUNDLE_NAME "Firestorm")
+  set(MACOSX_BUNDLE_BUNDLE_NAME "Starbird")
   set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
   set(MACOSX_BUNDLE_BUNDLE_VERSION "${VIEWER_SHORT_VERSION}${VIEWER_MACOSX_PHASE}${VIEWER_REVISION}")
   set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2021 Virtual World Research, Inc.")
-  set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Firestorm.nib")
+  set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Starbird.nib")
   set(MACOSX_BUNDLE_NSPRINCIPAL_CLASS "LLApplication")
 
   # https://blog.kitware.com/upcoming-in-cmake-2-8-12-osx-rpath-support/
@@ -2681,9 +2680,9 @@ if (DARWIN)
     # does not work. Try this:
     LINK_FLAGS "-rpath @loader_path/../Frameworks"
     MACOSX_BUNDLE_INFO_PLIST
-    # <FS:CR> Use Firestorm plist
+    # <FS:CR> Use Starbird plist
     #"${CMAKE_CURRENT_SOURCE_DIR}/Info-SecondLife.plist"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Info-Firestorm.plist"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Info-Starbird.plist"
     )
 
   set(VIEWER_APP_BUNDLE "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/${product}.app")
@@ -2692,9 +2691,9 @@ if (DARWIN)
   set(VIEWER_APP_XCARCHIVE "${VIEWER_APP_BUNDLE}/../${product}.xcarchive.zip")
 
   configure_file(
-     # <FS:CR> Use Firestorm plist
+     # <FS:CR> Use Starbird plist
      #"${CMAKE_CURRENT_SOURCE_DIR}/Info-SecondLife.plist"
-     "${CMAKE_CURRENT_SOURCE_DIR}/Info-Firestorm.plist"
+     "${CMAKE_CURRENT_SOURCE_DIR}/Info-Starbird.plist"
      "${VIEWER_APP_BUNDLE}/Contents/Info.plist"
     )
 
@@ -2796,7 +2795,7 @@ if (PACKAGE AND (RELEASE_CRASH_REPORTING OR NON_RELEASE_CRASH_REPORTING) AND VIE
     if (LINUX)
       list(APPEND SYMBOL_SEARCH_DIRS "${CMAKE_CURRENT_BINARY_DIR}/packaged")
 ##      set(VIEWER_EXE_GLOBS "do-not-directly-run-secondlife-bin SLPlugin")
-      set(VIEWER_EXE_GLOBS "do-not-directly-run-firestorm-bin")
+      set(VIEWER_EXE_GLOBS "do-not-directly-run-Starbird-bin")
       set(VIEWER_LIB_GLOB "*${CMAKE_SHARED_MODULE_SUFFIX}*")
       set(VIEWER_COPY_MANIFEST copy_l_viewer_manifest)
     endif (LINUX)
@@ -2850,8 +2849,8 @@ if (PACKAGE AND (RELEASE_CRASH_REPORTING OR NON_RELEASE_CRASH_REPORTING) AND VIE
           "${VIEWER_SYMBOL_FILE_CYGWIN}"
           "-C"
           "${PARENT_DIRECTORY_CYGWIN}"
-          "firestorm-bin.pdb"
-        DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/firestorm-bin.pdb"
+          "Starbird-bin.pdb"
+        DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/Starbird-bin.pdb"
         COMMENT "Packing viewer PDB into ${VIEWER_SYMBOL_FILE_CYGWIN}"
         )
       add_custom_target(generate_symbols DEPENDS "${VIEWER_SYMBOL_FILE}" ${VIEWER_BINARY_NAME})

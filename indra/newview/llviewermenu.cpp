@@ -145,7 +145,7 @@
 #include "rlvlocks.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// Starbird includes
 #include "fsassetblacklist.h"
 #include "fsdata.h"
 #include "fslslbridge.h"
@@ -9635,7 +9635,7 @@ class LLSomethingSelectedNoHUD : public view_listener_t
 static bool is_editable_selected()
 {
 // [RLVa:KB] - Checked: 2010-09-28 (RLVa-1.2.1f) | Modified: RLVa-1.0.5a
-	// Changed for Firestorm because of script reset function in object menus (see FIRE-8213)
+	// Changed for Starbird because of script reset function in object menus (see FIRE-8213)
 	if (rlv_handler_t::isEnabled())
 	{
 		LLObjectSelectionHandle hSelection = LLSelectMgr::getInstance()->getSelection();

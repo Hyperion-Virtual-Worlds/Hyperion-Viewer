@@ -340,8 +340,8 @@ int LLCrashLoggerWindows::processingLoop() {
 
 	// std::string per_run_file = per_run_dir + "\\SecondLife.log";
     // std::string log_file = gDirUtilp->getExpandedFilename(LL_PATH_LOGS,"SecondLife.log");
-	std::string per_run_file = per_run_dir + "\\Firestorm.log";
-    std::string log_file = gDirUtilp->getExpandedFilename(LL_PATH_LOGS,"Firestorm.log");
+	std::string per_run_file = per_run_dir + "\\Starbird.log";
+    std::string log_file = gDirUtilp->getExpandedFilename(LL_PATH_LOGS,"Starbird.log");
 
 	// </FS:ND>
 

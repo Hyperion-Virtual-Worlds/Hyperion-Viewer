@@ -517,7 +517,7 @@ public:
 
 // <FS:Ansariel> FS Help SLUrl
 ///
-/// FSHelpDebugUrlEntrySL Describes a Firestorm Help SLURL, e.g.
+/// FSHelpDebugUrlEntrySL Describes a Starbird Help SLURL, e.g.
 /// secondlife://app/fshelp/showdebug/DisplayIM
 ///
 class FSHelpDebugUrlEntrySL : public LLUrlEntryBase

@@ -1,6 +1,6 @@
 /**
  * @file fsfloaterblocklist.cpp
- * @brief Class for the standalone blocklist in Firestorm
+ * @brief Class for the standalone blocklist in Starbird
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Starbird Viewer Source Code

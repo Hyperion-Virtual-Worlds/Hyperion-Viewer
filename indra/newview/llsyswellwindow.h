@@ -34,7 +34,7 @@
 #include "lltransientdockablefloater.h"
 #include "llinitdestroyclass.h"
 
-// Firestorm includes
+// Starbird includes
 #include "llbutton.h"
 #include "llscreenchannel.h"
 #include "llscrollcontainer.h"

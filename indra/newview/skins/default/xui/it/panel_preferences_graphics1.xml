@@ -26,7 +26,7 @@
 			<text name="ShadersPrefText4">
 				Ultra
 			</text>
-			<check_box label="A tutto schermo" name="Fullscreen Mode" tool_tip="Avvia Firestorm in modalità schermo intero (richiede riavvio)"/>
+			<check_box label="A tutto schermo" name="Fullscreen Mode" tool_tip="Avvia Starbird in modalità schermo intero (richiede riavvio)"/>
 			<text name="ShadersText">
 				Effetti grafici:
 			</text>

@@ -1,6 +1,6 @@
 /**
  * @file fsradar.cpp
- * @brief Firestorm radar implementation
+ * @brief Starbird radar implementation
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Copyright (c) 2013 Ansariel Hiller @ Second Life

@@ -33,7 +33,7 @@
 #include "llsyswellwindow.h"
 #include "llfloaternotificationstabbed.h"
 
-// Firestorm includes
+// Starbird includes
 #include "fsfloaterim.h"
 #include "llfloaterreg.h"
 

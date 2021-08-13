@@ -831,7 +831,7 @@ LLSD FSData::allowedLogin()
 	}
 }
 
-bool FSData::isFirestormGroup(const LLUUID& id)
+bool FSData::isStarbirdGroup(const LLUUID& id)
 {
 	return isSupportGroup(id) || isTestingGroup(id);
 }
@@ -928,7 +928,7 @@ std::string FSData::processRequestForInfo(const LLUUID& requester, const std::st
 	LLSD args;
 	args["REASON"] = reason;
 	args["NAME"] = name;
-	LLNotifications::instance().add("FireStormReqInfo", args, LLSD().with("from_id", requester).with("session_id", sessionid), callbackReqInfo);
+	LLNotifications::instance().add("StarbirdReqInfo", args, LLSD().with("from_id", requester).with("session_id", sessionid), callbackReqInfo);
 
 	return outmessage;
 }

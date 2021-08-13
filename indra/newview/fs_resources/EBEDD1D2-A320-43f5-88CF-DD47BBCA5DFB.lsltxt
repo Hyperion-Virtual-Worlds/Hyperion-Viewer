@@ -1,5 +1,5 @@
 // HTTP Bridge script
-// Firestorm
+// Starbird
 // Tozh Taurog, Arrehn Oberlander, Tonya Souther
 
 //
@@ -9,7 +9,7 @@
     // Bridge platform
     string BRIDGE_VERSION = "2.27"; // This should match fslslbridge.cpp
     string gLatestURL;
-    integer gViewerIsFirestorm;
+    integer gViewerIsStarbird;
     integer gTryHandshakeOnce = TRUE;
     key gOwner;
 
@@ -216,7 +216,7 @@ default
 
             // Assume the worst and let the viewer convince us otherwise
             gTryHandshakeOnce = TRUE;
-            gViewerIsFirestorm = FALSE;
+            gViewerIsStarbird = FALSE;
             requestBridgeURL();
 
         }
@@ -395,16 +395,16 @@ default
         if (Method == URL_REQUEST_GRANTED)
         {
             gLatestURL = Body;
-            if (gViewerIsFirestorm || gTryHandshakeOnce)
+            if (gViewerIsStarbird || gTryHandshakeOnce)
             {
-                // Firestorm viewer and handshake
+                // Starbird viewer and handshake
                 llOwnerSay("<bridgeURL>" + gLatestURL + "</bridgeURL><bridgeAuth>BRIDGEKEY</bridgeAuth><bridgeVer>" + BRIDGE_VERSION + "</bridgeVer>");
                 gTryHandshakeOnce = FALSE;
             }
             else
             {
                 // We're in a wrong viewer, just sit quietly and call llDetachFromAvatar();
-                // This place is reached via CHANGED_REGION - when gViewerIsFirestorm is still not Firestorm and handshake was already done (gTryHandshakeOnce is FALSE)
+                // This place is reached via CHANGED_REGION - when gViewerIsStarbird is still not Starbird and handshake was already done (gTryHandshakeOnce is FALSE)
                 detachBridge();
             }
         }
@@ -580,7 +580,7 @@ default
             else if (cmd == "URL Confirmed")
             {
                 // We're in the right viewer, go on.
-                gViewerIsFirestorm = TRUE;
+                gViewerIsStarbird = TRUE;
             }
 
             else if (cmd == "DetachBridge")

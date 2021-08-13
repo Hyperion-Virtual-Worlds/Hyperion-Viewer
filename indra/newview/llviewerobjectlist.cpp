@@ -1967,7 +1967,7 @@ void LLViewerObjectList::renderObjectsForMap(LLNetMap &netmap)
 	LLColor4 group_own_below_water_color = 
 						colortable.getColor( "NetMapGroupOwnBelowWater" );
 
-// <FS:CR> FIRE-1846: Firestorm netmap enhancements
+// <FS:CR> FIRE-1846: Starbird netmap enhancements
 	LLColor4 you_own_physical_color = colortable.getColor ( "NetMapYouPhysical", LLColor4::red );
 	LLColor4 group_own_physical_color = colortable.getColor ( "NetMapGroupPhysical", LLColor4::green );
 	LLColor4 other_own_physical_color = colortable.getColor ( "NetMapOtherPhysical", LLColor4::green );
@@ -2054,7 +2054,7 @@ void LLViewerObjectList::renderObjectsForMap(LLNetMap &netmap)
 			color = below_water_color;
 		}
 		
-// <FS:CR> FIRE-1846: Firestorm netmap enhancements
+// <FS:CR> FIRE-1846: Starbird netmap enhancements
 		if (fs_netmap_scripted && objectp->flagScripted())
 		{
 			color = scripted_object_color;

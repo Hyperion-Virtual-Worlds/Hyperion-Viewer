@@ -39,19 +39,19 @@ endif(WINDOWS OR DARWIN)
 
 if( NOT USESYSTEMLIBS ) # <FS:ND/> Don't add any autobuild dirs when building standalone
 
-# <FS:Ansariel> Changed for Firestorm
+# <FS:Ansariel> Changed for Starbird
 #if (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "Release")
 if (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS_AVX" AND NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS" AND NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS_open")
-# </FS:Ansariel> Changed for Firestorm
+# </FS:Ansariel> Changed for Starbird
   # When we're building something other than Release, append the
   # packages/lib/release directory to deal with autobuild packages that don't
   # provide (e.g.) lib/debug libraries.
   list(APPEND AUTOBUILD_LIBS_INSTALL_DIRS ${ARCH_PREBUILT_DIRS_RELEASE})
 
-# <FS:Ansariel> Changed for Firestorm
+# <FS:Ansariel> Changed for Starbird
 #endif (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "Release")
 endif (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS_AVX" AND NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS" AND NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseFS_open")
-# </FS:Ansariel> Changed for Firestorm
+# </FS:Ansariel> Changed for Starbird
 
 link_directories(${AUTOBUILD_LIBS_INSTALL_DIRS})
 

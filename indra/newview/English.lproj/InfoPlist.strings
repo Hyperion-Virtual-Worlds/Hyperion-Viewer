@@ -1,6 +1,6 @@
 /* Localized versions of Info.plist keys */
 
-CFBundleName = "Firestorm";
+CFBundleName = "Starbird";
 
-CFBundleShortVersionString = "Firestorm version %%VERSION%%";
-CFBundleGetInfoString = "Firestorm version %%VERSION%%, Copyright 2021 Virtual World Research, Inc.";
+CFBundleShortVersionString = "Starbird version %%VERSION%%";
+CFBundleGetInfoString = "Starbird version %%VERSION%%, Copyright 2021 Virtual World Research, Inc.";

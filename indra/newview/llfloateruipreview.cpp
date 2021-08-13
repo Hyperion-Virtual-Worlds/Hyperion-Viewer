@@ -652,7 +652,7 @@ void LLFloaterUIPreview::refreshList()
 	BOOL found = TRUE;
 
 	// <FS:Ansariel> Floaters from Exodus
-	while(found)				// for every firestorm custom file that matches the pattern
+	while(found)				// for every Starbird custom file that matches the pattern
 	{
 		if((found = gDirUtilp->getNextFileInDir(getLocalizedDirectory(), "exo_*.xml", name)))	// get next file matching pattern
 		{
@@ -670,16 +670,16 @@ void LLFloaterUIPreview::refreshList()
 			addFloaterEntry(name.c_str());	// and add it to the list (file name only; localization code takes care of rest of path)
 		}
 	}
-	// ## Zi: Firestorm custom floaters
+	// ## Zi: Starbird custom floaters
 	found = TRUE;
-	while(found)				// for every firestorm custom file that matches the pattern
+	while(found)				// for every Starbird custom file that matches the pattern
 	{
 		if((found = gDirUtilp->getNextFileInDir(getLocalizedDirectory(), "fs_*.xml", name)))	// get next file matching pattern
 		{
 			addFloaterEntry(name.c_str());	// and add it to the list (file name only; localization code takes care of rest of path)
 		}
 	}
-	// ## Zi: Firestorm custom floaters
+	// ## Zi: Starbird custom floaters
 	found = TRUE;
 
 	LLDirIterator inspect_iter(getLocalizedDirectory(), "inspect_*.xml");

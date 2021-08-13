@@ -175,11 +175,11 @@ LLViewerFolderDictionary::LLViewerFolderDictionary()
 
 	addEntry(LLFolderType::FT_NONE, 				new ViewerFolderEntry("New Folder",				"Inv_FolderOpen",		"Inv_FolderClosed",		FALSE,     false, "default"));
 
-	// <FS:Ansariel> Special Firestorm folder
-	addEntry(LLFolderType::FT_FIRESTORM, 			new ViewerFolderEntry("Firestorm",				"Inv_FirestormOpen",	"Inv_FirestormClosed",	FALSE,     true));
+	// <FS:Ansariel> Special Starbird folder
+	addEntry(LLFolderType::FT_Starbird, 			new ViewerFolderEntry("Starbird",				"Inv_StarbirdOpen",	"Inv_StarbirdClosed",	FALSE,     true));
 	addEntry(LLFolderType::FT_PHOENIX, 				new ViewerFolderEntry("Phoenix",				"Inv_PhoenixOpen",		"Inv_PhoenixClosed",	FALSE,     true));
 	addEntry(LLFolderType::FT_RLV,					new ViewerFolderEntry("RLV",					"Inv_RLVOpen",			"Inv_RLVClosed",		FALSE,     true));
-	// </FS:Ansariel> Special Firestorm folder
+	// </FS:Ansariel> Special Starbird folder
 
 	// <FS:Ansariel> OpenSim HG-support
 	addEntry(LLFolderType::FT_MY_SUITCASE,			new ViewerFolderEntry("My Suitcase",			"Inv_SuitcaseOpen",		"Inv_SuitcaseClosed",	FALSE,     true));

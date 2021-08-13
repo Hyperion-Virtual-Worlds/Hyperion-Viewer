@@ -49,7 +49,7 @@
 #include "rlvhandler.h"
 // [/RLVa:KB]
 
-// Firestorm includes
+// Starbird includes
 #include "exogroupmutelist.h"
 #include "fscommon.h"
 #include "fsdata.h"

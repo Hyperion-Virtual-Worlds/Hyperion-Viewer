@@ -3,15 +3,15 @@
 	<tab_container name="about_tab">
 		<panel label="Info" name="support_panel">
     <text name="support_intro">    
-Aktuelle Informationen über Firestorm finden Sie unter
-https://www.firestormviewer.org
+Aktuelle Informationen über Starbird finden Sie unter
+https://www.Starbirdviewer.org
     </text>
 			<button label="In Zwischenablage kopieren" name="copy_btn"/>
 			<button label="Nach Updates suchen" name="update_btn"/>
 		</panel>
 		<panel label="Danksagung" name="credits_panel">
 			<text name="linden_intro">
-Ohne Linden Labs Entscheidung, den Second Life-Viewer quelloffen zu machen, wäre Firestorm nicht möglich gewesen.
+Ohne Linden Labs Entscheidung, den Second Life-Viewer quelloffen zu machen, wäre Starbird nicht möglich gewesen.
 
 Second Life wird präsentiert von den Lindens,
 mit Open-Source-Beiträgen von:
@@ -20,23 +20,23 @@ mit Open-Source-Beiträgen von:
 				Dummy-Name wird zur Laufzeit ersetzt
 			</text_editor>
 		</panel>
-<!-- Firestorm Credits -->
-		<panel label="Firestorm" name="fs_credits_panel" height="860">
+<!-- Starbird Credits -->
+		<panel label="Starbird" name="fs_credits_panel" height="860">
 			<scroll_container name="fs_credits_scroll_container">
 				<panel name="fs_credits_scroll_container_content_panel">
-					<text name="firestorm_intro" height="120">
-Firestorm ist ein Community-Projekt, um das SecondLife(tm)-Viewer-Erlebnis zu verbessern. Wir verbinden Beiträge von Community-Entwicklern mit Code von Linden Lab sowie eigenen Erweiterungen, um ein qualitativ hochwertiges und funktionsreiches Viewer-Erlebnis zu bieten. Wir werden durch ein großes, freiwilliges Support-Team unterstützt. Firestorm wird Ihnen präsentiert von Virtual World Research, Inc., einer gemeinnützigen Organisation.
+					<text name="Starbird_intro" height="120">
+Starbird ist ein Community-Projekt, um das SecondLife(tm)-Viewer-Erlebnis zu verbessern. Wir verbinden Beiträge von Community-Entwicklern mit Code von Linden Lab sowie eigenen Erweiterungen, um ein qualitativ hochwertiges und funktionsreiches Viewer-Erlebnis zu bieten. Wir werden durch ein großes, freiwilliges Support-Team unterstützt. Starbird wird Ihnen präsentiert von Virtual World Research, Inc., einer gemeinnützigen Organisation.
 
-Das Firestorm Entwickler-Team:
+Das Starbird Entwickler-Team:
 					</text>
 					<text name="fs_contrib_intro" >
 Zusätzlicher Programmcode von:
 					</text>
 					<text name="fs_support_intro" >
-Besonderer Dank gilt unserem Firestorm-Support-Team sowie den Wiki-Autoren, Schulungsleitern und Übersetzern:
+Besonderer Dank gilt unserem Starbird-Support-Team sowie den Wiki-Autoren, Schulungsleitern und Übersetzern:
 					</text>
 					<text name="fs_art_intro" >
-Firestorm enthält Starlight, modifiziert für Firestorm. Es ist von Einwohnern für Einwohner und hat das Ziel, eine alternative, freundlichere und hoffentlich einfacher zu bedienende Oberfläche bereitzustellen. Für weitere Details, siehe &lt;nolink&gt;https://wiki.secondlife.com/wiki/Viewer_Skins/Starlight&lt;/nolink&gt;.
+Starbird enthält Starlight, modifiziert für Starbird. Es ist von Einwohnern für Einwohner und hat das Ziel, eine alternative, freundlichere und hoffentlich einfacher zu bedienende Oberfläche bereitzustellen. Für weitere Details, siehe &lt;nolink&gt;https://wiki.secondlife.com/wiki/Viewer_Skins/Starlight&lt;/nolink&gt;.
 
 UI-Künstler und Designer:
 					</text>

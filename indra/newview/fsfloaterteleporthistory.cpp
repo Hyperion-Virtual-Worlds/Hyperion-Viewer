@@ -1,6 +1,6 @@
 /**
  * @file fsfloaterteleporthistory.cpp
- * @brief Class for the standalone teleport history in Firestorm
+ * @brief Class for the standalone teleport history in Starbird
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Starbird Viewer Source Code

@@ -8,7 +8,7 @@
 		Second Life Grid
 	</string>
 	<string name="SUPPORT_SITE">
-		Firestorm サポートポータル
+		Starbird サポートポータル
 	</string>
 	<string name="StartupDetectingHardware">
 		ハードウェアの検出中です...
@@ -148,14 +148,14 @@
 		終了
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.Starbirdviewer.org/join-secondlife/
 	</string>
 	<string name="ViewerDownloadURL">
-		https://www.firestormviewer.org/choose-your-platform/
+		https://www.Starbirdviewer.org/choose-your-platform/
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		お使いの古いビューワでは Second Life にアクセスできません。以下のページから新しいビューワをダウンロードしてください：
-https://www.firestormviewer.org/choose-your-platform/
+https://www.Starbirdviewer.org/choose-your-platform/
 
 詳細については、FAQ を参照してください：
 http://secondlife.com/viewer-access-faq
@@ -676,7 +676,7 @@ support@secondlife.com にお問い合わせください。
 	<string name="AssetUploadServerUnavaliable">サービスが利用できないか、アップロードのタイムアウト上限に達しています。</string>
 	<string name="AssetUploadRequestInvalid">
 アップロードの要求中にエラーが発生しました。この問題を解決するには、次のページを参照して下さい。
-https://www.firestormviewer.org/support
+https://www.Starbirdviewer.org/support
 	</string>
 	
 	<!-- Settings errors -->
@@ -5850,7 +5850,7 @@ www.secondlife.com から最新バージョンをダウンロードしてくだ�
 		インワールドでのコールや近くにいる人の音量調整
 	</string>
 	
-<!-- Firestorm commands added Jun.30, 2013 -->
+<!-- Starbird commands added Jun.30, 2013 -->
 	<string name="Command_Quickprefs_Tooltip">
 		よく使う設定を変更する場合のクィック設定
 	</string>
@@ -5911,7 +5911,7 @@ www.secondlife.com から最新バージョンをダウンロードしてくだ�
 	<string name="Command_Radar_Tooltip">
 		レーダーを開いて近くにいるアバターを表示する
 	</string>
-<!-- Firestorm commands added Jun.30, 2013 -->
+<!-- Starbird commands added Jun.30, 2013 -->
 
 	<string name="Command_Conversation_Log_Tooltip">
 		会話ログを開いて過去に交わしたチャットをテキストで確認します。
@@ -6314,7 +6314,7 @@ Secondlife.com のサポートセクションから
 	<string name="FSWithHavok">Havok 対応</string>
 	<string name="FSWithOpensim">OpenSim 対応</string>
 
-	<!-- Firestorm search -->
+	<!-- Starbird search -->
   <string name="not_found">&apos;[TEXT]&apos; は見つかりません</string>
   <string name="no_results">該当なし</string>
   <string name="searching">検索中...</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel label="Firestorm" name="firestorm">
+<panel label="Starbird" name="Starbird">
 
-<tab_container label="Firestorm Prefs" name="tabs" >
+<tab_container label="Starbird Prefs" name="tabs" >
 
 
 	<!-- Extras -->
@@ -87,7 +87,7 @@
 
 	<!-- アバター -->
 	
-	<panel label="アバター" name="firestorm_avatar" >
+	<panel label="アバター" name="Starbird_avatar" >
 
         <text name="HeadMovement" >
             マウスを追いかけるアバターの頭の動き（動かしたくない時は0に設定）：

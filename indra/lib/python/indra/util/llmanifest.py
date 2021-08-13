@@ -91,7 +91,7 @@ def get_default_platform(dummy):
             }[sys.platform]
 
 DEFAULT_SRCTREE = os.path.dirname(sys.argv[0])
-CHANNEL_VENDOR_BASE = 'Firestorm'
+CHANNEL_VENDOR_BASE = 'Starbird'
 RELEASE_CHANNEL = CHANNEL_VENDOR_BASE + ' Development'
 
 BASE_ARGUMENTS=[
@@ -229,7 +229,7 @@ def main(extra=[]):
             args['version'] = vf.read().strip().split('.')
         except:
             print "Unable to read versionfile '%s'" % args['versionfile']
-            # <FS:ND> This will break copy_w_viewer_manifest on Windows 32 and 64 bit builds, the versionfile will not create until the firestorm project.
+            # <FS:ND> This will break copy_w_viewer_manifest on Windows 32 and 64 bit builds, the versionfile will not create until the Starbird project.
             # As copy_w_viewer_manifest does not seem to need the version attribute, we supress the exception for now.
             # raise
 

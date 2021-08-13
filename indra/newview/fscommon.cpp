@@ -1,6 +1,6 @@
 /**
  * @file fscommon.cpp
- * @brief Central class for common used functions in Firestorm
+ * @brief Central class for common used functions in Starbird
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Starbird Viewer Source Code

@@ -51,7 +51,7 @@ import shlex
 import zipfile
 #</FS:AO>
 
-from fs_viewer_manifest import FSViewerManifest #<FS:ND/> Manifest extensions for Firestorm
+from fs_viewer_manifest import FSViewerManifest #<FS:ND/> Manifest extensions for Starbird
 
 viewer_dir = os.path.dirname(__file__)
 # Add indra/lib/python to our path so we don't have to muck with PYTHONPATH.
@@ -175,7 +175,7 @@ class ViewerManifest(LLManifest,FSViewerManifest):
                 self.path("*.txt")
                 self.path("*.xml")
                 
-            # <FS:AO> Include firestorm resources
+            # <FS:AO> Include Starbird resources
             with self.prefix(src_dst="fs_resources"):
                 self.path("*.lsltxt")
                 self.path("*.dae") # <FS:Beq> FIRE-30963 - better physics defaults
@@ -190,7 +190,7 @@ class ViewerManifest(LLManifest,FSViewerManifest):
                             self.path("*/*.png")
                             self.path("*.tga")
                             self.path("*.j2c")
-                            self.path("*.jpg") # <FS:Ansariel> Needed for Firestorm
+                            self.path("*.jpg") # <FS:Ansariel> Needed for Starbird
                             self.path("*.png")
                             self.path("textures.xml")
                     self.path("*/xui/*/*.xml")
@@ -302,11 +302,11 @@ class ViewerManifest(LLManifest,FSViewerManifest):
     def installer_base_name(self):
         global CHANNEL_VENDOR_BASE
         # a standard map of strings for replacing in the templates
-        #<FS:TS> tag "OS" after CHANNEL_VENDOR_BASE and before any suffix
-        channel_base = "Phoenix-" + CHANNEL_VENDOR_BASE
+        # tag "OS" after CHANNEL_VENDOR_BASE and before any suffix
+        channel_base = CHANNEL_VENDOR_BASE
         if self.fs_is_opensim():
             channel_base = channel_base + "OS"
-        #</FS:TS>
+
         substitution_strings = {
             'channel_vendor_base' : '_'.join(channel_base.split()),
             'channel_variant_underscores':self.channel_variant_app_suffix(),
@@ -574,8 +574,8 @@ class WindowsManifest(ViewerManifest):
         debpkgdir = os.path.join(pkgdir, "lib", "debug")
 
         if self.is_packaging_viewer():
-            # Find firestorm-bin.exe in the 'configuration' dir, then rename it to the result of final_exe.
-            self.path(src='%s/firestorm-bin.exe' % self.args['configuration'], dst=self.final_exe())
+            # Find Starbird-bin.exe in the 'configuration' dir, then rename it to the result of final_exe.
+            self.path(src='%s/Starbird-bin.exe' % self.args['configuration'], dst=self.final_exe())
 
             # <FS:Ansariel> Remove VMP
             #with self.prefix(src=os.path.join(pkgdir, "VMP")):
@@ -851,16 +851,14 @@ class WindowsManifest(ViewerManifest):
 
         substitution_strings = self.fs_splice_grid_substitution_strings( substitution_strings ) #<FS:ND/> Add grid args
 
-        # <FS:ND> Properly name OS version, also add Phoenix- in front of installer name
-        #installer_file = self.installer_base_name() + '_Setup.exe'
-        installer_file = "Phoenix-%(app_name)s-%(version_dashes)s_Setup.exe" % substitution_strings
-        # </FS:ND>
+        # Properly name OS version
+        installer_file = "%(app_name)s-%(version_dashes)s_Setup.exe" % substitution_strings
         
         substitution_strings['installer_file'] = installer_file
         substitution_strings['is64bit'] = (1 if (self.address_size == 64) else 0)
-        substitution_strings['is_opensim'] = self.fs_is_opensim() # <FS:Ansariel> FIRE-30446: Register hop-protocol for OS version only
-        substitution_strings['friendly_app_name'] = self.friendly_app_name() # <FS:Ansariel> FIRE-30446: Set FriendlyAppName for protocol registrations
-        substitution_strings['icon_suffix'] = ("_os" if (self.fs_is_opensim()) else "") # <FS:Ansariel> FIRE-24335: Use different icon for OpenSim version
+        substitution_strings['is_opensim'] = self.fs_is_opensim() # FIRE-30446: Register hop-protocol for OS version only
+        substitution_strings['friendly_app_name'] = self.friendly_app_name() # FIRE-30446: Set FriendlyAppName for protocol registrations
+        substitution_strings['icon_suffix'] = ("_os" if (self.fs_is_opensim()) else "") # FIRE-24335: Use different icon for OpenSim version
 
         version_vars = """
         !define INSTEXE "SLVersionChecker.exe"
@@ -895,7 +893,7 @@ class WindowsManifest(ViewerManifest):
             engage_registry="SetRegView 32"
             program_files=""
 
-        tempfile = "firestorm_setup_tmp.nsi"
+        tempfile = "Starbird_setup_tmp.nsi"
 
         self.fs_sign_win_binaries() # <FS:ND/> Sign files, step one. Sign compiled binaries
 
@@ -1335,7 +1333,7 @@ class DarwinManifest(ViewerManifest):
     def construct(self):
         # copy over the build result (this is a no-op if run within the xcode script)
         # self.path(os.path.join(self.args['configuration'], self.channel()+".app"), dst="")
-        self.path(os.path.join(self.args['configuration'], "Firestorm.app"), dst="")
+        self.path(os.path.join(self.args['configuration'], "Starbird.app"), dst="")
 
         pkgdir = os.path.join(self.args['build'], os.pardir, 'packages')
         relpkgdir = os.path.join(pkgdir, "lib", "release")
@@ -1389,9 +1387,9 @@ class DarwinManifest(ViewerManifest):
 
                 icon_path = self.icon_path()
                 with self.prefix(src=icon_path) :
-                    self.path("firestorm_icon.icns")
+                    self.path("Starbird_icon.icns")
 
-                self.path("Firestorm.nib")
+                self.path("Starbird.nib")
                 # Translations
                 self.path("English.lproj/language.txt")
                 self.replace_in(src="English.lproj/InfoPlist.strings",
@@ -1615,7 +1613,7 @@ class DarwinManifest(ViewerManifest):
         if ("package" in self.args['actions'] or 
             "unpacked" in self.args['actions']):
             self.run_command_shell('strip -S %(viewer_binary)r' %
-                             { 'viewer_binary' : self.dst_path_of('Contents/MacOS/Firestorm')})
+                             { 'viewer_binary' : self.dst_path_of('Contents/MacOS/Starbird')})
 # </FS:Ansariel> construct method VMP trampoline crazy VMP launcher juggling shamelessly replaced with old version
 
     def package_finish(self):
@@ -1659,9 +1657,9 @@ class DarwinManifest(ViewerManifest):
             # will use the release .DS_Store, and will look broken.
             # - Ambroff 2008-08-20
             #<FS:TS> Select proper directory based on flavor and build type
-            dmg_template_prefix = 'firestorm'
+            dmg_template_prefix = 'Starbird'
             if self.fs_is_opensim():
-                dmg_template_prefix = 'firestormos'
+                dmg_template_prefix = 'Starbirdos'
             dmg_template = os.path.join(
                 'installers', 'darwin', '%s-%s-dmg' % (dmg_template_prefix, self.channel_type()))
             print ("Trying template directory", dmg_template)
@@ -1839,13 +1837,13 @@ class LinuxManifest(ViewerManifest):
 
         self.path("licenses-linux.txt","licenses.txt")
         self.path("VivoxAUP.txt")
-        self.path("res/firestorm_icon.png","firestorm_icon.png")
+        self.path("res/Starbird_icon.png","Starbird_icon.png")
         with self.prefix("linux_tools"):
             self.path("client-readme.txt","README-linux.txt")
-            self.path("FIRESTORM_DESKTOPINSTALL.txt","FIRESTORM_DESKTOPINSTALL.txt")
+            self.path("Starbird_DESKTOPINSTALL.txt","Starbird_DESKTOPINSTALL.txt")
             self.path("client-readme-voice.txt","README-linux-voice.txt")
             self.path("client-readme-joystick.txt","README-linux-joystick.txt")
-            self.path("wrapper.sh","firestorm")
+            self.path("wrapper.sh","Starbird")
             with self.prefix(dst="etc"):
                 self.path("handle_secondlifeprotocol.sh")
                 self.path("register_secondlifeprotocol.sh")
@@ -1854,7 +1852,7 @@ class LinuxManifest(ViewerManifest):
             self.path("install.sh")
 
         with self.prefix(dst="bin"):
-            self.path("firestorm-bin","do-not-directly-run-firestorm-bin")
+            self.path("Starbird-bin","do-not-directly-run-Starbird-bin")
             self.path("../linux_crash_logger/linux-crash-logger","linux-crash-logger.bin")
             self.path2basename("../llplugin/slplugin", "SLPlugin") 
             #this copies over the python wrapper script, associated utilities and required libraries, see SL-321, SL-322 and SL-323
@@ -1870,9 +1868,9 @@ class LinuxManifest(ViewerManifest):
         icon_path = self.icon_path()
         print ("DEBUG: icon_path '%s'" % icon_path)
         with self.prefix(src=icon_path) :
-            self.path("firestorm_256.png","firestorm_48.png")
+            self.path("Starbird_256.png","Starbird_48.png")
             #with self.prefix(dst="res-sdl") :
-            #    self.path("firestorm_256.bmp","ll_icon.BMP")
+            #    self.path("Starbird_256.bmp","ll_icon.BMP")
 
         # plugins
         with self.prefix(src=os.path.join(self.args['build'], os.pardir, 'media_plugins'), dst="bin/llplugin"):
@@ -2066,14 +2064,12 @@ class LinuxManifest(ViewerManifest):
                   self.path("libvivoxsdk.so")
                   self.path("libvivoxplatform.so")
 
-
     def package_finish(self):
         # a standard map of strings for replacing in the templates
-        installer_name_components = ['Phoenix',self.app_name(),self.args.get('arch'),'.'.join(self.args['version'])]
+        installer_name_components = [self.app_name(),self.args.get('arch'),'.'.join(self.args['version'])]
         installer_name = "_".join(installer_name_components)
-        #installer_name = self.installer_base_name()
 
-        self.fs_delete_linux_symbols() # <FS:ND/> Delete old syms
+        self.fs_delete_linux_symbols() # Delete old syms
         self.strip_binaries()
         self.fs_save_linux_symbols() # <FS:ND/> Package symbols, add debug link
 

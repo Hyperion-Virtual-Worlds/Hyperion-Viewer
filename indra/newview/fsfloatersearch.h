@@ -1,6 +1,6 @@
 /**
  * @file fsfloatersearch.h
- * @brief Firestorm search definitions
+ * @brief Starbird search definitions
  *
  * $LicenseInfo:firstyear=2012&license=fsviewerlgpl$
  * Starbird Viewer Source Code

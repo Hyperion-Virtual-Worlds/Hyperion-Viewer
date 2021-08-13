@@ -68,7 +68,7 @@
 #include "llcallstack.h"
 #include "llcorehttputil.h"
 
-// Firestorm includes
+// Starbird includes
 #include "fslslbridge.h"
 #include "lggbeammaps.h"
 #include "piemenu.h"
@@ -3330,10 +3330,10 @@ bool LLVOAvatarSelf::sendAppearanceMessage(LLMessageSystem *mesgsys) const
 	LL_INFOS() << "Setting clientTag" << LL_ENDL;
 	LLTextureEntry* entry = getTE(0);
 	//You edit this to change the tag in your client. Yes.
-	const char* tag_client = "Firestorm";
+	const char* tag_client = "Starbird";
 	LLUUID client_name;
 	strncpy((char*)&client_name.mData[0], tag_client, UUID_BYTES);
-	static LLCachedControl<LLColor4> tag_color(gSavedPerAccountSettings, "FirestormTagColor", LLColor4(1,0,1,1));
+	static LLCachedControl<LLColor4> tag_color(gSavedPerAccountSettings, "StarbirdTagColor", LLColor4(1,0,1,1));
 	entry->setColor(tag_color);
 	//This glow is used to tell if the tag color is set or not.
 	entry->setGlow(0.1f);

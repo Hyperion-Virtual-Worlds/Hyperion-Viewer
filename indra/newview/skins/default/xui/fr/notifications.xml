@@ -82,7 +82,7 @@ Détails de l&apos;erreur : La notification, appelée &apos;[_NAME]&apos;, est i
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="BadInstallation">
-		Une erreur est survenue lors de la mise à jour de [APP_NAME].  Veuillez [https://www.firestormviewer.org/downloads télécharger la dernière version] du client.
+		Une erreur est survenue lors de la mise à jour de [APP_NAME].  Veuillez [https://www.Starbirdviewer.org/downloads télécharger la dernière version] du client.
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="LoginFailedNoNetwork">
@@ -693,7 +693,7 @@ L&apos;objet est peut-être inaccessible ou a peut-être été supprimé.
 
 Consulter [_URL] pour en savoir plus ?
 		<url name="url" option="0">
-			https://wiki.firestormviewer.org/fs_system_requirements
+			https://wiki.Starbirdviewer.org/fs_system_requirements
 		</url>
 		<usetemplate ignoretext="Mon matériel n&apos;est pas pris en charge" name="okcancelignore" notext="Non" yestext="Oui"/>
 	</notification>

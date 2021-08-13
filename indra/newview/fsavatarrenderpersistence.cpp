@@ -1,6 +1,6 @@
 /**
  * @file fsavatarrenderpersistence.cpp
- * @brief Firestorm avatar render settings persistence
+ * @brief Starbird avatar render settings persistence
  *
  * $LicenseInfo:firstyear=2016&license=viewerlgpl$
  * Copyright (c) 2016 Ansariel Hiller @ Second Life

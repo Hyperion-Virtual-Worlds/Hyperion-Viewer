@@ -31,7 +31,7 @@ Szczegóły błędu: Błąd o nazwie &apos;[_NAME]&apos; nie został odnaleziony
 		<usetemplate name="okcancelbuttons" notext="Anuluj" yestext="Tak"/>
 	</notification>
 	<notification name="BadInstallation">
-		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.firestormviewer.org/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
+		Instalacja [APP_NAME] jest uszkodzona. Proszę [https://www.Starbirdviewer.org/downloads pobrać nową kopię] przeglądarki i ponownie ją zainstalować.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Nie można połączyć z [SECOND_LIFE_GRID].
@@ -1398,7 +1398,7 @@ Możesz normalnie używać [APP_NAME], inni użytkownicy będą Cię widzieli po
 		Instalacja [APP_NAME] zakończona.
 
 Jeżeli używasz [CURRENT_GRID] po raz pierwszy to musisz stworzyć konto żeby móc się zalogować.
-Czy chcesz przejść na stronę [https://www.firestormviewer.org/join-secondlife/ firestormviewer.org] żeby stworzyć nowe konto?
+Czy chcesz przejść na stronę [https://www.Starbirdviewer.org/join-secondlife/ Starbirdviewer.org] żeby stworzyć nowe konto?
 		<usetemplate name="okcancelbuttons" notext="Kontynuuj" yestext="Stwórz konto..."/>
 	</notification>
 	<notification name="LoginCantRemoveUsername">
@@ -3486,11 +3486,11 @@ Przycisk zostanie wyświetlony w przypadku dostatecznej ilości przestrzeni.
 	</notification>
 	<notification name="MeshUploadErrorDetails">
 		Nie można przesłać [LABEL]: [MESSAGE]
-[DETAILS] Zobacz Firestorm.log, aby dowiedzieć się więcej.
+[DETAILS] Zobacz Starbird.log, aby dowiedzieć się więcej.
 	</notification>
 	<notification name="MeshUploadError">
 		Nie można przesłać [LABEL]: [MESSAGE]
-Zobacz Firestorm.log, aby dowiedzieć się więcej.
+Zobacz Starbird.log, aby dowiedzieć się więcej.
 	</notification>
 	<notification name="MeshUploadPermError">
 		Wystąpił błąd podczas pobierania uprawnień przesyłania meszy.
@@ -3591,7 +3591,7 @@ Porty, które muszą być otwarte dla połączeń głosowych, to:
 Proszę sprawdź swoją sieć i ustawienia firewall.
 Wyłącz wszelkie funkcjonalności SIP ALG (Application Layer Gateway) w swoim routerze.
 
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
 		<usetemplate name="okignore" ignoretext="Ostrzegaj mnie, gdy przeglądarka nie może połączyć się z serwerem głosu" />
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3600,7 +3600,7 @@ Wyłącz wszelkie funkcjonalności SIP ALG (Application Layer Gateway) w swoim r
 Komunikacja głosowa nie będzie dostępna.
 Proszę sprawdź swoją sieć i ustawienia firewall.
 
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( [EXISTENCE] sekund w Second Life)
@@ -3962,7 +3962,7 @@ Nazwa może zawierać tylko znaki ASCII, za wyjątkiem ":" oraz "|".
 	<notification name="TestversionExpired">
 		Ta wersja testowa programu [APP_NAME] wygasła i nie można jej już dalej używać.
 	</notification>
-	<notification name="FireStormReqInfo">
+	<notification name="StarbirdReqInfo">
 		[NAME] prosi o wysłanie jej/mu informacji o Twojej instalacji przeglądarki [APP_NAME].
 (To dokładnie to samo, co możesz znaleźć w Pomoc -> Informacje o [APP_NAME])
 [REASON]
@@ -3993,7 +3993,7 @@ Czy chcesz jej/mu wysłać te informacje?
 	<notification name="FlightAssistEnabled">
 		Pomocnik lotu jest włączony
 	</notification>
-	<notification label="Resetuj wszystkie ustawienia" name="FirestormClearSettingsPrompt">
+	<notification label="Resetuj wszystkie ustawienia" name="StarbirdClearSettingsPrompt">
 		Resetowanie ustawień może się przydać, gdy napotykasz na jakieś problemy - pamiętaj jednak, że trzeba będzie wprowadzić od nowa wszystkie zmiany, jakie zostały przez Ciebie ustawione do tej pory.
 
 Na pewno chcesz zresetować wszystkie ustawienia?
@@ -5053,8 +5053,8 @@ Mnożnik LOD >8: Brak widocznych efektów. Może powodować błędy.
 	</notification>
 	<notification name="CurrencyURIOverrideReceived">
 		W tym regionie wybrano portal walutowy strony trzeciej.
-Należy pamiętać, że zakupy w walucie dokonywane za pośrednictwem Firestorm Viewer są transakcjami między Tobą (użytkownikiem) a dostawcą (-ami) lub sprzedawcą (-ami) waluty.
-Ani Firestorm Viewer, ani Phoenix Firestorm Viewer Project Inc., ani jego zespół nie ponoszą odpowiedzialności za jakiekolwiek koszty lub szkody wynikające bezpośrednio lub pośrednio z takich transakcji.
+Należy pamiętać, że zakupy w walucie dokonywane za pośrednictwem Starbird Viewer są transakcjami między Tobą (użytkownikiem) a dostawcą (-ami) lub sprzedawcą (-ami) waluty.
+Ani Starbird Viewer, Virtual World Research Inc., ani jego zespół nie ponoszą odpowiedzialności za jakiekolwiek koszty lub szkody wynikające bezpośrednio lub pośrednio z takich transakcji.
 Jeśli nie zgadzasz się z niniejszymi warunkami użytkowania, nie należy przeprowadzać transakcji finansowych za pomocą tej przeglądarki.
 		<usetemplate ignoretext="Kiedy region ustawia nowego pomocnika walutowego." name="okignore" />
 	</notification>
@@ -5156,7 +5156,7 @@ Pamiętaj, że nie można wybrać "otoczenia współdzielonego" i "bazowanego na
 		Zakończył się zbiorowy import Windlightów.
 	</notification>
 	<notification name="FSAOScriptedNotification">
-		Animator Firestorma: [AO_MESSAGE]
-		<usetemplate ignoretext="Ostrzegaj mnie, gdy Animator Firestorma jest proszony o dostęp przez oskryptowany obiekt" name="notifyignore" />
+		Animator Starbirda: [AO_MESSAGE]
+		<usetemplate ignoretext="Ostrzegaj mnie, gdy Animator Starbirda jest proszony o dostęp przez oskryptowany obiekt" name="notifyignore" />
 	</notification>
 </notifications>

@@ -31,7 +31,7 @@
 #include "llcombobox.h"
 #include "lldir.h"
 #include "llfoldertype.h"
-#include "llinventoryfunctions.h"	// for ROOT_FIRESTORM_FOLDER
+#include "llinventoryfunctions.h"	// for ROOT_Starbird_FOLDER
 #include "llinventorytype.h"
 #include "lllineeditor.h"
 #include "llnotificationsutil.h"
@@ -532,16 +532,16 @@ void ParticleEditor::onCopyButtonClicked()
 
 void ParticleEditor::onInjectButtonClicked()
 {
-	// first try to find the #Firestorm folder
-	LLUUID categoryID = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER);
+	// first try to find the #Starbird folder
+	LLUUID categoryID = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
 
-	// if no #Firestorm folder was found, create one
+	// if no #Starbird folder was found, create one
 	if (categoryID.isNull())
 	{
-		categoryID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_FIRESTORM_FOLDER);
+		categoryID = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_Starbird_FOLDER);
 	}
 
-	// if still no #Firestorm folder was found, try to find the default "Scripts" folder
+	// if still no #Starbird folder was found, try to find the default "Scripts" folder
 	if (categoryID.isNull())
 	{
 		std::string scriptFolderName = LLFolderType::lookup(LLFolderType::FT_LSL_TEXT);

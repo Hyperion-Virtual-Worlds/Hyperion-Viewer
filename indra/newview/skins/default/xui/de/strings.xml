@@ -8,7 +8,7 @@
 		Second Life-Grid:
 	</string>
 	<string name="SUPPORT_SITE">
-		Firestorm Support-Portal
+		Starbird Support-Portal
 	</string>
 	<string name="StartupDetectingHardware">
 		Hardware wird erfasst...
@@ -217,7 +217,7 @@ Voice-Serverversion: [VOICE_VERSION]
 		Beenden
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.Starbirdviewer.org/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Second Life Main Grid (Agni)
@@ -230,7 +230,7 @@ Voice-Serverversion: [VOICE_VERSION]
 	</string>
 	<string name="LoginFailedViewerNotPermitted">
 		Mit dem von Ihnen verwendeten Viewer ist der Zugriff auf Second Life nicht mehr möglich. Laden Sie von den folgenden Seite einen neuen Viewer herunter:
-https://www.firestormviewer.org/choose-your-platform/
+https://www.Starbirdviewer.org/choose-your-platform/
 
 Weitere Informationen finden Sie auf der folgenden FAQ-Seite: 
 http://secondlife.com/viewer-access-faq
@@ -881,7 +881,7 @@ nächsten Eigentümer angehängt werden.
 	</string>
 	<string name="AssetUploadRequestInvalid">
 Fehler in der Upload-Anforderung. Bitte besuchen Sie
-https://www.firestormviewer.org/support für Hilfe zum Lösen des Problems.
+https://www.Starbirdviewer.org/support für Hilfe zum Lösen des Problems.
 	</string>
 	<string name="SettingValidationError">
 		Validierung für das Importieren der Einstellungen [NAME] fehlgeschlagen
@@ -6477,7 +6477,7 @@ Support-Bereich der Website Secondlife.com und melden Sie das Problem.
 [https://community.secondlife.com/knowledgebase/english/error-messages-r520/#Section__3 Knowledge-Base]
 	</string>
 
-<!-- Firestorm-specific translations -->
+<!-- Starbird-specific translations -->
 	<string name="MediaFilterActionAllow">
 		erlauben
 	</string>
@@ -6662,7 +6662,7 @@ Support-Bereich der Website Secondlife.com und melden Sie das Problem.
 		mit OpenSimulator-Unterstützung
 	</string>
 
-	<!-- Firestorm search -->
+	<!-- Starbird search -->
 	<string name="not_found">
 		„[TEXT]“ nicht gefunden.
 	</string>

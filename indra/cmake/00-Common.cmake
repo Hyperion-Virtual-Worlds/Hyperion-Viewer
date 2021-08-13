@@ -251,7 +251,7 @@ if (DARWIN)
   # NOTE: it's critical to have both CXX_FLAGS and C_FLAGS covered.
 ## Really?? On developer machines too?
 ##set(ENABLE_SIGNING TRUE)
-##set(SIGNING_IDENTITY "Developer ID Application:  Phoenix Firestorm Project, Inc., The"")
+##set(SIGNING_IDENTITY "Developer ID Application:  Virtual World Research, Inc., "")
 endif (DARWIN)
 
 

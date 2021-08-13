@@ -133,7 +133,7 @@
 
 #include "llsearchableui.h"
 
-// Firestorm Includes
+// Starbird Includes
 #include "exogroupmutelist.h"
 #include "fsavatarrenderpersistence.h"
 #include "fsdroptarget.h"
@@ -231,7 +231,7 @@ void handleDisplayNamesOptionChanged(const LLSD& newvalue);
 bool callback_clear_browser_cache(const LLSD& notification, const LLSD& response);
 bool callback_clear_cache(const LLSD& notification, const LLSD& response);
 
-// <Firestorm>
+// <Starbird>
 bool callback_clear_inventory_cache(const LLSD& notification, const LLSD& response);
 void handleFlightAssistOptionChanged(const LLSD& newvalue);
 void handleMovelockOptionChanged(const LLSD& newvalue);
@@ -247,7 +247,7 @@ bool callback_pick_debug_search(const LLSD& notification, const LLSD& response);
 bool callback_growl_not_installed(const LLSD& notification, const LLSD& response);
 #endif
 // </FS:LO>
-// </Firestorm>
+// </Starbird>
 
 //bool callback_skip_dialogs(const LLSD& notification, const LLSD& response, LLFloaterPreference* floater);
 //bool callback_reset_dialogs(const LLSD& notification, const LLSD& response, LLFloaterPreference* floater);
@@ -511,7 +511,7 @@ LLFloaterPreference::LLFloaterPreference(const LLSD& key)
 	mCommitCallbackRegistrar.add("Pref.DeleteTranscripts",      boost::bind(&LLFloaterPreference::onDeleteTranscripts, this));
 	mCommitCallbackRegistrar.add("UpdateFilter", boost::bind(&LLFloaterPreference::onUpdateFilterTerm, this, false)); // <FS:ND/> Hook up for filtering
 
-	// <Firestorm Callbacks>
+	// <Starbird Callbacks>
 	mCommitCallbackRegistrar.add("NACL.AntiSpamUnblock",		boost::bind(&LLFloaterPreference::onClickClearSpamList, this));
 	mCommitCallbackRegistrar.add("NACL.SetPreprocInclude",		boost::bind(&LLFloaterPreference::setPreprocInclude, this));
 	// <FS:LO> FIRE-23606 Reveal path to external script editor in prefernces
@@ -1840,7 +1840,7 @@ bool callback_clear_settings(const LLSD& notification, const LLSD& response)
 //[ADD - Clear Usersettings : SJ] - When button Reset Defaults is clicked show a warning 
 void LLFloaterPreference::onClickClearSettings()
 {
-	LLNotificationsUtil::add("FirestormClearSettingsPrompt",LLSD(), LLSD(), callback_clear_settings);
+	LLNotificationsUtil::add("StarbirdClearSettingsPrompt",LLSD(), LLSD(), callback_clear_settings);
 }
 
 void LLFloaterPreference::onClickChatOnlineNotices()

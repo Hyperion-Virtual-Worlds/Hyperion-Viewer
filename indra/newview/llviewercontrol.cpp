@@ -84,7 +84,7 @@
 #include "rlvcommon.h"
 // [/RLVa:KB]
 
-// Firestorm inclues
+// Starbird inclues
 #include "fsfloatercontacts.h"
 #include "fsfloaterim.h"
 #include "fsfloaternearbychat.h"

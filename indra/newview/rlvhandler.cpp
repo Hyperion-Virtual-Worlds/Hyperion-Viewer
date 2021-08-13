@@ -755,7 +755,7 @@ void RlvHandler::changed(const LLUUID& idGroup, LLGroupChange change)
 bool RlvHandler::handleEvent(LLPointer<LLOldEvents::LLEvent> event, const LLSD& sdUserdata)
 {
 	// Ansariel: We really only want to handle "new group" events here. Registering for this event
-	//           will still get us the custom "update grouptitle list" Firestorm events, sending us
+	//           will still get us the custom "update grouptitle list" Starbird events, sending us
 	//           into a toggle-loop!
 	if ("new group" != event->desc())
 	{

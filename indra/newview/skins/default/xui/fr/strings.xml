@@ -8,7 +8,7 @@
 		Grille de Second Life
 	</string>
 	<string name="SUPPORT_SITE">
-		Portail Assistance Firestorm
+		Portail Assistance Starbird
 	</string>
 	<string name="StartupDetectingHardware">
 		Détection du matériel...
@@ -173,7 +173,7 @@ Version serveur vocal : [VOICE_VERSION]
 		Quitter
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.Starbirdviewer.org/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Grille principale de Second Life (Agni)
@@ -6098,7 +6098,7 @@ correctement. Si vous continuez à recevoir ce message d&apos;erreur, veuillez v
 		avec support de OpenSimulator
 	</string>
 
-	<!-- Firestorm search -->
+	<!-- Starbird search -->
 	<string name="not_found">
 		&apos;[TEXT]&apos; introuvable
 	</string>

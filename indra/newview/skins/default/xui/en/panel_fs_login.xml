@@ -293,9 +293,9 @@
           name="mode_combo"
           width="110">
            <combo_box.item
-            label="Firestorm"
-            name="Firestorm"
-            value="settings_firestorm.xml" />
+            label="Starbird"
+            name="Starbird"
+            value="settings_Starbird.xml" />
            <combo_box.item
             label="Phoenix"
             name="Phoenix"

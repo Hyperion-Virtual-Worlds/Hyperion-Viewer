@@ -327,7 +327,7 @@ void ll_nvapi_init(NvDRSSessionHandle hSession)
 	//}
 
 	NvDRSProfileHandle hProfile = 0;
-	// Check if we already have a Firestorm profile
+	// Check if we already have a Starbird profile
 	status = NvAPI_DRS_FindProfileByName(hSession, profile_name, &hProfile);
 	if (status != NVAPI_OK && status != NVAPI_PROFILE_NOT_FOUND)
 	{
@@ -336,8 +336,8 @@ void ll_nvapi_init(NvDRSSessionHandle hSession)
 	}
 	else if (status == NVAPI_PROFILE_NOT_FOUND)
 	{
-		// Don't have a Firestorm profile yet - create one
-		LL_INFOS() << "Creating Firestorm profile for NVIDIA driver" << LL_ENDL;
+		// Don't have a Starbird profile yet - create one
+		LL_INFOS() << "Creating Starbird profile for NVIDIA driver" << LL_ENDL;
 
 		NVDRS_PROFILE profileInfo;
 		profileInfo.version = NVDRS_PROFILE_VER;
@@ -794,9 +794,9 @@ bool LLAppViewerWin32::init()
 	checkTemp(); // Always do and log this, no matter if using Bugsplat or not
 
 	// Save those early so we don't have to deal with the dynamic memory during in process crash handling.
-	FS::LogfileIn = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "Firestorm.log"));
-	FS::LogfileOut = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Firestorm.log"));
-	FS::DumpFile = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Firestorm.dmp"));
+	FS::LogfileIn = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_LOGS, "Starbird.log"));
+	FS::LogfileOut = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Starbird.log"));
+	FS::DumpFile = ll_convert_string_to_wide(gDirUtilp->getExpandedFilename(LL_PATH_DUMP, "Starbird.dmp"));
 
 	S32 nCrashSubmitBehavior = gCrashSettings.getS32("CrashSubmitBehavior");
 	// Don't ever send? bail out!
@@ -982,7 +982,7 @@ bool LLAppViewerWin32::initHardwareTest()
 			if (OSBTN_NO== button)
 			{
 				LL_INFOS("AppInit") << "User quitting after failed DirectX 9 detection" << LL_ENDL;
-				LLWeb::loadURLExternal("http://www.firestormviewer.org/support", false);
+				LLWeb::loadURLExternal("http://www.Starbirdviewer.org/support", false);
 				return false;
 			}
 			gWarningSettings.setBOOL("AboutDirectX9", FALSE);

@@ -1,6 +1,6 @@
 /**
  * @file fsfloaterradar.h
- * @brief Firestorm radar floater implementation
+ * @brief Starbird radar floater implementation
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Copyright (c) 2013 Ansariel Hiller @ Second Life

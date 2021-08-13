@@ -561,7 +561,7 @@ BOOL LLFilePicker::getSaveFile(ESaveFilter filter, const std::string& filename, 
 		mOFN.lpstrFilter = L"LSL Files (*.lsl)\0*.lsl\0" L"\0";
 		break;
 			
-// <Firestorm>
+// <Starbird>
 	case FFSAVE_BEAM:
 		if (filename.empty())
 		{
@@ -590,7 +590,7 @@ BOOL LLFilePicker::getSaveFile(ESaveFilter filter, const std::string& filename, 
 		L"Comma seperated values (*.csv)\0*.csv\0" \
 		L"\0";
 		break;
-// </Firestorm>
+// </Starbird>
 	default:
 		return FALSE;
 	}

@@ -47,7 +47,7 @@ class LLMenuButton;
 class LLTabContainer;
 class LLNetMap;
 
-// Firestorm declarations
+// Starbird declarations
 class LLMenuGL;
 class FSPanelRadar;
 
@@ -158,9 +158,9 @@ private:
 	LLAvatarList*			mAllFriendList;
 	LLAvatarList*			mNearbyList;
 	LLAvatarList*			mContactSetList;	// [FS:CR] Contact sets
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	FSPanelRadar*			mRadarPanel;
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 	LLAvatarList*			mRecentList;
 	LLGroupList*			mGroupList;
 	LLNetMap*				mMiniMap;
@@ -171,9 +171,9 @@ private:
 	std::vector<std::string> mSavedFilters;
 
 	Updater*				mFriendListUpdater;
-	// <FS:Ansariel> Firestorm radar
+	// <FS:Ansariel> Starbird radar
 	//Updater*				mNearbyListUpdater;
-	// </FS:Ansariel> Firestorm radar
+	// </FS:Ansariel> Starbird radar
 	Updater*				mRecentListUpdater;
 	Updater*				mButtonsUpdater;
     LLHandle< LLFloater >	mPicker;

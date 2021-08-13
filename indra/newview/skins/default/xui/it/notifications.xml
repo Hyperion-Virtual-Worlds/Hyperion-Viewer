@@ -31,7 +31,7 @@ Dettagli errore: La notifica denominata &apos;[_NAME]&apos; non è stata trovata
 		<usetemplate name="okcancelbuttons" notext="Annulla" yestext="Si"/>
 	</notification>
 	<notification name="BadInstallation">
-		Il programma [APP_NAME] ha riscontrato un&apos;errore durante il tentativo di aggiornamento.  [https://www.firestormviewer.org/downloads Scarica l&apos;ultima versione] del viewer.
+		Il programma [APP_NAME] ha riscontrato un&apos;errore durante il tentativo di aggiornamento.  [https://www.Starbirdviewer.org/downloads Scarica l&apos;ultima versione] del viewer.
 	</notification>
 	<notification name="LoginFailedNoNetwork">
 		Non è possibile collegarsi alla [SECOND_LIFE_GRID].
@@ -3414,7 +3414,7 @@ Il pulsante verrà visualizzato quando lo spazio sarà sufficiente.
 	<notification name="MeshUploadError">
 		[LABEL] non è stato caricato: [MESSAGE]
 
-Per informazioni dettagliate, vedi il file del registro firestorm.log
+Per informazioni dettagliate, vedi il file del registro Starbird.log
 	</notification>
 	<notification name="MeshUploadPermError">
 		Errore durante la richiesta di autorizzazione al caricamento della mesh.
@@ -3513,7 +3513,7 @@ Consigliamo di controllare le impostazioni di rete e del firewall.
 Disabilitare tutte le funzioni SIP ALG sul router.
 
 Le comunicazioni tramite voce non saranno disponibili.
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
 		<usetemplate ignoretext="Avvisami quando non è possibile la connessione con il server voce" name="okignore"/>
 	</notification>
 	<notification name="NoVoiceConnect-GIAB">
@@ -3521,7 +3521,7 @@ Le comunicazioni tramite voce non saranno disponibili.
 
 Le comunicazioni tramite voce non saranno disponibili.
 Consigliamo di controllare le impostazioni di rete e del firewall.
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
 	</notification>
 	<notification name="AvatarRezLeftNotification">
 		( presente da [EXISTENCE] secondi )
@@ -3867,7 +3867,7 @@ Il nome può contenere solo caratteri ASCII esclusi : e | .
 	<notification name="TestversionExpired">
 		Questa versione di prova di [APP_NAME] è scaduta e non può più essere usata.
 	</notification>
-	<notification name="FireStormReqInfo">
+	<notification name="StarbirdReqInfo">
 		[NAME] chiede che vengano inviate informazioni sulla configurazione di [APP_NAME].
 (Sono le stesse informazioni che si possono trovare in Aiuto->A proposito di [APP_NAME])
 [REASON]
@@ -3895,7 +3895,7 @@ Inviare queste informazioni?
 	<notification name="MovelockDisabling">
 		Disabilitazione blocco...
 	</notification>
-	<notification label="Ripristino della configurazione" name="FirestormClearSettingsPrompt">
+	<notification label="Ripristino della configurazione" name="StarbirdClearSettingsPrompt">
 		Ripristinare completamente la configurazione può essere utile in caso di problemi. Tuttavia tutte le personalizzazioni rispetto all&apos;originale dovranno essere rifatte.
 
 Confermare il ripristino totale della configurazione iniziale?
@@ -4922,8 +4922,8 @@ Fattore LOD >8: Non ha effetti apprezzabili. Può causare errori.
 	</notification>
 	<notification name="CurrencyURIOverrideReceived">
 		Questa regione ha attivato un gestore di denaro esterno.
-Gli acquisti di valuta fatti attraverso Firestorm sono transazioni tra voi (l&apos;utente) e il fornitore/i fornitori o rivenditore/i della valuta.
-Né Firestorm Viewer, né Phoenix Firestorm Viewer Project Inc. o la sua squadra possono essere ritenuti responsabili di spese o danni legati direttamente o indirettamente a queste transazioni.
+Gli acquisti di valuta fatti attraverso Starbird sono transazioni tra voi (l&apos;utente) e il fornitore/i fornitori o rivenditore/i della valuta.
+Né Starbird Viewer, Virtual World Research Inc. o la sua squadra possono essere ritenuti responsabili di spese o danni legati direttamente o indirettamente a queste transazioni.
 Se non si ritiene di aderire a questi termini d&apos;uso, non effettuare transazioni usando questo viewer.
 		<usetemplate ignoretext="La regione attiva un nuovo portale per la valuta." name="okignore" />
 	</notification>

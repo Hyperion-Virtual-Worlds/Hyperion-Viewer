@@ -90,7 +90,7 @@ public:
 		FFLOAD_DIRECTORY = 13,   //To call from lldirpicker.
 		FFLOAD_EXE = 14,         // Note: EXE will be treated as ALL on Windows and Linux but not on Darwin
 		
-		// Firestorm additions
+		// Starbird additions
 		FFLOAD_IMPORT = 50
 	};
 
@@ -114,7 +114,7 @@ public:
 		FFSAVE_SCRIPT = 15,
 		FFSAVE_TGAPNG = 16,
 		
-		// Firestorm additions
+		// Starbird additions
 		FFSAVE_BEAM = 50,
 		FFSAVE_EXPORT = 51,
 		FFSAVE_CSV = 52

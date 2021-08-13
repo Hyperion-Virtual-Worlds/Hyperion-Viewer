@@ -193,7 +193,7 @@ No tutorial is currently available.
    icon="alertmodal.tga"
    name="BadInstallation"
    type="alertmodal">
- Installation of [APP_NAME] is defective. Please [https://www.firestormviewer.org/downloads download a new copy] of the Viewer and reinstall.
+ Installation of [APP_NAME] is defective. Please [https://www.Starbirdviewer.org/downloads download a new copy] of the Viewer and reinstall.
     <tag>fail</tag>
     <usetemplate
      name="okbutton"
@@ -1845,7 +1845,7 @@ Visit [_URL] for more information?
     <tag>confirm</tag>
     <url option="0" name="url">
 
-			https://wiki.firestormviewer.org/fs_system_requirements
+			https://wiki.Starbirdviewer.org/fs_system_requirements
     </url>
     <usetemplate
      ignoretext="My computer hardware is not supported"
@@ -9419,7 +9419,7 @@ Select residents to share with.
     icon="alert.tga"
     type="alert">
       [LABEL] failed to upload: [MESSAGE]
-[DETAILS] See Firestorm.log for details
+[DETAILS] See Starbird.log for details
   </notification>
 
   <notification
@@ -9428,7 +9428,7 @@ Select residents to share with.
     type="alert">
       [LABEL] failed to upload: [MESSAGE]
 
-See Firestorm.log for details
+See Starbird.log for details
   </notification>
    
   <notification
@@ -9629,7 +9629,7 @@ Please check your network and firewall setup.
 Disable any SIP ALG feature in your router.
 
 Voice communications will not be available.
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
     <tag>voice</tag>
   <tag>fail</tag>
     <usetemplate
@@ -9646,7 +9646,7 @@ We're having trouble connecting to your voice server.
 
 Voice communications will not be available.
 Please check your network and firewall setup.
-[https://wiki.firestormviewer.org/fs_voice]
+[https://wiki.Starbirdviewer.org/fs_voice]
     <tag>voice</tag>
   <tag>fail</tag>
     <usetemplate
@@ -10613,7 +10613,7 @@ This will send the following information to the current IM session:
 
   <notification
    icon="alertmodal.tga"
-   name="FireStormReqInfo"
+   name="StarbirdReqInfo"
    type="alertmodal">
     [NAME] is requesting that you send them information about your [APP_NAME] setup.
 (This is the same information that can be found by going to Help->About [APP_NAME])
@@ -10631,7 +10631,7 @@ Would you like to send them this information?
     </form>
   </notification>
 
-<!-- Firestorm Phantom -->
+<!-- Starbird Phantom -->
 
   <notification
    icon="notifytip.tga"
@@ -10682,13 +10682,13 @@ Disabling movelock...
 Flight Assist is enabled
   </notification>
 
-<!-- Firestorm Phantom -->
+<!-- Starbird Phantom -->
 
-<!-- Firestorm Reset Settings -->
+<!-- Starbird Reset Settings -->
   <notification
     icon="alertmodal.tga"
     label="Reset all settings"
-    name="FirestormClearSettingsPrompt"
+    name="StarbirdClearSettingsPrompt"
     type="alertmodal">
     Resetting all settings may be helpful if you are experiencing problems; however, you will need to redo any customizations you have made to the default configuration. 
 
@@ -10705,7 +10705,7 @@ Flight Assist is enabled
     type="alertmodal">
     Settings will be cleared after restarting [APP_NAME].
   </notification>
-<!-- Firestorm Reset Settings -->
+<!-- Starbird Reset Settings -->
 
 <!-- AW: opensim -->
   <notification icon="alertmodal.tga"
@@ -13491,8 +13491,8 @@ LOD Factor >8: Has no real effect. May cause errors.
    name="CurrencyURIOverrideReceived"
    type="alertmodal">
 This region has elected to specify a third-party currency portal. 
-Please note that currency purchases made through Firestorm Viewer are transactions between you (the user) and the provider(s) or seller(s) of the currency. 
-Neither Firestorm Viewer, the Phoenix Firestorm Viewer Project Inc., nor its team shall be liable for any cost or damage arising either directly or indirectly from any such transaction. 
+Please note that currency purchases made through Starbird Viewer are transactions between you (the user) and the provider(s) or seller(s) of the currency. 
+Neither Starbird Viewer, Virtual World Research Inc., nor its team shall be liable for any cost or damage arising either directly or indirectly from any such transaction. 
 If you do not agree to these terms of use, then no financial transactions should be conducted using this viewer.
    <usetemplate
     ignoretext="When the region sets a new currency helper."
@@ -13726,9 +13726,9 @@ Bulk import of Windlights has finished.
    <unique combine = "cancel_old">
      <context>FSAOScriptedNotification</context>
    </unique>
-Firestorm Animation Overrider: [AO_MESSAGE]
+Starbird Animation Overrider: [AO_MESSAGE]
    <usetemplate
-    ignoretext="Warn me when the Firestorm Animation Overrider gets accessed by a scripted object"
+    ignoretext="Warn me when the Starbird Animation Overrider gets accessed by a scripted object"
     name="notifyignore"/>
   </notification>
 

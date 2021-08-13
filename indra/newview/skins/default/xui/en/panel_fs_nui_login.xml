@@ -314,9 +314,9 @@
       <combo_box.drop_down_button
         font="SansSerifLarge"/>
       <combo_box.item
-        label="Firestorm"
-        name="Firestorm"
-        value="settings_firestorm.xml" />
+        label="Starbird"
+        name="Starbird"
+        value="settings_Starbird.xml" />
       <combo_box.item
         label="Phoenix"
         name="Phoenix"

@@ -17,7 +17,7 @@
 		Second Life Ağı
 	</string>
 	<string name="SUPPORT_SITE">
-		Firestorm Destek Portalı
+		Starbird Destek Portalı
 	</string>
 	<string name="StartupDetectingHardware">
 		Donanım saptanıyor...
@@ -188,7 +188,7 @@ Ses Sunucusu Sürümü: [VOICE_VERSION]
 		Çık
 	</string>
 	<string name="create_account_url">
-		https://www.firestormviewer.org/join-secondlife/
+		https://www.Starbirdviewer.org/join-secondlife/
 	</string>
 	<string name="AgniGridLabel">
 		Second Life Ana Ağı (Agni)

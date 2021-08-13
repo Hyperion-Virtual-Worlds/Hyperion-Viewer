@@ -857,7 +857,7 @@ BOOL LLPanelGroupMembersSubTab::postBuildSubTab(LLView* root)
 	mMembersList->setCommitCallback(onMemberSelect, this);
 	// Show the member's profile on double click.
 	mMembersList->setDoubleClickCallback(onMemberDoubleClick, this);
-	// <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+	// <FS:Ansariel> Special Starbird menu also allowing multi-select action
 	//mMembersList->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
 	mMembersList->setContextMenu(&gFSNameListAvatarMenu);
 	// </FS:Ansariel>
@@ -2136,7 +2136,7 @@ BOOL LLPanelGroupRolesSubTab::postBuildSubTab(LLView* root)
 	mRolesList->setCommitOnSelectionChange(TRUE);
 	mRolesList->setCommitCallback(onRoleSelect, this);
 
-	// <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+	// <FS:Ansariel> Special Starbird menu also allowing multi-select action
 	//mAssignedMembersList->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
 	mAssignedMembersList->setContextMenu(&gFSNameListAvatarMenu);
 
@@ -2970,7 +2970,7 @@ BOOL LLPanelGroupActionsSubTab::postBuildSubTab(LLView* root)
 
 	mActionList->setCommitOnSelectionChange(TRUE);
 	mActionList->setCommitCallback(boost::bind(&LLPanelGroupActionsSubTab::handleActionSelect, this));
-	// <FS:Ansariel> Special Firestorm menu also allowing multi-select action
+	// <FS:Ansariel> Special Starbird menu also allowing multi-select action
 	//mActionList->setContextMenu(LLScrollListCtrl::MENU_AVATAR);
 	mActionMembers->setContextMenu(&gFSNameListAvatarMenu);
 

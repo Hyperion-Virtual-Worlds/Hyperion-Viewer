@@ -1,6 +1,6 @@
 /**
  * @file fsfloatergroup.h
- * @brief Class for the standalone group details floater in Firestorm
+ * @brief Class for the standalone group details floater in Starbird
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Starbird Viewer Source Code

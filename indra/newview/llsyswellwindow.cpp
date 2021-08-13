@@ -36,7 +36,7 @@
 #include "llspeakers.h"
 #include "lltoastpanel.h"
 
-// Firestorm includes
+// Starbird includes
 #include "llagent.h"
 #include "llavatarnamecache.h"
 #include "llflatlistview.h"

@@ -94,7 +94,7 @@ public:
         FT_SETTINGS = 56,
 
 		// <FS:Ansariel> Folder types for our own virtual system folders
-		FT_FIRESTORM = 57,		
+		FT_Starbird = 57,		
 		FT_PHOENIX = 58,
 		FT_RLV = 59,
 		// </FS:Ansariel> Folder types for our own virtual system folders

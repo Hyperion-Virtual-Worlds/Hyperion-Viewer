@@ -48,7 +48,7 @@ LLConversationLogListItem::LLConversationLogListItem(const LLConversation* conve
 {
 	buildFromFile("panel_conversation_log_list_item.xml");
 
-	// <FS:CR> [Firestorm Communications UI]
+	// <FS:CR> [Starbird Communications UI]
 	//LLFloaterIMSession* floater = LLFloaterIMSession::findInstance(mConversation->getSessionID());
 	FSFloaterIM* floater = FSFloaterIM::findInstance(mConversation->getSessionID());
 	//bool ims_are_read = LLFloaterIMSession::isVisible(floater) && floater->hasFocus();

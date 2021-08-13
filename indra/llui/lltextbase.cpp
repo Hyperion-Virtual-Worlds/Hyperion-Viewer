@@ -2121,14 +2121,14 @@ void LLTextBase::createUrlContextMenu(S32 x, S32 y, const std::string &in_url)
 
 	// <FS:Ansariel> Additional convenience options
 	std::string target_id_str = LLUrlAction::extractUuidFromSlurl(url).asString();
-	registrar.add("FS.ZoomIn", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/zoom", true));
-	registrar.add("FS.TeleportToTarget", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/teleportto", true));
-	registrar.add("FS.OfferTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/offerteleport", true));
-	registrar.add("FS.RequestTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/requestteleport", true));
-	registrar.add("FS.TrackAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/track", true));
-	registrar.add("FS.AddToContactSet", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/addtocontactset", true));	// [FS:CR]
-	registrar.add("FS.BlockAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/blockavatar", true));
-	registrar.add("FS.ViewLog", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/viewlog", true));
+	registrar.add("FS.ZoomIn", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/zoom", true));
+	registrar.add("FS.TeleportToTarget", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/teleportto", true));
+	registrar.add("FS.OfferTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/offerteleport", true));
+	registrar.add("FS.RequestTeleport", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/requestteleport", true));
+	registrar.add("FS.TrackAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/track", true));
+	registrar.add("FS.AddToContactSet", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/addtocontactset", true));	// [FS:CR]
+	registrar.add("FS.BlockAvatar", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/blockavatar", true));
+	registrar.add("FS.ViewLog", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/viewlog", true));
 	// </FS:Ansariel>
 
 	// <FS:Ansariel> Add enable checks for menu items
@@ -2149,17 +2149,17 @@ void LLTextBase::createUrlContextMenu(S32 x, S32 y, const std::string &in_url)
 	// </FS:Ansariel>
 
 	// <FS:Zi> FIRE-30725 - Add more group functions to group URL context menu
-	registrar.add("FS.JoinGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupjoin", true));
-	registrar.add("FS.LeaveGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupleave", true));
-	registrar.add("FS.ActivateGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupactivate", true));
+	registrar.add("FS.JoinGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupjoin", true));
+	registrar.add("FS.LeaveGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupleave", true));
+	registrar.add("FS.ActivateGroup", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupactivate", true));
 
 	// hook up moderation tools
 	// if someone knows how to pass a parameter to these, let me know! - Zi
 	// also, I wish I could pass the group session id through these calls, but LLTextBase does not know it - Zi
-	registrar.add("FS.AllowGroupChat", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupchatallow", true));
-	registrar.add("FS.ForbidGroupChat", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupchatforbid", true));
-	registrar.add("FS.EjectGroupMember", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupeject", true));
-	registrar.add("FS.BanGroupMember", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/firestorm/" + target_id_str + "/groupban", true));
+	registrar.add("FS.AllowGroupChat", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupchatallow", true));
+	registrar.add("FS.ForbidGroupChat", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupchatforbid", true));
+	registrar.add("FS.EjectGroupMember", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupeject", true));
+	registrar.add("FS.BanGroupMember", boost::bind(&LLUrlAction::executeSLURL, "secondlife:///app/Starbird/" + target_id_str + "/groupban", true));
 
 	enable_registrar.add("FS.WaitingForGroupData", boost::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, target_id, FS_RGSTR_CHK_WAITING_FOR_GROUP_DATA));
 	enable_registrar.add("FS.HaveGroupData", boost::bind(&FSRegistrarUtils::checkIsEnabled, gFSRegistrarUtils, target_id, FS_RGSTR_CHK_HAVE_GROUP_DATA));

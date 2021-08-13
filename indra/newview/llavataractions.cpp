@@ -80,7 +80,7 @@
 #include "rlvhandler.h"
 // [/RLVa:KB]
 	
-// Firestorm includes
+// Starbird includes
 #include "fsfloaterim.h"
 #include "fsfloaterimcontainer.h"
 #include "fsfloaterprofile.h"
@@ -1740,7 +1740,7 @@ void LLAvatarActions::report(const LLUUID& idAgent)
 
 bool LLAvatarActions::canZoomIn(const LLUUID& idAgent)
 {
-	// <FS:Ansariel> Firestorm radar support
+	// <FS:Ansariel> Starbird radar support
 	//return gObjectList.findObject(idAgent);
 
 	LLViewerObject* object = gObjectList.findObject(idAgent);
@@ -1768,7 +1768,7 @@ bool LLAvatarActions::canZoomIn(const LLUUID& idAgent)
 
 void LLAvatarActions::zoomIn(const LLUUID& idAgent)
 {
-	// <FS:Ansariel> Firestorm radar support
+	// <FS:Ansariel> Starbird radar support
 	//handle_zoom_to_object(idAgent);
 
 	FSRadarEntry* entry = FSRadar::getInstance()->getEntry(idAgent);

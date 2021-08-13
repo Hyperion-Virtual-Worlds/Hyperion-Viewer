@@ -52,7 +52,7 @@ typedef enum ELLPath
 // [SL:KB] - Patch: Viewer-Skins | mS: 2010-10-19 (Catznip-2.4)
 	LL_PATH_TOP_SKINTHEME = 20,
 // [/SL:KB]
-	// <FS:TT> Firestorm data
+	// <FS:TT> Starbird data
 	LL_PATH_FS_RESOURCES = 21,
 	// </FS:TT>
 	// <FS:Ansariel> Sound cache

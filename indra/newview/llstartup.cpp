@@ -216,7 +216,7 @@
 #include "lldxhardware.h"
 #endif
 
-// Firestorm includes
+// Starbird includes
 // <FS:Ansariel> [FS communication UI]
 //#include "llfloaterimsession.h"
 #include "fsfloaterim.h"
@@ -309,7 +309,7 @@ boost::scoped_ptr<LLViewerStats::PhaseMap> LLStartUp::sPhases(new LLViewerStats:
 void login_show();
 void login_callback(S32 option, void* userdata);
 void show_release_notes_if_required();
-//void show_first_run_dialog();	// <FS:CR> Unused in Firestorm
+//void show_first_run_dialog();	// <FS:CR> Unused in Starbird
 bool first_run_dialog_callback(const LLSD& notification, const LLSD& response);
 void set_startup_status(const F32 frac, const std::string& string, const std::string& msg);
 bool login_alert_status(const LLSD& notification, const LLSD& response);

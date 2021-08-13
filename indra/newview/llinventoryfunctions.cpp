@@ -93,7 +93,7 @@
 
 #include <boost/foreach.hpp>
 
-// Firestorm includes
+// Starbird includes
 #include "aoengine.h"
 #include "fsfloaterwearablefavorites.h"
 #include "fslslbridge.h"

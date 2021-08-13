@@ -1,6 +1,6 @@
 /**
  * @file fsfloatervolumecontrols.cpp
- * @brief Class for the standalone volume controls floater in Firestorm
+ * @brief Class for the standalone volume controls floater in Starbird
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Starbird Viewer Source Code

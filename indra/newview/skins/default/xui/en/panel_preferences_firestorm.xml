@@ -7,8 +7,8 @@
  left="1"
  top="1"
  width="540"
- label="Firestorm"
- name="firestorm">
+ label="Starbird"
+ name="Starbird">
  
 <panel.string name="BeamsOffLabel">
 	=== OFF ===
@@ -24,7 +24,7 @@
 	</string>
 
 <tab_container
- label="Firestorm Prefs"
+ label="Starbird Prefs"
  layout="topleft"
  follows="all"
  top="5"
@@ -127,7 +127,7 @@
 		 label="Enable progressive draw distance stepping"
 		 layout="topleft"
 		 name="FSRenderFarClipStepping"
-		 tool_tip="If enabled, Firestorm will use a progressive draw distance stepping after teleporting."
+		 tool_tip="If enabled, Starbird will use a progressive draw distance stepping after teleporting."
 		 initial_value="true"
 		 top_pad="10"
 		 width="250" />
@@ -516,7 +516,7 @@
      right="-1"
      follows="all"
      label="Avatar"
-     name="firestorm_avatar" >
+     name="Starbird_avatar" >
 
         <text
          type="string"

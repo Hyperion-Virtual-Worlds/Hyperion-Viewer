@@ -405,7 +405,7 @@ void FSFloaterIM::sendMsgFromInputEditor(EChatType type)
 				// <FS:Techwolf Lupindo> Support group chat prefix
 				static LLCachedControl<bool> chat_prefix_support(gSavedSettings, "FSSupportGroupChatPrefix3");
 				static LLCachedControl<bool> chat_prefix_testing(gSavedSettings, "FSSupportGroupChatPrefixTesting");
-				if ((chat_prefix_support || chat_prefix_testing) && FSData::getInstance()->isFirestormGroup(mSessionID))
+				if ((chat_prefix_support || chat_prefix_testing) && FSData::getInstance()->isStarbirdGroup(mSessionID))
 				{
 					// <FS:PP> FIRE-7075: Skin indicator
 					static LLCachedControl<std::string> FSInternalSkinCurrent(gSavedSettings, "FSInternalSkinCurrent");
@@ -957,7 +957,7 @@ BOOL FSFloaterIM::postBuild()
 
 	getChild<LLButton>("chat_search_btn")->setCommitCallback(boost::bind(&FSFloaterIM::onChatSearchButtonClicked, this));
 
-	bool isFSSupportGroup = FSData::getInstance()->isFirestormGroup(mSessionID);
+	bool isFSSupportGroup = FSData::getInstance()->isStarbirdGroup(mSessionID);
 	bool isFSTestingGroup = FSData::getInstance()->isTestingGroup(mSessionID);
 	
 	//We can show the testing group button simply by checking testing group

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<panel name="firestorm">
+<panel name="Starbird">
 <panel.string name="BeamsOffLabel">
     === WYŁĄCZONE ===
 </panel.string>
@@ -12,9 +12,9 @@
 <string name="EmbeddedItemNotLoggedIn">
     Zaloguj się
 </string>
-<tab_container label="Ust. Firestorma" name="tabs">
+<tab_container label="Ust. Starbirda" name="tabs">
     <panel label="Dodatki" name="tab-extras">
-        <check_box name="checkMiscRLVa" label="Sterowanie Firestormem przez skrypty (RLVa)" />
+        <check_box name="checkMiscRLVa" label="Sterowanie Starbirdem przez skrypty (RLVa)" />
         <text name="textMiscRLVaRestart">
             (wymaga restartu)
         </text>
@@ -24,9 +24,9 @@
         <check_box label="Wyłącz ekran postępu logowania się" name="login_screen_toggle" tool_tip="Wyłącza czarny ekran postępu logowania się" />
         <check_box label="Napraw animację bezczynności dla Bento" name="play_default_bento_idle_animation_toggle" tool_tip="Gdy włączysz tą opcję, to przeglądarka będzie uruchamiać domyślną animację Bento o priorytecie 0, która ustawia dłonie, skrzydła, usta i ogon w naturalnej pozycji, gdy nie jest uruchomiona żadna inna animacja Bento." />
         <check_box label="Wyłącz ekran postępu wylogowywania się" name="logout_screen_toggle" tool_tip="Wyłącza czarny ekran postępu wylogowywania się." />
-        <check_box label="Stopniowe powiększanie pola widzenia" name="FSRenderFarClipStepping" tool_tip="Jeśli włączysz tą opcję, to Firestorm będzie stopniowo zwiększać pole widzenia po teleportacji." />
+        <check_box label="Stopniowe powiększanie pola widzenia" name="FSRenderFarClipStepping" tool_tip="Jeśli włączysz tą opcję, to Starbird będzie stopniowo zwiększać pole widzenia po teleportacji." />
         <slider name="progressive_draw_distance_interval" tool_tip="Odstęp w sekundach pomiędzy każdym kolejnym powiększeniem pola widzenia." />
-        <check_box name="UseLSLBridge" label="Włącz Most w LScript Language" tool_tip="Pozwala Firestormowi na używanie oskryptowanego dodatku (Mostu), aby rozszerzyć znacznie swoje możliwości" />
+        <check_box name="UseLSLBridge" label="Włącz Most w LScript Language" tool_tip="Pozwala Starbirdowi na używanie oskryptowanego dodatku (Mostu), aby rozszerzyć znacznie swoje możliwości" />
         <combo_box name="UseLSLFlightAssist" tool_tip="Włącza skrypt pomagający latać i zawisać na większych wysokościach">
             <combo_box.item label="Pomocnik lotu: Wyłączony" name="flight_disabled" />
             <combo_box.item label="Pomocnik lotu: Lekkie przyspieszanie" name="flight_mild" />
@@ -75,7 +75,7 @@
         <check_box label="Potwierdź przed płaceniem. Próg:" name="FSConfirmPayments" tool_tip="Pokaż okienko z potwierdzeniem przed płaceniem sum większych, niż ustawiony tutaj próg. Aby zawsze pokazywać potwierdzenie ustaw próg na 0." />
         <spinner name="FSPaymentConfirmationThreshold" tool_tip="Pokaż okienko z potwierdzeniem przed płaceniem sum większych, niż ustawiony tutaj próg. Aby zawsze pokazywać potwierdzenie ustaw próg na 0." />
     </panel>
-    <panel label="Awatar" name="firestorm_avatar">
+    <panel label="Awatar" name="Starbird_avatar">
         <text name="HeadMovement">
             Ustaw, jak mocno głowa Awatara śledzi myszkę ('0' oznacza brak ruchu):
         </text>

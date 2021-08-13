@@ -1,6 +1,6 @@
 /** 
  * @file fscontactsfriendsmenu.cpp
- * @brief Menu used by Firestorm contacts floater
+ * @brief Menu used by Starbird contacts floater
  *
  * $LicenseInfo:firstyear=2014&license=viewerlgpl$
  * Starbird Viewer Source Code

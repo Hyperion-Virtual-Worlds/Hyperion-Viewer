@@ -46,7 +46,7 @@
 #include "llviewerwindow.h"
 // </FS:PP>
 
-// Firestorm includes
+// Starbird includes
 #include "fsfloaterim.h"
 #include "llagent.h"
 #include "llavataractions.h"

@@ -210,7 +210,7 @@ void FSFloaterWearableFavorites::initCategory()
 
 	LLUUID fs_favs_id;
 
-	LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER);
+	LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
 	if (!fs_root_cat_id.isNull())
 	{
 		LLInventoryModel::item_array_t* items;
@@ -230,7 +230,7 @@ void FSFloaterWearableFavorites::initCategory()
 	}
 	else
 	{
-		fs_root_cat_id = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_FIRESTORM_FOLDER);
+		fs_root_cat_id = gInventory.createNewCategory(gInventory.getRootFolderID(), LLFolderType::FT_NONE, ROOT_Starbird_FOLDER);
 	}
 
 	if (fs_favs_id.isNull())
@@ -249,7 +249,7 @@ LLUUID FSFloaterWearableFavorites::getFavoritesFolder()
 		return sFolderID;
 	}
 
-	LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_FIRESTORM_FOLDER);
+	LLUUID fs_root_cat_id = gInventory.findCategoryByName(ROOT_Starbird_FOLDER);
 	if (!fs_root_cat_id.isNull())
 	{
 		LLInventoryModel::item_array_t* items;

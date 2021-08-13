@@ -1,6 +1,6 @@
 /**
  * @file fsslurlcommand.cpp
- * @brief SLurl command handler for Firestorm commands
+ * @brief SLurl command handler for Starbird commands
  *
  * $LicenseInfo:firstyear=2012&license=viewerlgpl$
  * Copyright (c) 2012 Ansariel Hiller @ Second Life
@@ -44,7 +44,7 @@ class FSSlurlCommandHandler : public LLCommandHandler
 {
 public:
 	// not allowed from outside the app
-	FSSlurlCommandHandler() : LLCommandHandler("firestorm", UNTRUSTED_BLOCK) { }
+	FSSlurlCommandHandler() : LLCommandHandler("Starbird", UNTRUSTED_BLOCK) { }
 
 	bool handle(const LLSD& params, const LLSD& query_map, LLMediaCtrl* web)
 	{

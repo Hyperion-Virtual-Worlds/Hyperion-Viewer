@@ -1,6 +1,6 @@
 /**
  * @file fspanelradar.cpp
- * @brief Firestorm radar panel implementation
+ * @brief Starbird radar panel implementation
  *
  * $LicenseInfo:firstyear=2013&license=viewerlgpl$
  * Copyright (c) 2013 Ansariel Hiller @ Second Life

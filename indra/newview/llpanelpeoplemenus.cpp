@@ -96,7 +96,7 @@ LLContextMenu* PeopleContextMenu::createMenu()
 		registrar.add("Avatar.Eject",			boost::bind(&LLAvatarActions::landEject,					id));
 		// </FS:Ansariel>
 
-		// <FS:Ansariel> Firestorm additions
+		// <FS:Ansariel> Starbird additions
 		registrar.add("Avatar.GroupInvite",		boost::bind(&LLAvatarActions::inviteToGroup,			id));
 		registrar.add("Avatar.AddToContactSet",	boost::bind(&PeopleContextMenu::addToContactSet,		this));	// [FS:CR]
 

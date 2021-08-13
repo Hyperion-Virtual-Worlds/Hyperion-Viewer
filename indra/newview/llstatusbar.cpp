@@ -89,7 +89,7 @@
 // system includes
 #include <iomanip>
 
-// Firestorm includes
+// Starbird includes
 #include "llagentui.h"
 #include "llaudioengine.h"
 #include "llclipboard.h"
@@ -298,7 +298,7 @@ BOOL LLStatusBar::postBuild()
 	getChild<LLUICtrl>("buyL")->setCommitCallback(
 		boost::bind(&LLStatusBar::onClickBuyCurrency, this));
 
-	// <FS:Ansariel> Not used in Firestorm
+	// <FS:Ansariel> Not used in Starbird
     //getChild<LLUICtrl>("goShop")->setCommitCallback(boost::bind(&LLWeb::loadURL, gSavedSettings.getString("MarketplaceURL"), LLStringUtil::null, LLStringUtil::null));
 
 	mBoxBalance = getChild<LLTextBox>("balance");
@@ -1209,11 +1209,11 @@ void LLStatusBar::updateBalancePanelPosition()
     const S32 HPAD = 24;
     LLRect balance_rect = mBoxBalance->getTextBoundingRect();
     LLRect buy_rect = getChildView("buyL")->getRect();
-    // <FS:Ansariel> Not used in Firestorm
+    // <FS:Ansariel> Not used in Starbird
     //LLRect shop_rect = getChildView("goShop")->getRect();
     LLView* balance_bg_view = getChildView("balance_bg");
     LLRect balance_bg_rect = balance_bg_view->getRect();
-    // <FS:Ansariel> Not used in Firestorm
+    // <FS:Ansariel> Not used in Starbird
     //balance_bg_rect.mLeft = balance_bg_rect.mRight - (buy_rect.getWidth() + shop_rect.getWidth() + balance_rect.getWidth() + HPAD);
     balance_bg_rect.mLeft = balance_bg_rect.mRight - (buy_rect.getWidth() + balance_rect.getWidth() + HPAD);
     // </FS:Ansariel>
@@ -1221,7 +1221,7 @@ void LLStatusBar::updateBalancePanelPosition()
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// Firestorm methods
+// Starbird methods
 
 void LLStatusBar::showBalance(bool show)
 {
